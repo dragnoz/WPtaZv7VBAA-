@@ -1,0 +1,176 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.fx.island.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+          "animation.reset.fx.island1": {
+            "timeline": {
+                "0.0": ["/"],
+                "13.0":["/event entity @s remove"]
+
+            },
+            "animation_length": 13.1,
+            "loop": true
+        },
+        "animation.reset.fx.island2": {
+            "timeline": {
+                "0.0": ["/tp @a 2175 94 24 ","/tp @s 2175 94 24 "  ],
+                "0.5":["/execute as @a at @s  positioned ~ ~ ~-10 run clone ~10 0 ~10 ~-10 40 ~-10 ~-10 71 ~-10",
+                        "/tag @a remove sweepcard"
+                        ],
+                "1":["/execute as @a at @s  positioned ~ ~ ~10 run clone ~10 0 ~10 ~-10 40 ~-10 ~-10 71 ~-10",
+                        "/fog @a remove sick"
+                      ],
+                "1.5":["/execute as @a at @s  positioned ~10 ~ ~ run clone ~10 0 ~10 ~-10 40 ~-10 ~-10 71 ~-10"],
+                "2.0":["/execute as @a at @s  as @a at @s positioned ~-10 ~ ~ run clone ~10 0 ~10 ~-10 40 ~-10 ~-10 71 ~-10"],
+                "2.5":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                     "/tp @a 2117 80 -6", "/tp @s 2117 80 -6"
+                    ],
+                "3":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                    "/dialogue change @e[type=dz:character,c=1] Respect_Quest_intro",
+                    "/tag @e[type=dz:character,c=1] add talk"
+                    ],
+                "3.2":["/tp @a 2182 86 58","/tp @s 2182 86 58"],
+                
+                "3.5":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                    "/dialogue change @e[type=dz:character,c=1] GardenerOne_intro",
+                    "/tag @e[type=dz:character,c=1] add talk"
+                    ],
+                "3.8":["/tp @a 2215 82 -3","/tp @s 2215 82 -3"],
+                    
+                "4":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                        "/dialogue change @e[type=dz:character,c=1] GardenerTwo_intro",
+                        "/tag @e[type=dz:character,c=1] add talk"
+                        ],
+                "4.2":["/tp @a 2179 96 -33","/tp @s 2179 96 -33"],
+                        
+                "4.5":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                            "/dialogue change @e[type=dz:character,c=1] GardenerThree_intro",
+                            "/tag @e[type=dz:character,c=1] add talk"
+                            ],
+                "4.8":["/tp @a 2130 83 -53","/tp @s 2130 83 -53"],
+                            
+                "5":["/execute as @a at @s  positioned ~ ~ ~ run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10",
+                                "/dialogue change @e[type=dz:character,c=1] GardenerFour_intro",
+                                "/tag @e[type=dz:character,c=1] add talk"
+                                ],
+                "5.5":["/tp @a 2095 73 -2 0 0","/tp @s 2095 73 -2"],
+                "5.9":["/title @a title Island 2 Reset"],
+                "6.0":["/event entity @s remove"]
+                    
+            },
+            
+                
+            "animation_length": 6.1,
+            "loop": true
+        },
+        "animation.reset.fx.island4": {
+            "timeline": {
+                "0.0": ["/tp @a 143 111 -4314","/tp @s 143 211 -4314" ],
+                "1":["/execute as @a at @s run kill @e[r=20]"],
+                "1.5": ["/tp @a -46 110 -4462 ","/tp @s -46 210 -4462 "  ],
+                "2":["/execute as @a at @s run kill @e[r=20]"],
+                "2.5": ["/tp @a -8 59 -4334 ","/tp @s -8 259 -4334 " ],
+                "3":["/execute as @a at @s run kill @e[r=20]"],
+                "3.5": ["/tp @a 35 68 -4265 ","/tp @s 35 268 -4265 " ],
+                "3.9":["/execute as @a at @s run kill @e[r=10]"],
+                "4":["/summon master:master_samir 38 68 -4266 ~ ~ npc"],
+                "5":["/execute as @a at @s run dialogue change @e[type=master:master_samir,c=1] Samir_the_Steadfast_intro"],
+
+                "5.1":["/event entity @s remove"]
+            },
+            "animation_length": 5.2,
+            "loop": true
+        },
+        "animation.reset.fx.island3": {
+            "timeline": {
+               
+                "0.0": ["/fill 1918 62 -2318 1946 62 -2340 water replace air","/setblock 1947 66 -2327 redstone_block"],
+                "1.0":["/tag @e[type=prop:pilliarbutton] remove pressme"],
+                "1.1":["@s remove"]
+            },
+            "animation_length": 1.5,
+            "loop": false
+        },
+        "animation.reset.fx.island5": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree5 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island6": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree6 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island7": {
+            "timeline": {
+                "0.0":["/tp @a -1996 140 -329","/tp @s -1996 140 -329"],
+                "1.0": ["/tp @a -2003 150 -349","/tp @s -2003 150 -349"  ],
+                "1.2": ["/setblock -1949 125 -245 stone" ],
+                "1.5": ["/setblock -1949 125 -245 redstone_block" ],
+                "2.1": ["/setblock -1988 111 -255 stone" ],
+                "2.2": ["/setblock -1988 111 -255 redstone_block" ],
+                "2.4": ["/setblock -1995 102 -225 stone" ],
+                "2.6": ["/setblock -1995 102 -225 redstone_block" ],
+
+
+                "3.0":["/event entity @s remove"]
+                
+
+            },
+
+            "animation_length": 3.1,
+            "loop": true
+        },
+        "animation.reset.fx.island8": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree8 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island9": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree9 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island10": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree10 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island11": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree11 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.reset.fx.island12": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree12 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        }
+    }
+}
+
+
+

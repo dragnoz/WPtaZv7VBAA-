@@ -1,0 +1,456 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+
+            {
+                "scene_tag": "KwametheModest_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s KwametheModest_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "KwametheModest_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        
+                        {
+                            "translate": "KwametheModest.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s KwametheModest_2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "KwametheModest_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+
+
+
+            //mina
+            {
+                "scene_tag": "ElderMina_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "ElderMina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "ElderMina.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "ElderMina.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "ElderMina.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "ElderMina_intro_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "ElderMina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                                {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "ElderMina.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "ElderMina.npc.dialogue.5"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //tao
+            {
+                "scene_tag": "BrotherTao_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "BrotherTao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "BrotherTao.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "BrotherTao.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s BrotherTao_intro_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "BrotherTao_intro_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "BrotherTao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "BrotherTao.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "BrotherTao.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //lila
+            {
+                "scene_tag": "SisterLila_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "SisterLila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "SisterLila.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "SisterLila.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "SisterLila.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+                //keon
+                {
+                    "scene_tag": "MasterKeon_intro",
+                    "npc_name": {
+                        "rawtext": [
+                            {
+                                "translate": "MasterKeon.npc"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "rawtext": [
+                            {
+                                "translate": "MasterKeon.npc.dialogue.1"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "MasterKeon.npc.dialogue.2"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "MasterKeon.npc.dialogue.3"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "MasterKeon.npc.dialogue.4"
+                            }
+                        ]
+                    },
+                    "buttons": [
+                        {
+                            "name": "next",
+                            "commands": [
+                                "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            ]
+                        }
+                    ]
+                },
+
+
+
+
+
+
+
+            //end
+            {
+                "scene_tag": "KwametheModest_end",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.9"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "KwametheModest_end_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.10"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.11"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "scene_tag": "KwametheModest_end_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "KwametheModest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.12"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.13"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.14"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "KwametheModest.npc.dialogue.15"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

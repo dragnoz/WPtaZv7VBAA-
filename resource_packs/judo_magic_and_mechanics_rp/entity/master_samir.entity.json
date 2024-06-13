@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "master:master_samir",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/master_samir"
+			},
+			"geometry": {
+				"default": "geometry.master_samir"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

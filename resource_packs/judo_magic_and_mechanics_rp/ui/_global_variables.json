@@ -1,0 +1,141 @@
+{
+	
+		"$is_edu": true,
+		"$enable_hearts": false,
+		"$enable_hunger": false,
+		"$enable_armor": false,
+		"$enable_bubbles": false,
+		"$enable_horse_hearts": false,
+		"$enable_horse_jump": false,
+		"$enable_experience_bar": false,
+		"$enable_experience_level": false,
+		"$enable_mob_icons": false,
+		"$lvl_background": false,
+
+		"$telescope_view.name": "view:telescope",
+		"$telescope_view.trigger": "(#text = $telescope_view.name)",
+		"$telescope_view.in_dur": 0,
+		"$telescope_view.wait_dur": 10,
+		"$telescope_view.out_dur": 0,
+
+		
+		"$island1.name": "unlock:island1",
+		"$island1.trigger": "(#text = $island1.name)",
+		"$island1.in_dur": 1,
+		"$island1.wait_dur": 4,
+		"$island1.out_dur": 1,
+
+		"$certificate_conservation.name": "dz:certificate_conservation_in_out",
+		"$certificate_conservation.trigger": "(#text = $certificate_conservation.name)",
+		"$certificate_conservation.in_dur": 1,
+		"$certificate_conservation.wait_dur": 4,
+		"$certificate_conservation.out_dur": 1,
+
+		"$certificate_aquatic.name": "dz:certificate_aquatic_in_out",
+		"$certificate_aquatic.trigger": "(#text = $certificate_aquatic.name)",
+		"$certificate_aquatic.in_dur": 1,
+		"$certificate_aquatic.wait_dur": 4,
+		"$certificate_aquatic.out_dur": 1,
+
+		
+		"$certificate_woodlands.name": "dz:certificate_woodlands_in_out",
+		"$certificate_woodlands.trigger": "(#text = $certificate_woodlands.name)",
+		"$certificate_woodlands.in_dur": 1,
+		"$certificate_woodlands.wait_dur": 4,
+		"$certificate_woodlands.out_dur": 1,
+
+		"$certificate_meadow.name": "dz:certificate_meadow_in_out",
+		"$certificate_meadow.trigger": "(#text = $certificate_meadow.name)",
+		"$certificate_meadow.in_dur": 1,
+		"$certificate_meadow.wait_dur": 4,
+		"$certificate_meadow.out_dur": 1,
+
+
+		"$saplingwin.name": "dz:saplingwin_in_out",
+		"$saplingwin.trigger": "(#text = $saplingwin.name)",
+		"$saplingwin.in_dur": 1,
+		"$saplingwin.wait_dur": 2,
+		"$saplingwin.out_dur": 1,
+		
+
+		"$saplinglose.name": "dz:saplinglose_in_out",
+		"$saplinglose.trigger": "(#text = $saplinglose.name)",
+		"$saplinglose.in_dur": 1,
+		"$saplinglose.wait_dur": 2,
+		"$saplinglose.out_dur": 1,
+
+
+		"$reception_fade_in_out.name": "dz:reception_in_out",
+        "$reception_fade_in_out.trigger": "(#text = $reception_fade_in_out.name)",
+        "$reception_fade_in_out.in_dur": 0,
+        "$reception_fade_in_out.wait_dur": 2,
+        "$reception_fade_in_out.out_dur": 1,
+
+
+		"$school_fade_in_out.name": "dz:school_in_out",
+		"$school_fade_in_out.trigger": "(#text = $school_fade_in_out.name)",
+		"$school_fade_in_out.in_dur": 1,
+		"$school_fade_in_out.wait_dur": 2,
+		"$school_fade_in_out.out_dur": 1,
+
+		"$aquatic_fade_in_out.name": "dz:aquatic_in_out",
+		"$aquatic_fade_in_out.trigger": "(#text = $aquatic_fade_in_out.name)",
+		"$aquatic_fade_in_out.in_dur": 1,
+		"$aquatic_fade_in_out.wait_dur": 2,
+		"$aquatic_fade_in_out.out_dur": 1,
+
+		"$cert_fade_in_out.name": "dz:cert_in_out",
+		"$cert_fade_in_out.trigger": "(#text = $cert_fade_in_out.name)",
+		"$cert_fade_in_out.in_dur": 1,
+		"$cert_fade_in_out.wait_dur": 2,
+		"$cert_fade_in_out.out_dur": 1,
+
+		"$poster_fade_in_out.name": "dz:poster_in_out",
+		"$poster_fade_in_out.trigger": "(#text = $poster_fade_in_out.name)",
+		"$poster_fade_in_out.in_dur": 1,
+		"$poster_fade_in_out.wait_dur": 2,
+		"$poster_fade_in_out.out_dur": 1,
+
+		"$meadow_fade_in_out.name": "dz:meadow_in_out",
+		"$meadow_fade_in_out.trigger": "(#text = $meadow_fade_in_out.name)",
+		"$meadow_fade_in_out.in_dur": 1,
+		"$meadow_fade_in_out.wait_dur": 2,
+		"$meadow_fade_in_out.out_dur": 1,
+
+
+
+		"$blackscreen_to_clear.name": "dz:blackscreen_to_clear",
+		"$blackscreen_to_clear.trigger": "(#text = $blackscreen_to_clear.name)",
+		"$blackscreen_to_clear.wait_dur": 1,
+		"$blackscreen_to_clear.out_dur": 1,
+
+			
+		"$letterbox_instant.name": "dz:letterbox_instant",
+		"$letterbox_instant.trigger": "(#text = $letterbox_instant.name)",
+
+
+		"$letterbox_fade_out.name": "dz:letterbox_fade_out",
+		"$letterbox_fade_out.trigger": "(#text = $letterbox_fade_out.name)",
+		"$letterbox_fade_out.out_dur": 1,
+
+
+		"$black_to_letterbox.name": "dz:black_to_letterbox",
+		"$black_to_letterbox.trigger": "(#text = $black_to_letterbox.name)",
+		"$black_to_letterbox.fullscreen_fadeout_dur": 2,
+
+		"$image_popup_0.name": "dz:image_popup_0",
+		"$image_popup_0.trigger": "(#text = $image_popup_0.name)",
+		"$image_popup_0.foreground": "textures/ui/1000.png",
+		"$image_popup_0.background": "textures/ui/cert_back.png",
+		"$image_popup_0.text_1": "textures/ui/quests/aqua.png",
+		"$image_popup_0.static": false,
+		"$image_popup_0.fade_in_dur": 2,
+		"$image_popup_0.wait_dur": 6.0,
+		"$image_popup_0.fade_out_dur": 3,
+
+
+
+		"$hud_ignored_title_text": "(not (#text = $telescope_view.name or #text = $island1.name or #text = $certificate_conservation.name or #text = $certificate_aquatic.name or #text = $certificate_woodlands.name or #text = $certificate_meadow.name or #text = $saplinglose.name or #text = $saplingwin.name or #text = $reception_fade_in_out.name or #text = $school_fade_in_out.name or #text = dz:quest_failed_in_out or #text = $aquatic_fade_in_out.name or #text = $poster_fade_in_out.name or #text = $meadow_fade_in_out.name or #text = $letterbox_fade_out.name or #text = $cert_fade_in_out.name or #text = $blackscreen_to_clear.name or #text = $letterbox_instant.name or #text = $black_to_letterbox.name or #text = $image_popup_0.name))",
+		"$hud_autohide": "(not (#text = $letterbox_fade_out.name or #text = $letterbox_instant.name or #text = $black_to_letterbox.name))"
+
+}

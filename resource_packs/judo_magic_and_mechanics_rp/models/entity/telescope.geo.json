@@ -1,0 +1,34 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.telescope",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2.9, 0, -3], "size": [6, 2, 6], "uv": [37, 3]},
+						{"origin": [-2.9, 12.75, -3], "size": [6, 2, 6], "uv": [0, 21]},
+						{"origin": [-1.5, 0, -1.65], "size": [3, 14.25, 3], "uv": [15, 4]},
+						{"origin": [-1.25, 15.5, -4.65], "size": [2.75, 3, 7], "uv": [28, 22]},
+						{"origin": [-0.95, 15.8, 7.85], "size": [2.25, 2.4, 1.25], "uv": [34, 27]},
+						{"origin": [-1.7, 15.05, -8.15], "size": [3.75, 4.15, 1.25], "uv": [44, 4]},
+						{"origin": [1.5, 13.5, -1.4], "size": [1, 4.25, 3], "uv": [7, 22]},
+						{"origin": [-2.25, 13.5, -1.4], "size": [1, 4.25, 3], "uv": [7, 22]},
+						{"origin": [-1.5, 15.4, -7.1], "size": [3.15, 3.3, 3], "uv": [6, 22]},
+						{"origin": [-0.85, 16, 4.85], "size": [2, 2, 3], "uv": [6, 22]},
+						{"origin": [-0.85, 16, 1.85], "size": [2, 2, 3], "uv": [6, 22]}
+					]
+				}
+			]
+		}
+	]
+}

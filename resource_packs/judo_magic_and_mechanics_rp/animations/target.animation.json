@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.target.rotate": {
+			"animation_length": 1,
+			"bones": {
+				"bone3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -90, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "combat:combat_tatami",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/combat_tatami"
+			},
+			"geometry": {
+				"default": "geometry.combat_tatami"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "prop:water_mill",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["animate"]},
+			"animations": {"animate": "animation.watermill.turn"}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:scale": {
+				"value": 3
+			},
+			"minecraft:push_through": {
+				"value": 1
+			}
+		}
+	}
+}

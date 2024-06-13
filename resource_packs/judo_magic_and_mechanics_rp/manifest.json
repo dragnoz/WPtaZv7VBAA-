@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Magic and Mechanics",
+		"name": "Magic and Mechanics RP",
+		"uuid": "87661a65-1371-31eb-90b1-8e29a0342ef1",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 13]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "resources",
+			"uuid": "65923ede-7564-35f4-9e00-9ab2759a83c6",
+			"version": [1, 0, 0]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.4.0", "1.5.0"]
+		}
+	}
+}

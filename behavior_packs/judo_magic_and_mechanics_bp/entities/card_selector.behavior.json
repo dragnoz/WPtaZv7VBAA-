@@ -1,0 +1,112 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cards:card_selector",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:damage_sensor": {"triggers": { "cause": "all", "deals_damage": false }  },
+
+			"minecraft:persistent": { },
+			"minecraft:scale": { "value":0.75 },
+			"minecraft:nameable": { 
+				"always_show": false
+			  },
+
+			"minecraft:physics": {"has_gravity":false,"has_collision": false	},
+			"minecraft:pushable": {	"is_pushable": false},
+
+			"minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.5
+            },
+
+			"minecraft:push_through": {	"value": 1	}
+		},
+		"component_groups": {
+			"npc":{
+			  "minecraft:npc": {
+				"npc_data": {
+				  "portrait_offsets": { "translate": [3.5,0, 0], "scale": [4.5, 4.5, 4.5]}
+				}
+			  }
+			},
+
+			"card01": {"minecraft:variant": { "value": 1}, "minecraft:type_family": { "family": [ "card01" ]   }},
+			"card02": {"minecraft:variant": { "value": 2}, "minecraft:type_family": { "family": [ "card02" ]   }},
+			"card03": {"minecraft:variant": { "value": 3}, "minecraft:type_family": { "family": [ "card03" ]   }},
+			"card04": {"minecraft:variant": { "value": 4}, "minecraft:type_family": { "family": [ "card04" ]   }},
+			"card05": {"minecraft:variant": { "value": 5}, "minecraft:type_family": { "family": [ "card05" ]   }},
+			"card06": {"minecraft:variant": { "value": 6}, "minecraft:type_family": { "family": [ "card06" ]   }},
+			"card07": {"minecraft:variant": { "value": 7}, "minecraft:type_family": { "family": [ "card07" ]   }},
+			"card08": {"minecraft:variant": { "value": 8}, "minecraft:type_family": { "family": [ "card08" ]   }},
+			"card09": {"minecraft:variant": { "value": 9}, "minecraft:type_family": { "family": [ "card09" ]   }},
+			"card10": {"minecraft:variant": { "value": 10}, "minecraft:type_family": { "family": [ "card10" ]   }},
+			"accept": {"minecraft:variant": { "value": 11}, "minecraft:type_family": { "family": [ "accept" ]   }},
+			"close": {"minecraft:variant": { "value": 12}, "minecraft:type_family": { "family": [ "close" ]   }},
+
+			"island1" : {"minecraft:variant": { "value": 13},"minecraft:type_family": { "family": [ "island1" ]   }},
+			"island2" : {"minecraft:variant": { "value": 14},"minecraft:type_family": { "family": [ "island2" ]   }},
+			"island3" : {"minecraft:variant": { "value": 15},"minecraft:type_family": { "family": [ "island3" ]   }},
+			"island4" : {"minecraft:variant": { "value": 16},"minecraft:type_family": { "family": [ "island4" ]   }},
+			"island5" : {"minecraft:variant": { "value": 17},"minecraft:type_family": { "family": [ "island5" ]   }},
+			"island6" : {"minecraft:variant": { "value": 18},"minecraft:type_family": { "family": [ "island6" ]   }},
+			"island7" : {"minecraft:variant": { "value": 19},"minecraft:type_family": { "family": [ "island7" ]   }},
+			"island8" : {"minecraft:variant": { "value": 20},"minecraft:type_family": { "family": [ "island8" ]   }},
+			"island9" : {"minecraft:variant": { "value": 21},"minecraft:type_family": { "family": [ "island9" ]   }},
+			 "hitbox": {"minecraft:collision_box": {"width": 1,"height": 1}},
+			
+			"remove":{
+                "minecraft:instant_despawn":{}
+            }
+			
+
+		},
+		"events":{
+		
+			"npc":{
+				"add": {
+					"component_groups": [ "npc" ]
+				}
+			},
+			"not_npc":{
+				"remove": {
+					"component_groups": [ "npc" ]
+				}
+			},
+
+			"island1": {"add": { "component_groups": [ "island1","npc","hitbox" ] }},
+			"island2": {"add": { "component_groups": [ "island2","npc","hitbox"  ] }},
+			"island3": {"add": { "component_groups": [ "island3","npc","hitbox"  ] }},
+			"island4": {"add": { "component_groups": [ "island4","npc","hitbox"  ] }},
+			"island5": {"add": { "component_groups": [ "island5","npc","hitbox"  ] }},
+			"island6": {"add": { "component_groups": [ "island6","npc","hitbox"  ] }},
+			"island7": {"add": { "component_groups": [ "island7","npc","hitbox"  ] }},
+			"island8": {"add": { "component_groups": [ "island8","npc","hitbox"  ] }},
+			"island9": {"add": { "component_groups": [ "island9","npc","hitbox"  ] }},
+
+
+			"card01": {"add": { "component_groups": [ "card01" ] }},
+			"card02": {"add": { "component_groups": [ "card02" ] }},
+			"card03": {"add": { "component_groups": [ "card03" ] }},
+			"card04": {"add": { "component_groups": [ "card04" ] }},
+			"card05": {"add": { "component_groups": [ "card05" ] }},
+			"card06": {"add": { "component_groups": [ "card06" ] }},
+			"card07": {"add": { "component_groups": [ "card07" ] }},
+			"card08": {"add": { "component_groups": [ "card08" ] }},
+			"card09": {"add": { "component_groups": [ "card09" ] }},
+			"card10": {"add": { "component_groups": [ "card10" ] }},
+			"accept": {"add": { "component_groups": [ "accept" ] }},
+			"close": {"add": { "component_groups": [ "close" ] }},
+
+			"remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			}
+		}
+	}
+}

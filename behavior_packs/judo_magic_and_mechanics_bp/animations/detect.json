@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+     "animation.player.detect": {
+         "timeline": {
+            "2.0":["/fill 45 99 149 53 99 144 air replace leaves2"],  
+            "8.0": [ "/fill 45 99 149 53 99 144 leaves2 replace air"],
+            "10.0": ["/function entities/remove"]
+
+         },
+         
+         "animation_length": 10.1,
+         "loop": true
+     }
+    }
+}
+
+

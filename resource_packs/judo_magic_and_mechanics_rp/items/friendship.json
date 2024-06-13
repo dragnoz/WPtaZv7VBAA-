@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dz:friendship",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "Friendship",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

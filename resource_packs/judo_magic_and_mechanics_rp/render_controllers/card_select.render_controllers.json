@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+		"controller.render.cards.select": {
+			"arrays": {
+				"textures": {
+                    "Array.textures": [
+						"Texture.default",
+                        "Texture.card1",
+                        "Texture.card2",
+						"Texture.card3",
+						"Texture.card4",
+						"Texture.card5",
+                        "Texture.card6",
+						"Texture.card7",
+						"Texture.card8",
+						"Texture.card9",
+						"Texture.card10",
+						"Texture.cardclose",
+						"Texture.cardaccept",
+						"Texture.island1",
+						"Texture.island2",
+						"Texture.island3",
+						"Texture.island4",
+						"Texture.island5",
+						"Texture.island6",
+						"Texture.island7",
+						"Texture.island8",
+						"Texture.island9"
+                    ]
+                }
+			},
+			"geometry": "Geometry.default",
+
+			"materials": [ { "*": "Material.default" } ],
+
+			"textures": [ "Array.textures[query.variant]" ]
+		}
+	}
+}

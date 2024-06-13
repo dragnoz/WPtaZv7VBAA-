@@ -1,0 +1,73 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "prop:plant_of_kindness",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			
+			"properties": {
+				"dz:growthstage" :{
+					"type" : "int",
+					"default": 0,
+					"range": [0,20],
+					"client_sync": false
+				}
+			},
+			"animations": { "stage1":"animation.plant.stage1",
+							"stage1_wait":"animation.plant.stage1_wait",
+							"stage2":"animation.plant.stage2",
+							"stage2_wait":"animation.plant.stage2_wait",
+							"stage3":"animation.plant.stage3",
+							"stage3_wait":"animation.plant.stage3_wait",
+							"stage4":"animation.plant.stage4",
+							"stage4_wait":"animation.plant.stage4_wait",
+							"stage5":"animation.plant.stage5",
+							"stage5_wait":"animation.plant.stage5_wait",
+							"remove":"animation.plant.remove"
+							},
+			"scripts": {"animate": [
+									{"stage1": "q.property('dz:growthstage' ) ==1"},
+									{"stage1_wait": "q.property('dz:growthstage' ) ==2"},
+									{"stage2": "q.property('dz:growthstage' ) ==3"},
+									{"stage2_wait": "q.property('dz:growthstage' ) ==4"},
+									{"stage3": "q.property('dz:growthstage' ) ==5"},
+									{"stage3_wait": "q.property('dz:growthstage' ) ==6"},
+									{"stage4": "q.property('dz:growthstage' ) ==7"},
+									{"stage4_wait": "q.property('dz:growthstage' ) ==8"},
+									{"stage5": "q.property('dz:growthstage' ) ==9"},
+									{"stage5_wait": "q.property('dz:growthstage' ) ==10"},
+									{"remove": "q.property('dz:growthstage' ) ==20"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			}
+		},
+		"events":{
+			"reset":{"set_property":{"dz:growthstage":0} },
+			"stage1":{"set_property":{"dz:growthstage":1} },
+			"stage1wait":{"set_property":{"dz:growthstage":2} },
+			"stage2":{"set_property":{"dz:growthstage":3} },
+			"stage2wait":{"set_property":{"dz:growthstage":4} },
+			"stage3":{"set_property":{"dz:growthstage":5} },
+			"stage3wait":{"set_property":{"dz:growthstage":6} },
+			"stage4":{"set_property":{"dz:growthstage":7} },
+			"stage4wait":{"set_property":{"dz:growthstage":8} },
+			"stage5":{"set_property":{"dz:growthstage":9} },
+			"stage5wait":{"set_property":{"dz:growthstage":10} },
+
+
+			"remove":{"set_property":{"dz:growthstage":20}}
+		}
+	}
+}

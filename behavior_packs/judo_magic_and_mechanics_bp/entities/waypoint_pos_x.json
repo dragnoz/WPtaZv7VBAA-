@@ -1,0 +1,51 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "waypoint:posx",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+
+				
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "posx" ]
+			  },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			}
+		},
+		"component_groups": {
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            }
+            
+
+		},
+		"events":{
+			
+			
+			"remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			}
+		
+	}
+	}
+}

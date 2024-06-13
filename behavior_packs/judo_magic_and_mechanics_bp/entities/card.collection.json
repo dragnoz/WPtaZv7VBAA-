@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "card:collection",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["show"]},
+			"animations": {"show": "animation.card.collection"}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			  }
+		},
+		"component_groups": {
+
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			}
+		  },
+		  "events": {
+			"minecraft:entity_born": {
+			  "add": {"component_groups": [ "invistitle"] }
+			},
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			}
+		  }
+	
+		
+}}
+
+

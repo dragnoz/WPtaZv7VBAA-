@@ -1,0 +1,65 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Info_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Info.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Info.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Info.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Info.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Info.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Info.npc.dialogue.5"
+                        }
+                    ]
+                },
+                "on_close_commands": [
+                    "/tp @initiator -153 105.5 4039",
+                    "/tag @initiator  add posx",
+                    "/summon game:scenes ~ ~ ~ ~ ~ scene1",
+                    "/tag @a[r=10] add dialogue1"
+                  ],
+              
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/tp @initiator -153 105.5 4039",
+                            "/tag @initiator  add posx",
+                            "/tag @a[r=10] add dialogue1"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

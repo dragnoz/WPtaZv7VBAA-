@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dz:action2",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "action2",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

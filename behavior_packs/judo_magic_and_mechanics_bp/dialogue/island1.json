@@ -1,0 +1,247 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "CourageQuestNPC_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "CourageQuestNPC.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "on_open_commands": ["/tag @initiator add courage1", "/tag @initiator remove courage2" ],
+                "buttons": [
+                    {
+                        "name": "[Next]",
+                        "commands": [
+                            "/summon isle:courage ~ ~5 ~ "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "CourageQuestNPC_intro2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "CourageQuestNPC.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+
+                
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "CourageQuestNPC.npc.dialogue7"
+                        }
+                    ]
+                },
+                "on_open_commands": ["/tag @initiator add courage2", "/tag @initiator remove courage1" ],
+
+                "buttons": [
+                    {
+                        "name": "[Next]",
+                        "commands": [
+                            "/summon isle:courage ~ ~5 ~ ~ ~ courage2",
+                            "/scoreboard players set @a title 210"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Cable_Car_Operator_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Cable_Car_Operator.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Cable_Car_Operator.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Cable_Car_Operator.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Cable_Car_Operator.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Cable_Car_Operator.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Let's Go!",
+                        "commands": [
+                            "/tp @initiator -105 201 -89 -90 0", "/execute as @p run function cards/tcard09"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Zara_the_Courageous_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Zara_the_Courageous.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Zara_the_Courageous.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/dialogue open @e[type=character:master_zara,c=1] @initiator Zara_the_Courageous_1"
+                        ]
+                    }
+                ]
+            },
+          {
+                    "scene_tag": "Zara_the_Courageous_1",
+                    "npc_name": {
+                        "rawtext": [
+                            {
+                                "translate": "Zara_the_Courageous.npc"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "rawtext": [
+                            {
+                                "translate": "Zara_the_Courageous.npc.dialogue.7"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Zara_the_Courageous.npc.dialogue.8"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Zara_the_Courageous.npc.dialogue.9"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Zara_the_Courageous.npc.dialogue.10"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Zara_the_Courageous.npc.dialogue.11"
+                            }
+                        ]
+                    },
+                    "buttons": [
+                        {
+                            "name": "To the boat!",
+                            "commands": [
+                            "/summon info:bells ~ ~ ~ ~ ~ island1_complete"
+                            ]
+                        }
+                    ]
+                }
+            
+        ]
+    }
+}

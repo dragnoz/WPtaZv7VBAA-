@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+     "animation.player.animatescene": {
+         "timeline": {
+            "0.0" :["/inputpermission set @a camera disabled"],
+            "0.01" :["/tp @p -33 125.5 175 -40 20"],
+            "0.02" :["/inputpermission set @a movement disabled"],
+            "0.03" :["/gamemode adventure"],
+            "0.1":["/playanimation @e[type=actor:judokai] animation.judokai.prefall"],  
+            "0.4":["/playanimation @e[type=dz:big_bell] animation.big_bell.ring"],  
+            
+            "3.0": [ "/particle minecraft:large_explosion -25.80 124.5 177.73"],
+            "3.2": [ "/particle minecraft:large_explosion -26.73 124.5 179.90"],
+            "3.4": [ "/particle minecraft:large_explosion -27.69 124.5 178.61"],
+            "3.5": [ "/particle minecraft:large_explosion -28.17 124.5 179.79"],
+            "4": [ "/fill -29 123 177 -26 123 180 air destroy"],
+            "4.2":["/event entity @e[type=actor:judokai] fall"], 
+            "4.6":["/playanimation @e[type=actor:judokai] animation.judokai.fall"],  
+            "4.7": ["/tp @p -29 125 179 -75 90"],
+
+         
+    
+            "6.7" :["/effect @a blindness 4 1 true"],
+            "7" :["/tp @p -26.51 55.00 179.68 220 0"],
+            "7.01" :["/inputpermission set @a camera enabled"],
+            "7.02" :["/inputpermission set @a movement enabled"],
+            "8.0": ["/function entities/remove"]
+     
+            
+           
+
+         },
+         
+         "animation_length": 8.1,
+         "loop": false
+     }
+    }
+}
+
+

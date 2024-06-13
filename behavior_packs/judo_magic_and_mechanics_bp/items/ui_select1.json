@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "UI:select1",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:use_duration": 10,
+            "minecraft:food": {
+                "nutrition": 0,
+                "can_always_eat": true,
+                "cooldown_type": "chorusfruit",
+                "cooldown_time": 10,
+                "saturation_modifier": "low"
+            }
+        }
+    }
+}

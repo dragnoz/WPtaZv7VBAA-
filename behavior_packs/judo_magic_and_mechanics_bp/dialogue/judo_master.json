@@ -1,0 +1,143 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+           
+            {
+                "scene_tag": "Judo_Master_intro_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Judo_Master_intro.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Judo_Master_intro.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Judo_Master_intro.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Judo_Master_intro.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Judo_Master_intro.npc.dialogue.4"
+                        }
+                    ]
+                },
+                
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/dialogue open @s @initiator Master_2_intro"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Master_2_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Master_2.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Master_2.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_2.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_2.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_2.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/dialogue open @s @initiator Master_3_intro"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Master_3_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Master_3.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Master_3.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_3.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_3.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_3.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Master_3.npc.dialogue.5"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Go to Ship",
+                        "commands": [
+                            "/summon game:scenes ~ ~ ~ ~ ~ scene2"
+                        ]
+                    }
+                ]
+            } 
+
+        ]}}

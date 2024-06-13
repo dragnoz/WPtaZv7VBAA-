@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "blighty:tcard04",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "blighty:tcard04",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.pixie.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+        
+        "animation.game.pixie.event1": {
+            "timeline": {
+                "0.1":["/playanimation @e[type=character:mischievous_pixie,c=1] animation.pixie.spell","/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "1.5":["/execute as @s as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/execute as @s as @s run particle sweep:dust ~ ~ ~1"],
+                "2.2":["/execute as @s as @s run particle sweep:dust ~-1 ~ ~"],
+                "2.4":["/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "2.6":["/execute as @s as @s run clone ~10 -64 ~10 ~-10 -30 ~-10 ~-10 74 ~-10","/fog @a push fog:sick sick"],
+                "2.7":["/execute as @s as @s run particle map:cloud_reveal_large"],
+
+
+         
+
+                "3.1":["/event entity @s remove"]                
+                
+            },
+            "animation_length": 3.2,
+            "loop": false
+        },
+        "animation.game.pixie.event2": {
+            "timeline": {
+                "0.0":["/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "1.0":["/execute as @s as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/execute as @s as @s run particle sweep:dust ~ ~ ~1"],
+                "2.1":["/execute as @s as @s run clone ~5 0 ~5 ~-5 30 ~-5 ~-5 71 ~-5"],
+                "3.0":["/execute as @s as @s run particle sweep:dust ~-1 ~ ~"],
+                "4.0":["/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+
+
+         
+
+                "5.0":["/function entities/remove"]                
+                
+            },
+            "animation_length": 5.1,
+            "loop": true
+        },
+        "animation.game.pixie.event3": {
+            "timeline": {
+                "0.1": ["/playanimation @e[type=character:mischievous_pixie,c=1] animation.pixie.spell","/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "1.5":["/execute as @s as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/execute as @s as @s run particle sweep:dust ~ ~ ~1"],
+                "2.2":["/execute as @s as @s run particle sweep:dust ~-1 ~ ~"],
+                "2.4":["/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "2.7":["/execute as @s as @s run particle map:cloud_reveal_large"],
+
+
+         
+
+                "3.1":["/event entity @s remove"]                
+                
+            },
+            "animation_length": 3.2,
+            "loop": false
+        }
+    }
+}
+
+

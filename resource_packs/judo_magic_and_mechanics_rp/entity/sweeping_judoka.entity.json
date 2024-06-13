@@ -1,0 +1,30 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mount:sweeping_judoka",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/sweeping_judoka"
+			},
+			"geometry": {
+				"default": "geometry.sweeping_judoka"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"drive": "animation.sweeping_judoka.drive"
+			},
+			"scripts": {
+				"initialize": ["variable.steering = 0;"],
+				"pre_animation": ["query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"],
+				"animate": ["drive"]
+			},
+			"spawn_egg": {
+				"base_color": "#533643",
+				"overlay_color": "#e9afab"
+			}
+		}
+	}
+}

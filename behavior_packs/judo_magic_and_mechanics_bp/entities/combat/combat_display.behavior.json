@@ -1,0 +1,50 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ui:combat_display",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {"width": 0,"height": 0},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+				  "cause": "all",
+				  "deals_damage": false
+				}
+			  }
+		},
+		"component_groups": {
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			},
+			"p1": {
+				"minecraft:type_family": { "family": [ "p1" ]   }
+			  },
+			  "p2": {
+				"minecraft:type_family": { "family": [ "p2" ]   }
+			  }
+		  },
+		  "events": {
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+						},
+			"p1": {	"add": {"component_groups": [ "p1"] } },
+						  
+			"p2": {"add": {"component_groups": [ "p2"] }										}
+		
+		  }
+	}
+}

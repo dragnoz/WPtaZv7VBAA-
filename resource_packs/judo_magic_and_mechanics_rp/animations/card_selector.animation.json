@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.card_selector.selected": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"selected": {
+					"scale": 1
+				},
+				"unselected": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.card_selector.unselected": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.1,
+			"bones": {
+				"unselected": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

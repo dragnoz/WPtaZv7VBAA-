@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.broom.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+        "animation.game.broom.restore": {
+            "timeline": {
+                "0.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~1 ~ ~"],
+                "1.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~ ~ ~1"],
+                "2.1":["/execute as @e[type=game:sweep] as @s run clone ~5 0 ~5 ~-5 48 ~-5 ~-5 71 ~-5"],
+                "3.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~-1 ~ ~"],
+                "4.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~1 ~ ~"],
+
+
+         
+
+                "5.0":["/function entities/remove"]                
+                
+            },
+            "animation_length": 5.1,
+            "loop": true
+        },
+        "animation.game.broom.destroy": {
+            "timeline": {
+                "0.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~1 ~ ~"],
+                "1.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~ ~ ~1"],
+                "2.1":["/execute as @e[type=game:sweep] as @s run clone ~5 -64 ~5 ~-5 -30 ~-5 ~-5 74 ~-5"],
+                "3.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~-1 ~ ~"],
+                "4.0":["/playanimation @e[type=game:sweep] animation.sweep.sweep","/execute as @e[type=game:sweep] as @s run particle sweep:dust ~1 ~ ~"],
+
+
+         
+
+                "5.0":["/function entities/remove"]                
+                
+            },
+            "animation_length": 5.1,
+            "loop": true
+        }
+    }
+}
+
+

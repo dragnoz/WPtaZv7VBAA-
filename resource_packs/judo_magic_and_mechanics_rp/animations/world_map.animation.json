@@ -1,0 +1,305 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.world_map.island1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"4.0": {
+							"post": [0, 8, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.world_map.island2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 11, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 12, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island4": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 8, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island5": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 15, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island6": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": [0, 15, 0]
+				},
+				"isle6": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 12, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island7": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": [0, 15, 0]
+				},
+				"isle6": {
+					"position": [0, 12, 0]
+				},
+				"isle7": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 8, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.island8": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": [0, 15, 0]
+				},
+				"isle6": {
+					"position": [0, 12, 0]
+				},
+				"isle7": {
+					"position": [0, 8, 0]
+				},
+				"isle8": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 6, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.tutorial": {
+			"animation_length": 24.45833,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": {
+						"2.9167": [0, 0, 0],
+						"24.375": [0, 0, 0]
+					}
+				},
+				"tutorial": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, -362.5, 0]
+					},
+					"position": {
+						"0.0": [-13, 0, -7],
+						"4.0": [-13, 9, -7]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"4.0": [3, 3, 3]
+					}
+				}
+			}
+		},
+		"animation.world_map.paris": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": [0, 15, 0]
+				},
+				"isle6": {
+					"position": [0, 12, 0]
+				},
+				"isle7": {
+					"position": [0, 8, 0]
+				},
+				"isle8": {
+					"position": [0, 6, 0]
+				},
+				"tutorial": {
+					"position": [0, 10, 0]
+				},
+				"paris": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 16, 0]
+					}
+				}
+			}
+		},
+		"animation.world_map.all": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4,
+			"override_previous_animation": true,
+			"bones": {
+				"isle1": {
+					"position": [0, 8, 0]
+				},
+				"isle2": {
+					"position": [0, 11, 0]
+				},
+				"isle3": {
+					"position": [0, 12, 0]
+				},
+				"isle4": {
+					"position": [0, 8, 0]
+				},
+				"isle5": {
+					"position": [0, 15, 0]
+				},
+				"isle6": {
+					"position": [0, 12, 0]
+				},
+				"isle7": {
+					"position": [0, 8, 0]
+				},
+				"isle8": {
+					"position": [0, 6, 0]
+				},
+				"tutorial": {
+					"position": [0, 10, 0]
+				},
+				"paris": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 16, 0]
+					}
+				}
+			}
+		}
+	}
+}

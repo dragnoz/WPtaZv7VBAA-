@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "master:amira",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/amira"
+			},
+			"geometry": {
+				"default": "geometry.amira"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

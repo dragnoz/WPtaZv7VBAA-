@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:card_trader",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/character/card_trader"
+			},
+			"geometry": {
+				"default": "geometry.card_trader"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

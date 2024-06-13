@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "props:swing",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["animate"]},
+			"animations": {"animate": "animation.swing"}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:rideable": {
+                "seat_count": 2,
+                "family_types": [
+                    "player", "players"
+                ],
+                "pull_in_entities": true,
+                "seats": [
+                    {
+						"position": [0, -3, 0],
+                        "min_rider_count":1,
+                        "max_rider_count": 1,
+                        "lock_rider_rotation": 0
+                    },
+                    {
+                        "position": [-0.5, 0, 0],
+                        "min_rider_count": 1,
+                        "max_rider_count": 2,
+                        "lock_rider_rotation": 0
+                    },
+                    {
+                        "position": [0.5, 0, 0],
+                        "min_rider_count": 1,
+                        "max_rider_count": 2,
+                        "lock_rider_rotation": 0
+                    }
+                ]
+            },
+			"minecraft:push_through": {
+				"value": 1
+			}
+		}
+	}
+}

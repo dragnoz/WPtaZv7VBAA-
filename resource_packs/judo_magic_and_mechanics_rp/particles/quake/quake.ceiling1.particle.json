@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "quake:ceiling1",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/tileset"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 1.1
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": [2, 2],
+				"facing_camera_mode": "emitter_transform_xz",
+				"uv": {
+					"texture_width": 1000,
+					"texture_height": 1000,
+					"uv": [389, 252],
+					"uv_size": [391, 248]
+				}
+			}
+		}
+	}
+}

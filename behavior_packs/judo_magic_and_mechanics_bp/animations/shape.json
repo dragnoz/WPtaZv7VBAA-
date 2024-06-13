@@ -1,0 +1,107 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.shape.entities.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+          "animation.shape.event1": {
+            "animation_length": 0.1,"loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=4x4,c=1] ^ ^ ^10"
+
+                     ]
+
+            }
+            
+        },
+        "animation.shape.event2": {
+            "timeline": {
+                "0.0": [ "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=8x8] ^ ^ ^20"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event3": {
+            "timeline": {
+                "0.0": [ "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=10x10] ^ ^ ^30"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event4": {
+            "timeline": {
+                "0.0": [ "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=20x20] ^ ^ ^50"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event5": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree5 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event6": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree6 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event7": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree7 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event8": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree8 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event9": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree9 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event10": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree10 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event11": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree11 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.shape.event12": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree12 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        }
+    }
+}
+
+
+

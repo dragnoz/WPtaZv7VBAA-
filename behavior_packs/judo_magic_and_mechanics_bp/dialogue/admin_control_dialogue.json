@@ -1,0 +1,321 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+      "scenes": [
+          {
+              "scene_tag": "UI_Settings_intro",
+              "npc_name": {
+                  "rawtext": [
+                      {
+                          "translate": "UI_Settings.npc"
+                      }
+                  ]
+              },
+              "text": {
+                  "rawtext": [
+                      {
+                          "translate": "UI_Settings.npc.dialogue.1"
+                      }
+                  ]
+              },
+              "buttons": [
+                  {
+                      "name": "Up","commands": [ "/execute as @e[type=ui:combat_display,c=1] at @s run tp @s ~ ~0.5 ~" ]
+                  },
+                  {
+                    "name": "Down","commands": [ "/execute as @e[type=ui:combat_display,c=1] at @s run tp @s ~ ~-0.5 ~" ]
+                },
+                {
+                  "name": "Bigger","commands": [ "/execute as @e[type=ui:combat_display,c=1] at @s run tp @s ~0.5 ~ ~" ]
+              },
+              {
+                "name": "Smaller","commands": [ "/execute as @e[type=ui:combat_display,c=1] at @s run tp @s ~-0.5 ~ ~" ]
+            },
+            {
+              "name": "Setup Arena","commands": [ "/function combat/setup/arena_setup" ]
+          },
+          {
+            "name": "Reset Arena","commands": [ "/function combat/setup/arena_reset" ]
+        }
+              ]
+          },
+          {
+            "scene_tag": "Combat_info",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "translate": "UI_Settings.npc"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "translate": "UI_Settings.npc.dialogue.1"
+                    }
+                ]
+            },
+            "buttons": [
+                {
+                    "name": "Add Round","commands": [ "/scoreboard players add @initiator round 1" ]
+                },
+                {
+                  "name": "Add Stamina","commands":  [ "/scoreboard players add @initiator combatstamina 1" ]
+              },
+              {
+                "name": "Add Focus","commands":  [ "/scoreboard players add @initiator combatfocus 1" ]
+            },
+            {
+              "name": "Add Attack","commands":  [ "/scoreboard players add @initiator combatattack 1" ]
+          },
+          {
+            "name": "Add Defence","commands":  [ "/scoreboard players add @initiator combatdefence 1" ]
+        },
+        {
+          "name": "Reset Arena Scores","commands": [ "/execute at @initiator as @s run function combat/setup/arena_scores_reset" ]
+      }
+            ]
+        },
+        {
+          "scene_tag": "Admin_utility",
+          "npc_name": {
+              "rawtext": [
+                  {
+                      "translate": "UI_Settings.npc"
+                  }
+              ]
+          },
+          "text": {
+              "rawtext": [
+                  {
+                      "translate": "UI_Settings.npc.dialogue.1"
+                  }
+              ]
+          },
+          "buttons": [
+              {
+                  "name": "UI","commands": [ "/dialogue open @e[type=admin:card,c=1] @initiator UI_Settings_intro" ]
+              },
+              {
+                "name": "Combat","commands":  [ "/dialogue open @e[type=admin:card,c=1] @initiator Combat_info" ]
+            },
+            {
+              "name": "TP","commands":  [ "/dialogue open @e[type=admin:card,c=1] @initiator tp_loc1 " ]
+          },
+          {
+            "name": "Combat Animation ","commands":  [ "/dialogue open @e[type=admin:card,c=1] @initiator Combat_Animation" ]
+        },
+        {
+          "name": " ","commands":  [ "/dialogue open @e[type=admin:card,c=1] @initiator " ]
+      },
+      {
+        "name": " ","commands": [ "/function combat/setup/arena_reset" ]
+    }
+          ]
+      },
+      {
+        "scene_tag": "tp_loc1",
+        "npc_name": {
+            "rawtext": [
+                {
+                    "translate": "UI_Settings.npc"
+                }
+            ]
+        },
+        "text": {
+            "rawtext": [
+                {
+                    "translate": "UI_Settings.npc.dialogue.1"
+                }
+            ]
+        },
+        "buttons": [
+            {"name": "Commands","commands": [ "/tp @initiator 0 0 0" ]},
+            {"name": "Paris", "commands": ["/tp @p 6 79 -2482"]},
+            {"name": "Start Boat", "commands": ["/tp @p -4000 150 -4000"]},
+            {"name": "Start island", "commands": ["/tp @p 0 0 4000"]},
+            {"name": "Paris Parcour", "commands": ["/tp @p 0 150 -6000"]},
+            {"name": "Back","commands": [ "/dialogue open @e[type=admin:card,c=1] @initiator Admin_utility" ]}
+           
+        ]
+    }
+    ,
+    {
+      "scene_tag": "Combat_Animation",
+      "npc_name": {
+          "rawtext": [
+              {
+                  "translate": "UI_Settings.npc"
+              }
+          ]
+      },
+      "text": {
+          "rawtext": [
+              {
+                  "translate": "UI_Settings.npc.dialogue.1"
+              }
+          ]
+      },
+      "buttons": [
+          {"name": "Bow + Walk + Grapple","commands": [ "/summon combat:start" ]},
+          {"name": "Bow","commands": [ "/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow" ]},
+          {"name": "Walk","commands": [ "/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk" ]},
+          {"name": "Grapple","commands": [ "/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple" ]},
+          {"name": "Back","commands": [ "/dialogue open @e[type=admin:card,c=1] @initiator Admin_utility" ]}
+         
+      ]
+  }
+    
+      ]
+  }
+}
+
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "seed_of_patience0",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "text": "Sister Lila"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "the wise farmer knows that he cannot rush the growth of his crops; he must wait for them to mature."
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+              "name": "Right...","commands": [ "/scoreboard players add @initiator patience 2" ],
+              "name": "Again?..","commands": [ "/scoreboard players add @initiator patience 1" ],
+              "name": "I know...","commands": [ "/scoreboard players add @initiator patience 0" ],
+          }
+                ]
+            },
+        ]
+    }
+  }
+
+<text>: 
+
+<button>: Right (Patient) <button>: (Bored) <button>: (Impatient)
+
+<text>: Consider the ancient trees, how they stand silent and tall, their patience measured in centuries.
+
+<button>: Inspiring. (Patient) <button>: Still talking? (Bored)
+
+
+
+<text>: Patience is the companion of wisdom, for without it, knowledge rushes ahead without purpose.
+
+<button>: Agreed. (Patient) <button>: Yawn (Bored) <button>: Obvious. (Impatient)
+
+<text>: In the dojo, a moment of patience can mean the difference between victory and defeat.
+
+<button>: Understood. (Patient) <button>: This again? (Bored) <button>: Got it. (Impatient)
+
+
+
+<text>: The patient angler catches the largest fish, while the hasty one returns home empty-handed.
+
+<button>: True story. (Patient) <button>: Still here? (Bored) <button>: Whatever. (Impatient)
+
+
+
+<text>: Like the moon's phases, patience cycles through our lives, teaching us its quiet strength.
+
+<button>: Beautiful. (Patient) <button>: How poetic. (Bored) <button>: Enough already. (Impatient)
+
+
+
+<text>: The art of calligraphy requires a steady hand and a patient heart, each stroke a testament to time.
+
+<button>: Fascinating. (Patient) <button>: More lessons? (Bored) <button>: I get it. (Impatient)
+
+
+
+<text>: Even the stars above us, they too have waited eons to shine their light upon us.
+
+<button>: Amazing. (Patient) <button>: Stars now? (Bored) <button>: So long? (Impatient)
+
+
+
+<text>: The caterpillar does not rush to become a butterfly; it embraces each stage with grace.
+
+<button>: Wise words. (Patient) <button>: Still going? (Bored) <button>: Skip this. (Impatient)
+
+
+
+<text>: Patience is the thread that weaves through the fabric of our lives, holding it together.
+
+<button>: Profound. (Patient) <button>: More metaphors? (Bored) <button>: Yeah, yeah. (Impatient)
+
+
+
+<text>: It is in the quiet moments of waiting that we often find the answers we seek.
+
+<button>: I'll remember. (Patient) <button>: Quiet, finally. (Bored) <button>: Found nothing. (Impatient)
+
+
+
+<text>: The potter shapes the clay with patience, for rushing leads to imperfection.
+
+<button>: Good analogy. (Patient) <button>: Still shaping? (Bored) <button>: Imperfect speech. (Impatient)
+
+
+
+<text>: The patient mind is like a clear lake, its still waters reflecting the depth of the sky.
+
+<button>: Deep insight. (Patient) <button>: More water? (Bored) <button>: Shallow talk. (Impatient)
+
+
+
+<text>: Remember, the best tea takes time to brew, its flavors deepening with each passing minute.
+
+<button>: I'll taste it. (Patient) <button>: Still brewing? (Bored) <button>: Bitter taste. (Impatient)
+
+
+
+<text>: The gardener does not pull at the shoots to hasten their growth; he nurtures them with care.
+
+<button>: Nature's way. (Patient) <button>: Pulling my leg? (Bored) <button>: Stop pulling. (Impatient)
+
+
+
+<text>: In the tapestry of history, those who were patient are often the ones who wove the most enduring stories.
+
+<button>: Timeless tales. (Patient) <button>: History lesson? (Bored) <button>: End this story. (Impatient)
+
+
+
+<text>: The patient teacher shapes the minds of the future, understanding that knowledge cannot be rushed.
+
+<button>: Valuable lesson. (Patient) <button>: Still teaching? (Bored) <button>: Rush it, please. (Impatient)
+
+
+
+<text>: The patient traveler sees more of the world, for they take the time to truly look.
+
+<button>: I'll travel. (Patient) <button>: Seen enough. (Bored) <button>: Let's move. (Impatient)
+
+
+
+<text>: Patience is the key that unlocks the door to inner peace and understanding.
+
+<button>: Key found. (Patient) <button>: Door's stuck. (Bored) <button>: Unlock it. (Impatient)
+
+
+
+<text>: The patient heart knows that all things come to those who wait with grace and dignity.
+
+<button>: Heartfelt. (Patient) <button>: Still waiting? (Bored) <button>: Tired of waiting. (Impatient)
+
+Overwhelmingly Patient Player: <text>: Your patience is a testament to your strength of character. It is the calm water that reflects the stars, the steady hand that guides the brush, and the quiet space where wisdom takes root. May your journey be as rich and fulfilling as the time you've taken to savor each moment.
+Mostly Bored Player: <text>: I sense a restlessness within you, a desire for action over contemplation. Remember, even the most thrilling adventures are punctuated by moments of calm. Embrace these pauses as opportunities to reflect and grow, for they are the hidden threads that strengthen the tapestry of your story.
+Mostly Impatient Player: <text>: Impatience is a fire that burns quickly but fades just as fast. True mastery comes from understanding the value of waiting, of learning, and of growing at the pace of life itself. May you find the balance between the rush of the river and the stillness of the pond.

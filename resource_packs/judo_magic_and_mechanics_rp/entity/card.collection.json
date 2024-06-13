@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "card:collection",
+
+			"spawn_egg": {
+				"texture": "card.collection"
+			}
+		}
+	}
+}

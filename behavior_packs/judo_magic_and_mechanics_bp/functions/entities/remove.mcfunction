@@ -1,0 +1,6 @@
+event entity @s remove
+
+
+
+
+

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "prop:plant_of_kindness",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/plant_of_kindness"
+			},
+			"geometry": {
+				"default": "geometry.plant_of_kindness"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "plant_of_kindness_spawn_egg"
+			}
+		}
+	}
+}

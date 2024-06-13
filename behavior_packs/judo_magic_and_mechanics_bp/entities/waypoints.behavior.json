@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dz:waypoints",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["waypoint"]},
+			"animations": {"waypoint": "animation.player.waypoint"}
+		},
+		"components": {
+			"minecraft:type_family": { "family": [ "util" ]   },
+			"minecraft:collision_box": {"width": 0,"height": 0},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			  }
+		},
+		"component_groups": {
+			"invistitle": {
+			  "minecraft:timer": {
+				"looping": false,
+				"time": 5.0,
+				"time_down_event": {
+				  "event": "remove",
+				  "target": "self"
+				}
+			  }
+			 
+			},
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			}
+		  },
+		  "events": {
+			"minecraft:entity_born": {
+			  "add": {"component_groups": [ "invistitle"] }
+			},
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			}
+		  }
+	
+		
+}}
+
+

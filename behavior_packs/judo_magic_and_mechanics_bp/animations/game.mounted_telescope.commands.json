@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.mounted_telescope.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+        
+        "animation.game.mounted_telescope.event1": {
+            "animation_length": 10.3,"loop": false,
+            "timeline": {
+                "0.0":["/inputpermission set @a movement disabled","/title @a title view:telescope","/effect @a slowness 50 7 true","/playanimation @s animation.boat.disapear"],
+
+
+                "10":["/effect @a clear","/inputpermission set @a movement enabled","/summon spyglass:boat ~ ~ ~ 180 0","/event entity @s remove"]
+                        }
+        },
+        "animation.game.mounted_telescope.event2": {
+            "animation_length": 10.3,"loop": false,
+            "timeline": {
+                "0.0":["/inputpermission set @a movement disabled","/title @a title view:telescope","/effect @a slowness 50 7 true","/playanimation @s animation.boat.disapear"],
+
+
+                "10":["/effect @a clear","/inputpermission set @a movement enabled","/summon utility:telescope ~ ~ ~ 180 0","/event entity @s remove"]
+                        }
+        },
+        "animation.game.mounted_telescope.event3": {
+            "timeline": {
+                "0.1": ["/playanimation @e[type=character:mischievous_mounted_telescope,c=1] animation.mounted_telescope.spell","/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "1.5":["/execute as @s as @s run particle sweep:dust ~ ~ ~-1"],
+                "2.0":["/execute as @s as @s run particle sweep:dust ~ ~ ~1"],
+                "2.2":["/execute as @s as @s run particle sweep:dust ~-1 ~ ~"],
+                "2.4":["/execute as @s as @s run particle sweep:dust ~1 ~ ~"],
+                "2.7":["/execute as @s as @s run particle map:cloud_reveal_large"],
+
+
+         
+
+                "3.1":["/event entity @s remove"]                
+                
+            },
+            "animation_length": 3.2,
+            "loop": false
+        }
+    }
+}
+
+

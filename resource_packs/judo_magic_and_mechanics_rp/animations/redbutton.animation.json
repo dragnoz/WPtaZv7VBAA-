@@ -1,0 +1,72 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.redbutton.normal": {
+			"loop": true,
+			"animation_length": 10,
+			"bones": {
+				"whole": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.redbutton.press": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"button": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.16": {
+							"post": [0, -1, 0.4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": [0, -1, 0.4],
+						"0.52": [0, -1, 0.4],
+						"0.76": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "buttonpress"
+				}
+			}
+		},
+		"animation.redbutton.presssilent": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"button": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.16": {
+							"post": [0, -1, 0.4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": [0, -1, 0.4],
+						"0.52": [0, -1, 0.4]
+					}
+				}
+			}
+		},
+		"animation.redbutton.pressed": {
+			"loop": true,
+			"bones": {
+				"button": {
+					"position": [0, -1, 0.4]
+				}
+			}
+		}
+	}
+}

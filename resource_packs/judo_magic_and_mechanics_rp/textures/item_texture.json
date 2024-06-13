@@ -1,0 +1,138 @@
+{
+	"texture_data": {
+		"poop_spawn_egg": {
+			"textures": ["textures/items/poop_spawn_egg"]
+		},
+		"plant_of_kindness_spawn_egg": {
+			"textures": ["textures/items/plant_of_kindness_spawn_egg"]
+		},
+		"pilliarbutton_spawn_egg": {
+			"textures": ["textures/items/pilliarbutton_spawn_egg"]
+		},
+		"pipes_leaking_spawn_egg": {
+			"textures": ["textures/items/pipes_leaking_spawn_egg"]
+		},
+		"boat_spawn_egg": {
+			"textures": ["textures/items/boat_spawn_egg"]
+		},
+		"telescope_spawn_egg": {
+			"textures": ["textures/items/telescope_spawn_egg"]
+		},
+		"keystone": {
+			"textures": ["textures/items/keystone"]
+		},
+		"Square": {
+			"textures": "textures/items/Square"
+		},
+		"square_spawn_egg": {
+			"textures": ["textures/items/square_spawn_egg"]
+		},
+		"shape_spawn_egg": {
+			"textures": ["textures/items/shape_spawn_egg"]
+		},
+		"sweep_spawn_egg": {
+			"textures": ["textures/items/sweep_spawn_egg"]
+		},
+		"broom_spawn_egg": {
+			"textures": ["textures/items/broom_spawn_egg"]
+		},
+		"card_selector_spawn_egg": {
+			"textures": ["textures/items/card_selector_spawn_egg"]
+		},
+		"ucard08": {
+			"textures": "textures/items/ucard08"
+		},
+		"card.collection": {
+			"textures": ["textures/items/showcollection"]
+		},
+		"combat_display_spawn_egg": {
+			"textures": ["textures/items/combat_display_spawn_egg"]
+		},
+		"tatami_spawn_egg": {
+			"textures": ["textures/items/tatami_spawn_egg"]
+		},
+		"judokai_spawn_egg": {
+			"textures": ["textures/items/judokai_spawn_egg"]
+		},
+		"waypoints_spawn_egg": {
+			"textures": ["textures/items/waypoints_spawn_egg"]
+		},
+		"invistitle_spawn_egg": {
+			"textures": ["textures/items/invistitle_spawn_egg"]
+		},
+		"blighty:tcard01": {
+			"textures": "textures/items/tcard01"
+		},
+		"blighty:tcard02": {
+			"textures": "textures/items/tcard02"
+		},
+		"blighty:tcard03": {
+			"textures": "textures/items/tcard03"
+		},
+		"blighty:tcard04": {
+			"textures": "textures/items/tcard04"
+		},
+		"blighty:tcard05": {
+			"textures": "textures/items/tcard05"
+		},
+		"blighty:tcard06": {
+			"textures": "textures/items/tcard06"
+		},
+		"blighty:tcard07": {
+			"textures": "textures/items/tcard07"
+		},
+		"blighty:tcard08": {
+			"textures": "textures/items/tcard08"
+		},
+		"blighty:tcard09": {
+			"textures": "textures/items/tcard09"
+		},
+		"blighty:tcard10": {
+			"textures": "textures/items/tcard10"
+		},
+		"UI:select1": {
+			"textures": "textures/items/ui_select1"
+		},
+		"blighty:cardtest2": {
+			"textures": "textures/items/card5"
+		},
+		"big_bell_spawn_egg": {
+			"textures": ["textures/items/big_bell_spawn_egg"]
+		},
+		"card1": {
+			"textures": ["textures/items/card1"]
+		},
+		"card2": {
+			"textures": ["textures/items/card2"]
+		},
+		"card3": {
+			"textures": ["textures/items/card3"]
+		},
+		"card4": {
+			"textures": ["textures/items/card4"]
+		},
+		"card5": {
+			"textures": "textures/items/card5"
+		},
+		"action1": {
+			"textures": "textures/items/action1"
+		},
+		"action2": {
+			"textures": "textures/items/action2"
+		},
+		"Friendship": {
+			"textures": "textures/items/Friendship"
+		},
+		"A": {
+			"textures": "textures/items/A"
+		},
+		"B": {
+			"textures": "textures/items/B"
+		},
+		"C": {
+			"textures": "textures/items/C"
+		}
+	},
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.items"
+}

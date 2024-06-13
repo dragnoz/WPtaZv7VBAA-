@@ -1,0 +1,76 @@
+{
+    "texture_data": {
+        "camera": {
+            "textures": "textures/items/camera_new"
+          },
+        "blighty:boxitem": {
+            "textures": "textures/items/boxitem"
+        },
+        "blighty:unstuck": {
+            "textures": "textures/items/unstuck"
+        },
+        "blighty:return": {
+            "textures": "textures/items/return"
+        },
+        "blighty:pipewrench": {
+            "textures": "textures/items/pipewrench"
+        },
+        "blighty:wrench": {
+            "textures": "textures/items/weldingtorch"
+        },
+        "blighty:box_superstructure_kareldoorman": {
+            "textures": "textures/items/box_superstructure_kareldoorman"
+        },
+        "blighty:box_superstructure_denhelder": {
+            "textures": "textures/items/box_superstructure_denhelder"
+        },
+        "blighty:box_superstructure_rotterdam": {
+            "textures": "textures/items/box_superstructure_rotterdam"
+        },
+        "blighty:box_superstructure_zevenprovincien": {
+            "textures": "textures/items/box_superstructure_zevenprovincien"
+        },
+        "blighty:box_superstructure_holland": {
+            "textures": "textures/items/box_superstructure_holland"
+        },
+        "blighty:box_superstructure_vlissingen": {
+            "textures": "textures/items/box_superstructure_vlissingen"
+        },
+        "blighty:box_aft_kareldoorman": {
+            "textures": "textures/items/box_aft_kareldoorman"
+        },
+        "blighty:box_aft_denhelder": {
+            "textures": "textures/items/box_aft_denhelder"
+        },
+        "blighty:box_aft_rotterdam": {
+            "textures": "textures/items/box_aft_rotterdam"
+        },
+        "blighty:box_aft_zevenprovincien": {
+            "textures": "textures/items/box_aft_zevenprovincien"
+        },
+        "blighty:box_aft_holland": {
+            "textures": "textures/items/box_aft_holland"
+        },
+        "blighty:box_aft_vlissingen": {
+            "textures": "textures/items/box_aft_vlissingen"
+        },
+        "blighty:box_forward_kareldoorman": {
+            "textures": "textures/items/box_forward_kareldoorman"
+        },
+        "blighty:box_forward_denhelder": {
+            "textures": "textures/items/box_forward_denhelder"
+        },
+        "blighty:box_forward_rotterdam": {
+            "textures": "textures/items/box_forward_rotterdam"
+        },
+        "blighty:box_forward_zevenprovincien": {
+            "textures": "textures/items/box_forward_zevenprovincien"
+        },
+        "blighty:box_forward_holland": {
+            "textures": "textures/items/box_forward_holland"
+        },
+        "blighty:box_forward_vlissingen": {
+            "textures": "textures/items/box_forward_vlissingen"
+        }
+    }
+}

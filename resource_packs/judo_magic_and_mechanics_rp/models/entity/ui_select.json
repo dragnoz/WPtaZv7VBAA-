@@ -1,0 +1,111 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.UI.select1",
+				"texture_width": 33,
+				"texture_height": 33,
+				"visible_bounds_width": 20,
+				"visible_bounds_height": 96,
+				"visible_bounds_offset": [0, -44, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "upperbody",
+					"parent": "waist",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "upperbody",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "bone",
+					"parent": "rightItem",
+					"pivot": [-1, 2.85, -1]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [-2, 0.75, -0.25]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone",
+					"pivot": [-0.5, 8, -1.5],
+					"cubes": [
+						{"origin": [-5.5, 3, -2], "size": [10, 10, 1], "inflate": 0.025, "uv": [1, 19]}
+					],
+					"locators": {
+						"card": [0, 8, -2]
+					}
+				},
+				{
+					"name": "armpart",
+					"parent": "bone",
+					"pivot": [-6, 23, 0],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [0, 0]},
+						{"origin": [-8, 24, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 25, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 26, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 27, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 28, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 29, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.24, "uv": [17, 0]}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-1.9, 12, 0]
+				}
+			]
+		}
+	]
+}

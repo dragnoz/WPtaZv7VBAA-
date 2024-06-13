@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.goals.entities.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+        "animation.game.goals.event1": {
+            "timeline": {
+                "0.0": ["/function command_center/modules/goals/goal.2x2box" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.game.goals.event2": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree1 ~-4 ~3 ~-4" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        }
+    }
+}
+
+
+

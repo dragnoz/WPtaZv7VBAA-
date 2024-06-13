@@ -1,0 +1,97 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "info:bells",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": { "remove":"animation.entities.remove",
+							"bell1":  "animation.bell1",
+							"bell2":  "animation.bell2",
+							"bell3":  "animation.bell3",
+                            "island1_complete":  "animation.island1_complete",
+                            "island2_complete":  "animation.island2_complete"
+							},
+			"scripts": {"animate": [{"remove": "q.variant == 0"},
+									{"bell1": "q.variant == 1"},
+									{"bell2": "q.variant == 2"},
+									{"bell3": "q.variant == 3"},
+									{"island1_complete": "q.variant == 4"},
+									{"island2_complete": "q.variant == 5"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:collision_box": {
+                "width": 0.01,
+                "height": 0.01
+            },
+	
+			"minecraft:scale": { "value":0 },
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+				  "cause": "all",
+				  "deals_damage": false
+				}
+			  }
+		},
+		"component_groups": {
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			},
+			"fall": {
+				"minecraft:physics": {
+					"has_gravity": true,
+					"has_collision": false
+				}
+			  },
+			  "temple1": {
+				"minecraft:type_family": { "family": [ "temple1" ]   }
+			  },
+			"bellring": { "minecraft:type_family": { "family": [ "bellring" ]   }},
+
+			 "bell": {"minecraft:variant": {"value": 0}},
+			 "bell_tmpl1": {"minecraft:variant": {"value": 1}},
+			 "bell_tmpl2": {"minecraft:variant": {"value": 2}},
+			 "bell_tmpl3": {"minecraft:variant": {"value": 3}},
+			 "island1_complete": {"minecraft:variant": {"value": 4}},
+             "island2_complete": {"minecraft:variant": {"value": 5}}
+
+		  },
+		  "events": {
+			"bell": {
+				"add": {"component_groups": [ "bell"] },
+				"remove": {"component_groups": [ "bell_tmpl1","bell_tmpl2","bell_tmpl3"] }
+			  },
+			  "bell_tmpl1": {"remove": {"component_groups": [ "bell","bell_tmpl1","bell_tmpl2","bell_tmpl3"] },"add": {"component_groups": [ "bell_tmpl1"] }},
+			  "bell_tmpl2": {"remove": {"component_groups": [ "bell","bell_tmpl1","bell_tmpl2","bell_tmpl3"] },"add": {"component_groups": [ "bell_tmpl2"] }},
+			  "bell_tmpl3": {"remove": {"component_groups": [ "bell","bell_tmpl1","bell_tmpl2","bell_tmpl3"] },"add": {"component_groups": [ "bell_tmpl3"] }},
+              
+              "island1_complete": {"add": {"component_groups": ["island1_complete"] }},
+              "island2_complete": {"add": {"component_groups": ["island2_complete"] }},
+
+			  
+              "bellring": {"add": {"component_groups": [ "bellring"] }},
+			"bellringstop": {
+				"remove": {"component_groups": [ "bellring"] }
+			  },
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			},
+			"fall": {
+				"add": {"component_groups": [ "fall"] }
+			  },
+			  "temple1": {
+				  "add": {"component_groups": [ "temple1"] }
+				}
+		  }
+	}
+}
+

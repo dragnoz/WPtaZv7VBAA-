@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "props:plates",
+      "min_engine_version": "1.8.0",
+      "materials": { "default": "entity", "alpha": "entity_alphatest" },
+      "textures": { "default": "textures/entity/plates/plates" },
+      "render_controllers": ["controller.render.default"],
+      "geometry": { "default": "geometry.plates" },
+      "animations": {
+        "default_pose": "animation.plates.default_pose",
+        "controller.pose": "controller.animation.plates.pose"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.example.a = 0;",
+          "variable.example.b = 0;"
+        ],
+        "animate": [
+          "controller.pose"
+        ]
+      }
+    }
+  }
+}

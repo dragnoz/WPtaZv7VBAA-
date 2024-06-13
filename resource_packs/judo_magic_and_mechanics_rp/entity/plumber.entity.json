@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:plumber",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/plumber"
+			},
+			"geometry": {
+				"default": "geometry.plumber"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

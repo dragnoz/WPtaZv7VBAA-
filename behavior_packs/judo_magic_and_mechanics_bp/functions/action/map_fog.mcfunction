@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:armor_stand,r=20,tag=undiscovered] at @s run particle map:fog ~ ~ ~

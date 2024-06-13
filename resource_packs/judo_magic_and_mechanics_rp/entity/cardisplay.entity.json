@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cable:cardisplay",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cardisplay"
+			},
+			"geometry": {
+				"default": "geometry.cardisplay"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

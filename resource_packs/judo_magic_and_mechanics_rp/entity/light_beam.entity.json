@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "prop:light_beam",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/light_beam"
+			},
+			"geometry": {
+				"default": "geometry.light_beam"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

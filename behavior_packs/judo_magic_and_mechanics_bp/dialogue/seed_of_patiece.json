@@ -1,0 +1,609 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+      "scenes": [
+        {
+            "scene_tag": "seed_of_patience1",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Consider the ancient trees, how they stand silent and tall, their patience measured in centuries."
+                    }
+                ]
+            },
+           
+            "buttons": [
+                {
+                    "name": "Inspiring.",
+                    "commands": [ "/scoreboard players add @initiator patience 2","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience2" ]
+                },
+                {
+                    "name": "Still talking?",
+                    "commands": [ "/scoreboard players add @initiator patience 1","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience2" ]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience2",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Patience is the companion of wisdom, for without it, knowledge rushes ahead without purpose."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Agreed.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" , "/dialogue open @e[type=npc,c=1] @initiator seed_of_patience3"]
+                },
+                {
+                    "name": "Yawn…",
+                    "commands": [ "/scoreboard players add @initiator patience 1", "/dialogue open @e[type=npc,c=1] @initiator seed_of_patience3" ]
+                },
+                {
+                    "name": "Obvious.",
+                    "commands": [ "/scoreboard players add @initiator patience 0", "/dialogue open @e[type=npc,c=1] @initiator seed_of_patience3" ]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience3",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "In the dojo, a moment of patience can mean the difference between victory and defeat."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Understood.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience4"]
+                },
+                {
+                    "name": "This again?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience4"]
+                },
+                {
+                    "name": "Got it.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience4"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience4",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The patient angler catches the largest fish, while the hasty one returns home empty-handed."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "True story.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience5"]
+                },
+                {
+                    "name": "Still here?",
+                    "commands": [ "/scoreboard players add @initiator patience 1","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience5" ]
+                },
+                {
+                    "name": "Whatever.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience5"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience5",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Like the moon's phases, patience cycles through our lives, teaching us its quiet strength."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Beautiful.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience6"]
+                },
+                {
+                    "name": "How poetic.",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience6"]
+                },
+                {
+                    "name": "Enough already.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience6"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience6",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The art of calligraphy requires a steady hand and a patient heart, each stroke a testament to time."
+                    }
+                ]
+            },
+          
+            "buttons": [
+                {
+                    "name": "Fascinating.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience7"]
+                },
+                {
+                    "name": "More lessons?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience7"]
+                },
+                {
+                    "name": "I get it.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience7"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience7",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Even the stars above us, they too have waited eons to shine their light upon us."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Amazing.",
+                    "commands": [ "/scoreboard players add @initiator patience 2","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience8"]
+                },
+                {
+                    "name": "Stars now?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience8"]
+                },
+                {
+                    "name": "So long?",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience8"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience8",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The caterpillar does not rush to become a butterfly; it embraces each stage with grace."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Wise words.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience9"]
+                },
+                {
+                    "name": "Still going?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience9"]
+                },
+                {
+                    "name": "Skip this.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience9"]
+                }
+            ]
+        },{
+            "scene_tag": "seed_of_patience9",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Patience is the thread that weaves through the fabric of our lives, holding it together."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Profound.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience10"]
+                },
+                {
+                    "name": "More metaphors?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience10"]
+                },
+                {
+                    "name": "Yeah, yeah.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience10"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience10",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "It is in the quiet moments of waiting that we often find the answers we seek."
+                    }
+                ]
+            },
+   
+            "buttons": [
+                {
+                    "name": "I'll remember.",
+                    "commands": [ "/scoreboard players add @initiator patience 2","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience11" ]
+                },
+                {
+                    "name": "Quiet, finally.",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience11"]
+                },
+                {
+                    "name": "Found nothing.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience11"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience11",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The potter shapes the clay with patience, for rushing leads to imperfection."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Good analogy.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience12"]
+                },
+                {
+                    "name": "Still shaping?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience12"]
+                },
+                {
+                    "name": "Imperfect speech.",
+                    "commands": [ "/scoreboard players add @initiator patience 0","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience12" ]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience12",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The patient mind is like a clear lake, its still waters reflecting the depth of the sky."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Deep insight.",
+                    "commands": [ "/scoreboard players add @initiator patience 2","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience13" ]
+                },
+                {
+                    "name": "More water?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience13"]
+                },
+                {
+                    "name": "Shallow talk.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience13"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience13",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The patient heart knows that all things come to those who wait with grace and dignity."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Heartfelt.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience14"]
+                },
+                {
+                    "name": "Still waiting?",
+                    "commands": [ "/scoreboard players add @initiator patience 1","/dialogue open @e[type=npc,c=1] @initiator seed_of_patience14" ]
+                },
+                {
+                    "name": "Tired of waiting.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience14"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience14",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Remember, the best tea takes time to brew, its flavors deepening with each passing minute."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "I'll taste it.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience15"]
+                },
+                {
+                    "name": "Still brewing?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience15"]
+                },
+                {
+                    "name": "Bitter taste.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience15"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience15",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The gardener does not pull at the shoots to hasten their growth; he nurtures them with care."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Nature's way.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience16"]
+                },
+                {
+                    "name": "Pulling my leg?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience16"]
+                },
+                {
+                    "name": "Stop pulling.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience16"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience16",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "In the tapestry of history, those who were patient are often the ones who wove the most enduring stories."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Timeless tales.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience17"]
+                },
+                {
+                    "name": "History lesson?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience17"]
+                },
+                {
+                    "name": "End this story.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience17"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience17",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The patient teacher shapes the minds of the future, understanding that knowledge cannot be rushed."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "Valuable lesson.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience18"]
+                },
+                {
+                    "name": "Still teaching?",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience18"]
+                },
+                {
+                    "name": "Rush it, please.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience18"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience18",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "The patient traveler sees more of the world, for they take the time to truly look."
+                    }
+                ]
+            },
+
+            "buttons": [
+                {
+                    "name": "I'll travel.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience19"]
+                },
+                {
+                    "name": "Seen enough.",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience19"]
+                },
+                {
+                    "name": "Let's move.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience19"]
+                }
+            ]
+        },
+        {
+            "scene_tag": "seed_of_patience19",
+            "npc_name": {
+                "rawtext": [
+                    {
+                        "text": "Sister Lila"
+                    }
+                ]
+            },
+            "text": {
+                "rawtext": [
+                    {
+                        "text": "Patience is the key that unlocks the door to inner peace and understanding."
+                    }
+                ]
+            },
+               "buttons": [
+                {
+                    "name": "Key found.",
+                    "commands": [ "/scoreboard players add @initiator patience 2" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience20"]
+                },
+                {
+                    "name": "Door's stuck.",
+                    "commands": [ "/scoreboard players add @initiator patience 1" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience20"]
+                },
+                {
+                    "name": "Unlock it.",
+                    "commands": [ "/scoreboard players add @initiator patience 0" ,"/dialogue open @e[type=npc,c=1] @initiator seed_of_patience20"]
+                }
+            ]
+        }
+      ]
+  }
+}

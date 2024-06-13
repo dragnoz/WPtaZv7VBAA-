@@ -1,0 +1,570 @@
+## {"rawtext":[{"translate":"UI_Settings.npc.dialogue.1"}]} 
+
+ ## {"rawtext":[{"translate":"UI_Settings.npc"}]}
+
+elder_mina.npc.dialogue.1=Ah, you've arrived. This first marker is where we plant the Seed of Kindness. As you engage with this affirmation puzzle, reflect on the kindness you've received and given.
+elder_mina.npc.dialogue.2=Choose wisely, for positive affirmations will help the seed grow, while negative ones will hinder it.
+elder_mina.npc.dialogue.3=When I help others without expecting anything in return, I feel...
+elder_mina.npc.dialogue.4=Fulfilled
+elder_mina.npc.dialogue.5=Taken advantage of
+elder_mina.npc.dialogue.6=Remember, acts of kindness are gifts to both the giver and the receiver. Let's try again.
+elder_mina.npc.dialogue.7=Receiving kindness makes me feel...
+elder_mina.npc.dialogue.8=Grateful
+elder_mina.npc.dialogue.9=Obligated
+elder_mina.npc.dialogue.10=Kindness is a reminder of the goodness in others. Let's try again.
+elder_mina.npc.dialogue.11=Kindness should be shown to...
+elder_mina.npc.dialogue.12=Everyone
+elder_mina.npc.dialogue.13=Only those who deserve it
+elder_mina.npc.dialogue.14=Kindness knows no bounds. Let's try again.
+elder_mina.npc.dialogue.15=Acts of kindness are...
+elder_mina.npc.dialogue.16=Important for the community
+elder_mina.npc.dialogue.17=A waste of time
+elder_mina.npc.dialogue.18=Kindness is the glue that holds our community together. Let's try again.
+
+brother_tao.npc.dialogue.1=Welcome to the spring of simplicity. Here, plant the Seed of Simplicity and navigate this affirmation puzzle. In simplicity, we find clarity and truth. Choose your affirmations with care.
+brother_tao.npc.dialogue.2=Living with less allows me to...
+brother_tao.npc.dialogue.3=Focus on what matters
+brother_tao.npc.dialogue.4=Feel deprived
+brother_tao.npc.dialogue.5=Simplicity reveals what truly matters. Let's try again.
+brother_tao.npc.dialogue.6=A simple life is...
+brother_tao.npc.dialogue.7=Liberating
+brother_tao.npc.dialogue.8=Boring
+brother_tao.npc.dialogue.9=In simplicity, we find freedom. Let's try again.
+brother_tao.npc.dialogue.10=True happiness comes from...
+brother_tao.npc.dialogue.11=Simple pleasures
+brother_tao.npc.dialogue.12=Material wealth
+brother_tao.npc.dialogue.13=Happiness often lies in the simple things. Let's try again.
+brother_tao.npc.dialogue.14=To live simply means to...
+brother_tao.npc.dialogue.15=Prioritize needs over wants
+brother_tao.npc.dialogue.16=Limit my experiences
+brother_tao.npc.dialogue.17=Simplicity enriches our experiences. Let's try again.
+
+sister_lila.npc.dialogue.1=Beneath this old guardian, we plant the Seed of Patience. Engage with this affirmation puzzle and consider the value of patience in your life. Choose wisely to help the seed grow.
+sister_lila.npc.dialogue.2=Patience helps me to...
+sister_lila.npc.dialogue.3=See things more clearly
+sister_lila.npc.dialogue.4=Waste time
+sister_lila.npc.dialogue.5=Patience offers clarity and insight. Let's try again.
+sister_lila.npc.dialogue.6=Waiting for the right moment is...
+sister_lila.npc.dialogue.7=Wise
+sister_lila.npc.dialogue.8=Frustrating
+sister_lila.npc.dialogue.9=Wisdom often comes from waiting. Let's try again.
+sister_lila.npc.dialogue.10=Challenges are best faced with...
+sister_lila.npc.dialogue.11=Calm and patience
+sister_lila.npc.dialogue.12=Urgency and haste
+sister_lila.npc.dialogue.13=Calm and patience lead to better outcomes. Let's try again.
+sister_lila.npc.dialogue.14=Growth requires...
+sister_lila.npc.dialogue.15=Time and patience
+sister_lila.npc.dialogue.16=Immediate action
+sister_lila.npc.dialogue.17=True growth takes time. Let's try again.
+
+master_keon.npc.dialogue.1=At the threshold of our temple, we plant the Seed of Humility. Reflect on your journey and the lessons learned as you complete this affirmation puzzle. Your choices will determine the seed's growth.
+master_keon.npc.dialogue.2=Humility means...
+master_keon.npc.dialogue.3=Valuing others' contributions
+master_keon.npc.dialogue.4=Thinking less of myself
+master_keon.npc.dialogue.5=Humility is about valuing others, not diminishing yourself. Let's try again.
+master_keon.npc.dialogue.6=True strength lies in...
+master_keon.npc.dialogue.7=Quiet service
+master_keon.npc.dialogue.8=Boasting achievements
+master_keon.npc.dialogue.9=Strength is often found in quiet acts of service. Let's try again.
+master_keon.npc.dialogue.10=A humble person is...
+master_keon.npc.dialogue.11=Respectful and kind
+master_keon.npc.dialogue.12=Weak and submissive
+master_keon.npc.dialogue.13=Humility is strength wrapped in kindness. Let's try again.
+master_keon.npc.dialogue.14=To be humble is to...
+master_keon.npc.dialogue.15=Think of myself less
+master_keon.npc.dialogue.16=Downplay my worth
+master_keon.npc.dialogue.17=Humility involves thinking of others more, not devaluing yourself. Let's try again.
+
+kwame_the_modest.npc.dialogue.1=You have planted seeds not just in the earth but within yourself. You have shown a willingness to grow and understand the quiet strength that modesty offers. It is with great honour that I now present to you a reward that symbolises the virtues you have cultivated. This card represents the judo technique known as 'O-uchi-gari', or the large inner reap. In judo, this move requires one to step close to the opponent, using their own balance and strength against them in a subtle yet effective manner. It is a technique that embodies the principles of modesty — it does not boast of its power, yet it is profoundly effective. Remember, true greatness often lies in the smallest of acts, performed with a humble heart.
+
+elder_mina.npc=Elder Mina
+brother_tao.npc=Brother Tao
+sister_lila.npc=Sister Lila
+master_keon.npc=Master Keon
+kwame_the_modest.npc=Kwame the Modest
+
+
+UI_Settings.npc.dialogue.1=You can make UI bigger, Smaller or higher and lower
+UI_Settings.npc=UI_Settings
+
+
+
+item.dz:card1.name=card1
+item.dz:card2.name=card2
+item.dz:card3.name=card3
+item.dz:card4.name=card4
+item.dz:card5.name=card5
+item.dz:action1.name=action1
+item.dz:action2.name=action2
+item.dz:friendship.name=Friendship
+item.dz:selecta.name=selecta
+item.dz:selectb.name=selectb
+item.dz:selectc.name=selectc
+
+item.UI:select1.name=Option 1
+item.blighty:cardtest.name=Card
+item.blighty:cardtest2.name=Card
+item.blighty:tcard01.name = Card
+item.blighty:tcard02.name = Card
+item.blighty:tcard03.name = Card
+item.blighty:tcard04.name = Card
+item.blighty:tcard05.name = Card
+item.blighty:tcard06.name = Card
+item.blighty:tcard07.name = Card
+item.blighty:tcard08.name = Card
+item.blighty:tcard09.name = Card
+item.blighty:tcard10.name = Card
+entity.ui:combat_display.name=Combat Display
+item.spawn_egg.entity.ui:combat_display.name=Spawn Combat Display
+item.card:ucard08=Unplayable Card
+entity.cards:card_selector.name=Card Selector
+item.spawn_egg.entity.cards:card_selector.name=Spawn Card Selector
+
+
+judo.testing.hello.friend = Hello Friend
+
+cards.card1.description.name = Introspection 
+cards.card1.description.text1 = You take a moment to breath and reflect about all you have learnt. 
+cards.card1.description.text2 = Gain +2 focus
+entity.arena:combat_tatami.name=Combat Tatami
+entity.combat:combat_tatami.name=Combat Tatami
+entity.admin:card.name=Card: Admin
+entity.character:card_trader.name=Card Trader
+entity.character:master_hiroshi.name=Master Hiroshi
+entity.character:masterlucia.name=Master Lucia
+entity.character:master_zara.name=Master Zara
+
+
+
+cards.trader.text1 = Welcome to Misty Iles 
+
+Card_Collector.npc.dialogue.1=Welcome to the Mystery of the Judo Champions.
+Card_Collector.npc.dialogue.2=§r
+Card_Collector.npc.dialogue.3=Find the Village Elder who will explain your quest.
+Card_Collector.npc.dialogue.4=§r
+Card_Collector.npc.dialogue.5=Is this the first time attempting this game? 
+Card_Collector.npc=Card_Collector
+
+Card_Collector.npc.dialogue.6=In this magical land, we use collectable cards to perform judo moves and actions.
+Card_Collector.npc.dialogue.7=§r
+Card_Collector.npc.dialogue.8=An Action Card can help you find a hidden trap or boost your jumping ability.
+Card_Collector.npc.dialogue.9=§r
+Card_Collector.npc.dialogue.10=A Judo Move Card lets you fight on a Tatami Matt on the ship or at the Olympic stadium. 
+
+Card_Collector.npc.dialogue.11=I am the Card Collector and will trade you new cards you may need for each quest you encounter.
+Card_Collector.npc.dialogue.12=Visit me on your travels. I may have just the card you need.
+Card_Collector.npc.dialogue.13=Use the Card Deck Icon to summon your card collection. I've placed it in your inventory.
+Card_Collector.npc.dialogue.14=§r
+Card_Collector.npc.dialogue.15=Hold the Card Deck Icon and use it on the ground to summon your deck. Once summoned, you can see the cards you possess and how each works.
+Card_Collector.npc.dialogue.16=§r
+
+Card_Collector.npc.dialogue.17=I have given you The Quest Card, which will show you the path of the champions. 
+Card_Collector.npc.dialogue.18=To use a card, select it in your inventory and use it. 
+Card_Collector.npc.dialogue.19=§r
+Card_Collector.npc.dialogue.20=The Quest Card will show the way to your next quest point with green particles. 
+Card_Collector.npc.dialogue.21=It will lead you to the Village Elder.
+
+
+Judo_Master_intro.npc.dialogue.1=§r
+Judo_Master_intro.npc.dialogue.2=Welcome to The Mystery of the Judo Champions. 
+Judo_Master_intro.npc.dialogue.3=§r
+Judo_Master_intro.npc.dialogue.4=Your mission is to assemble a team of Judo Champions to travel to the Paris Olympics and celebrate Judo's eight core values.
+Judo_Master_intro.npc=Judo Master
+
+Judo_Master_VO.npc.dialogue.1=
+Judo_Master_VO.npc.dialogue.2=Sail to eight mysterious islands 
+Judo_Master_VO.npc.dialogue.3=and recruit the Judo champions.
+Judo_Master_VO.npc.dialogue.4=Each island represents a core value of Judo:
+Judo_Master_VO.npc.dialogue.5=Courage
+Judo_Master_VO.npc.dialogue.6=Respect
+Judo_Master_VO.npc.dialogue.7=Modesty
+Judo_Master_VO.npc.dialogue.8=Friendship
+Judo_Master_VO.npc.dialogue.9=Honour
+Judo_Master_VO.npc.dialogue.10=Sincerity
+Judo_Master_VO.npc.dialogue.11=Self-control
+Judo_Master_VO.npc.dialogue.12=Politeness.
+Judo_Master_VO.npc.dialogue.13=On each island, a Judo Master awaits.
+Judo_Master_VO.npc.dialogue.14=Complete their quests, and they will join your crew.
+Judo_Master_VO.npc.dialogue.15=With each new master, you gain a new Judo Card to practice on your ship.
+Judo_Master_VO.npc.dialogue.16=Visit 5 islands
+
+CourageQuestNPC.npc.dialogue.1=A mischievous pixie has frightened the cable car operator, who is frozen with fear. 
+CourageQuestNPC.npc.dialogue.2=§r
+CourageQuestNPC.npc.dialogue.3=Help them overcome their fear and take the cable car to the temple summit. 
+CourageQuestNPC.npc.dialogue.4=§r
+CourageQuestNPC.npc.dialogue.5=Ring the three bells of bravery to dispel the cable cars' fear and reach the temple of Courage. 
+CourageQuestNPC.npc.dialogue.6=§r
+CourageQuestNPC.npc.dialogue.7=Use a boat to start the challenge.
+CourageQuestNPC.npc=CourageQuestNPC
+
+Info.npc.dialogue.1=Welcome to:
+Info.npc.dialogue.2=Mystery of the Judo Masters
+Info.npc.dialogue.3=§r
+Info.npc.dialogue.4=Please Note this is an alpha preview with large parts not connected
+Info.npc.dialogue.5=§r
+Info.npc=Info
+
+Master_2.npc.dialogue.1=You have been chosen to sail to eight mysterious islands and recruit the Judo champions. 
+Master_2.npc.dialogue.2=§r
+Master_2.npc.dialogue.3=Each island represents a core value of Judo: Courage, Respect, Modesty, Friendship, Honour, Sincerity, Self-control and Politeness.
+Master_2.npc.dialogue.4=§r
+Master_2.npc=Master_2
+
+
+Master_3.npc.dialogue.1=On each island, a Judo Master awaits. 
+Master_3.npc.dialogue.2=§r
+Master_3.npc.dialogue.3=Complete their quests, and they will join your crew.
+Master_3.npc.dialogue.4=§r
+Master_3.npc.dialogue.5=With each new master, you gain a new Judo Card to practice on your ship.
+Master_3.npc=Master_3
+
+Combat.npc.dialogue.1=§r
+Combat.npc.dialogue.2=I'm a temporary controller, while the card mechanics are finalised.
+Combat.npc.dialogue.3=§r
+Combat.npc.dialogue.4=Choose a move to preview
+Combat.npc=Combat
+entity.character:mischievous_pixie.name=Mischievous Pixie
+
+
+Cable_Car_Operator.npc.dialogue.1=Thank you! Ringing the bells helped me down the mountain!
+Cable_Car_Operator.npc.dialogue.2=§r
+Cable_Car_Operator.npc.dialogue.3=Let me take you to the Temple of Courage.
+Cable_Car_Operator.npc.dialogue.4=§r
+Cable_Car_Operator.npc=Cable Car Operator
+
+Zara_the_Courageous.npc.dialogue.1=§r
+Zara_the_Courageous.npc.dialogue.2=Well done on reaching the summit! 
+Zara_the_Courageous.npc.dialogue.3=§r
+Zara_the_Courageous.npc.dialogue.4=You have shown courage and compassion. 
+Zara_the_Courageous.npc.dialogue.5=§r
+Zara_the_Courageous.npc.dialogue.6=As a token of this achievement, I will teach you a unique judo technique: the Uki-goshi (floating hip throw).
+Zara_the_Courageous.npc=Zara the Courageous
+Zara_the_Courageous.npc.dialogue.7=§r
+Zara_the_Courageous.npc.dialogue.8=floating hip throw involves up and forwards, putting them off balance and requiring courage and precision.
+Zara_the_Courageous.npc.dialogue.9=§r
+Zara_the_Courageous.npc.dialogue.10=§r
+Zara_the_Courageous.npc.dialogue.11=Return to the ship to continue your adventure and practice Uki-goshi (floating hip throw).
+
+Respect_Quest.npc.dialogue.1=§r
+Respect_Quest.npc.dialogue.2=Judoka, I am glad you have arrived. The Mischievous Pixie has been causing trouble in the Harmonious Gardens of Respect!
+Respect_Quest.npc.dialogue.3=§r
+Respect_Quest.npc.dialogue.4=§r
+Respect_Quest.npc=Respect Quest 
+
+Respect_Quest.npc.dialogue.5=§r
+Respect_Quest.npc.dialogue.6=Help the Gardeners sweep up the mess the Pixie has caused! 
+Respect_Quest.npc.dialogue.7=§r
+Respect_Quest.npc.dialogue.8=Restore harmony and respect to the Garden and sweep away the Pixie's rubbish!
+Respect_Quest.npc.dialogue.9=Take this broom and search the gardens for rubbish. 
+Respect_Quest.npc.dialogue.10=When you have helped all four gardeners, the Temple of Respect will open!
+
+GardenerOne.npc.dialogue.1=Thank you for lending your hands, Judoka! Just like you wouldn’t leave rubbish in your home, caring for our garden shows respect for nature and the others who come to enjoy this peace. 
+GardenerOne.npc.dialogue.2=§r
+GardenerOne.npc.dialogue.3=Remember, respect starts with empathy and understanding.
+GardenerOne.npc.dialogue.4=§r
+GardenerOne.npc=Gardener
+
+GardenerTwo.npc.dialogue.1=Marvellous work! You see, by helping to clean up, you've shown that respect isn’t just about what we say but what we do. 
+GardenerTwo.npc.dialogue.2=§r
+GardenerTwo.npc.dialogue.3=Actions often speak louder than words. It’s about doing your part without being asked because it’s the right thing.
+GardenerTwo.npc.dialogue.4=§r
+GardenerTwo.npc=Gardener
+
+GardenerThree.npc.dialogue.1=Ah, what a relief, Judoka! Respect is also about recognising everyone's effort, big or small. 
+GardenerThree.npc.dialogue.2=§r
+GardenerThree.npc.dialogue.3=Like each sweep of the broom, every small act of kindness contributes to a bigger change. It’s about acknowledging everyone’s contributions.
+GardenerThree.npc.dialogue.4=§r
+GardenerThree.npc=Gardener
+
+
+GardenerFour.npc.dialogue.1=Excellent, the gardens look beautiful again! Respect is about harmony and balance. 
+GardenerFour.npc.dialogue.2=§r
+GardenerFour.npc.dialogue.3=Just as we restore balance here by cleaning up, we strive to treat others fairly and give everyone a chance to thrive. Let’s carry this harmony everywhere we go.
+GardenerFour.npc.dialogue.4=§r
+GardenerFour.npc=Gardener
+
+Hiroshi_the_Respectful.npc.dialogue.1=Ah, Judoka! You've done an excellent job! Every leaf and every petal is back in its rightful place, just as every person has their rightful place in the world. 
+Hiroshi_the_Respectful.npc.dialogue.2=§r
+Hiroshi_the_Respectful.npc.dialogue.3=Thank you for sweeping away the chaos and restoring respect to our gardens. The Temple of Respect is now open to you.
+Hiroshi_the_Respectful.npc.dialogue.4=§r
+Hiroshi_the_Respectful.npc=Hiroshi the Respectful
+
+Hiroshi_the_Respectful.npc.dialogue.5=As a token of this achievement, I will teach you a unique judo technique: O-uchi-gari (large inner reap)
+Hiroshi_the_Respectful.npc.dialogue.6=§r
+Hiroshi_the_Respectful.npc.dialogue.7=A foot technique throw. Break your opponent’s balance and reap his left leg with a large motion to throw him backward.
+Hiroshi_the_Respectful.npc.dialogue.8=§r
+
+Hiroshi_the_Respectful.npc.dialogue.9=Return to the ship to continue your adventure and practice O-uchi-gari (large inner reap.
+
+Amira_the_Sincere.npc.dialogue.1=Welcome to Honesty Island. 
+Amira_the_Sincere.npc.dialogue.2=§r
+Amira_the_Sincere.npc.dialogue.3=The Mischievous Pixie mixed up the truth, and the once-flowing Well of Honesty has dried up.
+Amira_the_Sincere.npc=Amira the Sincere
+Amira_the_Sincere.npc.dialogue.4=§r
+Amira_the_Sincere.npc.dialogue.5=The waters can return only by restoring the fragments of truth.
+Amira_the_Sincere.npc.dialogue.6=§r
+Amira_the_Sincere.npc.dialogue.7=Visit the ancient castles scattered across the island and solve the Puzzles of Truth.
+
+Amira_the_Sincere.npc.dialogue.8=The Puzzles of Truth are no ordinary challenges. 
+Amira_the_Sincere.npc.dialogue.9=§r
+Amira_the_Sincere.npc.dialogue.10=They test your ability to distinguish truth from deception. 
+Amira_the_Sincere.npc.dialogue.11=§r
+Amira_the_Sincere.npc.dialogue.12=Each castle has a guardian who presents you with a statement. 
+Amira_the_Sincere.npc.dialogue.13=§r
+Amira_the_Sincere.npc.dialogue.14=Based on clues within the castle, you must decide which answer is the truth.
+Amira_the_Sincere.npc.dialogue.15=§r
+
+
+entity.decor:rubbish.name=Rubbish
+entity.mount:sweeping_judoka.name=Sweeping  Judoka
+item.spawn_egg.entity.mount:sweeping_judoka.name=Spawn Sweeping  Judoka
+entity.game:sweep.name=Sweep
+item.spawn_egg.entity.game:sweep.name=Spawn Sweep
+entity.master:amira.name=Master Amira
+entity.master:emma.name=Master  Emma
+entity.master:kwame.name=Master  Kwame
+entity.character:dojo_juduka.name=Dojo Juduka
+entity.character:map_master.name=Map Master
+entity.character:judoka_master.name=Judoka Master
+entity.cable:car.name=Cable Car
+entity.cable:cardisplay.name=Cable_Car_display
+entity.scenic:cablecarintro.name=CableCarIntro
+entity.master:master_samir.name=Master Samir
+tile.utility:rope.name=Rope
+
+Samir_the_Steadfast.npc.dialogue.1=Urgent! A mischievous pixie has unbalanced our island.
+Samir_the_Steadfast.npc.dialogue.2=The three keystones that maintain the equilibrium are missing! 
+Samir_the_Steadfast.npc.dialogue.3=You must recover them and restore balance before the island plunges into the sea! 
+Samir_the_Steadfast.npc.dialogue.4=Each keystone is hidden within a part of the giant statue that dominates the island's landscape. 
+Samir_the_Steadfast.npc.dialogue.5=To succeed, you will need to master your skills of balance and precision, navigating challenging parkour routes to reach each keystone.
+Samir_the_Steadfast.npc.dialogue.6=Thank you! With the keystones in place, balance is restored. 
+Samir_the_Steadfast.npc.dialogue.7=You've shown remarkable self-control and precision. Let's secure this victory.
+Samir_the_Steadfast.npc.dialogue.8=Excellent work reaching this summit of stability! 
+Samir_the_Steadfast.npc.dialogue.9=Your demonstration of proper self-control, a vital skill for judo and life's challenges, is commendable. 
+Samir_the_Steadfast.npc.dialogue.10=In recognition of your achievement, I will teach you a powerful judo technique: the O-goshi (large hip throw). 
+Samir_the_Steadfast.npc.dialogue.11=Use this technique to control all aspects of your life, just as you've controlled today's chaos. 
+Samir_the_Steadfast.npc.dialogue.12=Return to the ship to continue your adventure and apply what you've learned."
+Samir_the_Steadfast.npc.dialogue.13=§r
+Samir_the_Steadfast.npc=Samir_the_Steadfast
+
+Lucia_the_Polite.npc.dialogue.1=Welcome! Today, your mission is vital yet challenging. 
+Lucia_the_Polite.npc.dialogue.2=We are preparing a grand banquet in honour of our revered Judo Master. 
+Lucia_the_Polite.npc.dialogue.3=However, a mischievous pixie has been causing chaos throughout the marketplace,
+Lucia_the_Polite.npc.dialogue.4=unsettling the vendors and risking the banquet's success
+Lucia_the_Polite.npc.dialogue.5=You must gather the finest ingredients from our unsettled marketplace while managing the disruptions caused by the pixie.
+Lucia_the_Polite.npc.dialogue.6=We need: 
+Lucia_the_Polite.npc.dialogue.7=Herbs for the soups and stews 
+Lucia_the_Polite.npc.dialogue.8=Fish for the main course
+Lucia_the_Polite.npc.dialogue.9=and Cakes for dessert!
+Lucia_the_Polite.npc.dialogue.10=§r
+Lucia_the_Polite.npc=Lucia the Polite
+
+Herb_Vendor.npc.dialogue.1=Welcome! 
+Herb_Vendor.npc.dialogue.2=My herbs are the freshest you'll find!
+Herb_Vendor.npc=Herb Vendor
+
+Player_Herb_Vendor.npc.dialogue.1=Good day! Your Fish always looks superb. What's fresh today?
+Player_Herb_Vendor.npc.dialogue.2=Just point me to whatever's is prepared the quickest today.
+Player_Herb_Vendor.npc=Judoka  
+
+Baker.npc.dialogue.1=Hello, dear! Smell the freshly baked cakes?
+Baker.npc=Baker
+
+Player_Baker.npc.dialogue.1=It smells wonderful here! What do you have today that's special?
+Player_Baker.npc.dialogue.2=I'm in a hurry, just show me what's ready now.
+Player_Baker.npc=Judoka
+
+Fishmonger.npc.dialogue.1=Ahoy there! Care to look at today's catch?
+Fishmonger.npc=Fishmonger
+
+Player_Fishmonger.npc.dialogue.1=Good day! Your Fish always looks superb. 
+Player_Fishmonger.npc.dialogue.2=What's fresh today?
+Player_Fishmonger.npc.dialogue.3=Just point me to whatever's is prepared the quickest today.
+Player_Fishmonger.npc=Judoka
+
+Lucia_the_Polite_endgood.npc.dialogue.1=Well done! You've gathered all the necessary ingredients with exemplary decorum. 
+Lucia_the_Polite_endgood.npc.dialogue.2=This banquet will be a feast for the stomach and a testament to the virtues of respect and courtesy.
+Lucia_the_Polite_endgood.npc.dialogue.3=Ah, I see you've acquired what we needed despite some... 
+Lucia_the_Polite_endgood.npc.dialogue.4=challenging interactions. The banquet can proceed, but there's something we must address.
+Lucia_the_Polite_endgood.npc.dialogue.5=Courtesy isn't just about making things smoother;
+Lucia_the_Polite_endgood.npc.dialogue.6=it's about respect and making everyone feel valued. 
+Lucia_the_Polite_endgood.npc.dialogue.7=Remember, the quality of our interactions can often reflect the quality of our outcomes. 
+Lucia_the_Polite_endgood.npc.dialogue.8=You've seen how different your results were based on how you treated our vendors. 
+Lucia_the_Polite_endgood.npc.dialogue.9=Let this be a lesson in manners, leadership, and kindness.
+Lucia_the_Polite_endgood.npc=Lucia the Polite
+
+Lucia_the_Polite_end2.npc.dialogue.1=Today, your approach was more brusque than beneficial, affecting not just the spirits of those around you but potentially the quality of their goods and services. 
+Lucia_the_Polite_end2.npc.dialogue.2=Life, like our marketplace, thrives on mutual respect. It's something to think about as we move forward.
+Lucia_the_Polite_end2.npc.dialogue.3=Despite the bumps along the way, the banquet will celebrate our efforts and reflect on how we can improve. 
+Lucia_the_Polite_end2.npc.dialogue.4=To honour your graceful conduct, our Judo Master will now teach you 'Tsurikomi-goshi' (lift-pull hip throw). 
+Lucia_the_Polite_end2.npc.dialogue.5=This technique emphasizes the importance of timing and kuzushi (unbalancing the opponent), mirroring your ability to handle delicate situations in the marketplace with tact and balance.
+Lucia_the_Polite_end2.npc.dialogue.6=Return to your ship, ready for the next adventure.
+Lucia_the_Polite_end2.npc.dialogue.7=§r
+Lucia_the_Polite_end2.npc=Lucia the Polite
+
+Emma_the_Friendly.npc.dialogue.1=Hello and welcome to our island. 
+Emma_the_Friendly.npc.dialogue.2=We built a playground for everyone to enjoy, as we wanted to create a space of play and friendship. 
+Emma_the_Friendly.npc.dialogue.3=But the Mishcievious pixie has scattered our building supplies across the island. 
+Emma_the_Friendly.npc.dialogue.4=I need your help to gather these materials and bring our new playground to life. 
+Emma_the_Friendly.npc.dialogue.5=This will be a place of joy, made real through teamwork and creativity. 
+Emma_the_Friendly.npc.dialogue.6=As you explore and collect what we need, speak to our villagers; 
+Emma_the_Friendly.npc.dialogue.7=they have the materials and might also share what features they'd love to see in our playground! 
+Emma_the_Friendly.npc.dialogue.8=Then enter the plot area and build! When you have finished, press the finish button to let me know!
+Emma_the_Friendly.npc.dialogue.9=Look at what you've accomplished through friendship and collaboration! 
+Emma_the_Friendly.npc.dialogue.10=This playground isn't just a place to play; it symbolises our community's spirit and unity. 
+Emma_the_Friendly.npc.dialogue.11=Thank you for making this vision a reality. 
+Emma_the_Friendly.npc.dialogue.12=And now, as a token of our appreciation and to help you continue your journey of learning and growth, 
+Emma_the_Friendly.npc.dialogue.13=I'm proud to present you with the 'Seoi-otoshi' judo move card. 
+Emma_the_Friendly.npc.dialogue.14=Embodying the principles of leverage and timing, this powerful technique will serve you well in both judo and life's challenges.
+Emma_the_Friendly.npc.dialogue.15=Return to your ship, ready for the next adventure.
+
+Emma_the_Friendly.npc=Emma the Friendly
+
+Wendy_the_Weaver.npc.dialogue.1=How about some bright banners and soft sitting areas? A splash of colour makes any place more welcoming!
+Wendy_the_Weaver.npc=Wendy the Weaver
+
+Baxter_the_Builder.npc.dialogue.1=I'd love to see a big treehouse with many climbing ropes! 
+Baxter_the_Builder.npc.dialogue.2=Kids could have a grand time swinging around.
+Baxter_the_Builder.npc=Baxter the Builder
+
+Gus_the_Gardener.npc.dialogue.1=Let's remember a beautiful garden and a sandbox for the little ones to play in. 
+Gus_the_Gardener.npc.dialogue.2=It's always nice to have a touch of nature!
+Gus_the_Gardener.npc=Gus the Gardener
+
+Patty_the_Planner.npc.dialogue.1=I imagine a lovely pathway lined with creative mosaics leading right up to a whimsical fountain.
+Patty_the_Planner.npc=Patty the Planner
+
+Rania_the_Honourable.npc.dialogue.1=Welcome to our esteemed Isle of Honor. 
+Rania_the_Honourable.npc.dialogue.2=Here, we uphold the most profound traditions of respect and valour.
+Rania_the_Honourable.npc.dialogue.3=However, today, we face an unexpected challenge. 
+Rania_the_Honourable.npc.dialogue.4=A mischievous pixie, fascinated by the legends and spirits of our judo heroes, has spirited away the coloured offerings needed to complete our statues.
+Rania_the_Honourable.npc.dialogue.5=Talk to the people here; they know many stories about the heroes. 
+Rania_the_Honourable.npc.dialogue.6=They will give you hints and little jobs to help you find the right colours.
+Rania_the_Honourable.npc.dialogue.7=But watch out! A tricky pixie loves to play pranks and might try to confuse you with the wrong clues.
+Rania_the_Honourable.npc.dialogue.8=Once you know the right colours, it's time to hunt for a treasure! The pixie has hidden coloured dyes and flowers all over the island—in secret spots, gardens, and old stone quarries. 
+Rania_the_Honourable.npc.dialogue.9=Finding these colours shows how brave and dedicated you are!
+Rania_the_Honourable.npc.dialogue.10=When you have the colours, go to the statues and put the colours at their feet.
+Rania_the_Honourable.npc.dialogue.11=If you pick the right colours, something magical will happen—the statues will light up in beautiful colours, and fireworks will sparkle in the sky to show you did a great job!
+Rania_the_Honourable.npc.dialogue.13=You have restored our heroes' legacies and thwarted our local pixie's playful disruptions.
+Rania_the_Honourable.npc.dialogue.14=Your actions today exemplify the honour and dedication we cherish on this island.
+Rania_the_Honourable.npc.dialogue.15=As a token of our gratitude and recognition of your commitment, I present you with the 'Soto-makikomi Judo Move Card'.
+Rania_the_Honourable.npc.dialogue.16=Embodying the sacrifice necessary for true honour, this technique will enhance your abilities and remind you of your deeds here today.
+Rania_the_Honourable.npc.dialogue.17=Return to your ship, enriched and empowered, as a faithful guardian of honour.
+Rania_the_Honourable.npc=Rania the Honourable
+
+MilotheWise.npc.dialogue.1=The red dye, bright as the sunset, lies hidden where children once played. 
+MilotheWise.npc.dialogue.2=Seek the old swing set near the weeping willow. 
+MilotheWise.npc.dialogue.3=The hero of courage was fiery and brave, much like the colour red.
+MilotheWise.npc=Milo the Wise
+
+LilatheQuiet.npc.dialogue.1=Blue is like the deep sea; this dye can be found beneath the most enormous oak in the heart of the enchanted forest, where bluebells grow.
+LilatheQuiet.npc.dialogue.2=§r
+LilatheQuiet.npc.dialogue.3=The hero of Wisdom cherished the calmness of blue, reminding us of the sky and sea.
+LilatheQuiet.npc.dialogue.4=§r
+LilatheQuiet.npc=Lila the Quiet
+
+FinntheBold.npc.dialogue.1=In the old quarry, now filled with water, a hidden stash of white stones lies under the cliff's shadow that faces the morning sun.
+FinntheBold.npc.dialogue.2=White, pure and true, represents the Integrity of our most honest hero.
+FinntheBold.npc=Finn the Bold
+
+TaratheArtisan.npc.dialogue.1=Green, the colour of life, is kept safe within the ruins of the old mill by the stream, surrounded by ferns and moss.
+TaratheArtisan.npc.dialogue.2=Our hero of strength was as steadfast as the green earth.
+TaratheArtisan.npc=Tara the Artisan
+
+statues.npc.dialogue.1=Statue One (Courage - Red)
+statues.npc.dialogue.2=With courage in your heart, no challenge is too great. 
+statues.npc.dialogue.3=Carry this spirit wherever you go.
+statues.npc.dialogue.4=Statue Two (Wisdom - Blue)
+statues.npc.dialogue.5=Wisdom is the light that guides us through darkness.
+statues.npc.dialogue.6=May clarity accompany you on your journey.
+statues.npc.dialogue.7=Statue Three (Integrity - White)
+statues.npc.dialogue.8=Integrity binds us to our true path. Let honesty always guide your actions.
+statues.npc.dialogue.9=Statue Four (Strength - Green)
+statues.npc.dialogue.10=True strength lies in endurance and perseverance. Stand strong against the winds of adversity.
+statues.npc=Statue
+
+KwametheModest.npc.dialogue.1=Welcome, traveller, to our Isle of Humility. 
+KwametheModest.npc.dialogue.2=Here, we live by the virtues of modesty and quiet service, believing that the greatest strengths are often the softest spoken.
+KwametheModest.npc.dialogue.3=Today, I invite you on a journey not just up our mountain but inward into the depths of your own spirit. 
+KwametheModest.npc.dialogue.4=Along this path, you will find four stone markers. At each marker, an elder of our community will help you plant a seed of wisdom and humility. 
+KwametheModest.npc.dialogue.5=Like the virtues we cherish, these seeds will require your contemplation and care to grow. 
+KwametheModest.npc.dialogue.6=Reflect deeply on the virtues as you plant them, and you may find they take root within you as well.
+KwametheModest.npc.dialogue.7=-------------------------------
+KwametheModest.npc.dialogue.8=You have planted seeds not just in the earth but within yourself. 
+KwametheModest.npc.dialogue.9=You have shown a willingness to grow and understand the quiet strength that modesty offers. 
+KwametheModest.npc.dialogue.10=It is with great honour that I now present to you a reward that symbolises the virtues you have cultivated.
+KwametheModest.npc.dialogue.11=This card represents the judo technique known as 'O-uchi-gari', or the large inner reap.
+KwametheModest.npc.dialogue.12=In judo, this move requires one to step close to the opponent, using their own balance and strength against them in a subtle yet effective manner. 
+KwametheModest.npc.dialogue.13=It is a technique that embodies the principles of modesty — it does not boast of its power, yet it is profoundly effective.
+KwametheModest.npc.dialogue.14=Remember, true greatness often lies in the smallest of acts, performed with a humble heart.
+KwametheModest.npc.dialogue.15=return to ship
+KwametheModest.npc=Kwame the Modest
+
+ElderMina.npc.dialogue.1=Ah, you've arrived. 
+ElderMina.npc.dialogue.2=This first marker is where we plant the Seed of Kindness. 
+ElderMina.npc.dialogue.3=As you bury the seed in the earth, meditate on the times you've received kindness without expectation.
+ElderMina.npc.dialogue.4=Such acts are the soil in which our community thrives.
+ElderMina.npc.dialogue.5=Let the gong sound your intention to the world and to your heart.
+ElderMina.npc=Elder Mina
+
+BrotherTao.npc.dialogue.1=Welcome to the spring of simplicity. 
+BrotherTao.npc.dialogue.2=Here, plant the Seed of Simplicity and contemplate the beauty of less. 
+BrotherTao.npc.dialogue.3=In simplicity, we find clarity and truth. 
+BrotherTao.npc.dialogue.4=Hear the gong, and let its resonance clear away excess, leaving only what is truly needed.
+BrotherTao.npc=Brother Tao
+
+SisterLila.npc.dialogue.1=Beneath this old guardian, we plant the Seed of Patience. 
+SisterLila.npc.dialogue.2=Like this sturdy tree, true growth takes time and cannot be rushed.
+SisterLila.npc.dialogue.3=As you meditate, consider the slow unfolding of life’s tapestry, revealed not all at once but one thread at a time.
+SisterLila.npc=Sister Lila
+
+MasterKeon.npc.dialogue.1=At the threshold of our temple, we plant the Seed of Humility. 
+MasterKeon.npc.dialogue.2=As you prepare to enter, reflect on your journey and the lessons learned. 
+MasterKeon.npc.dialogue.3=Humility does not mean thinking less of yourself but thinking of yourself less. 
+MasterKeon.npc.dialogue.4=Let the gong's sound remind you of your place within the larger whole.
+MasterKeon.npc=Master Keon
+
+JudoJudge.npc.dialogue.1=Oh No! The Mischievous Pixie has hidden the Olympic medals! 
+JudoJudge.npc.dialogue.2=The games cannot continue without them.
+JudoJudge.npc.dialogue.3=To recover the Medals, you must defeat the Pixie and learn the location of the hidden medals! 
+JudoJudge.npc.dialogue.4=Use all the knowledge of courage, sincerity, honour, modesty, respect, self-control, friendship, and loyalty to defeat them!
+JudoJudge.npc.dialogue.5=§r
+JudoJudge.npc=Judo Judge
+
+MischievousPixie.npc.dialogue.1=Think you can defeat me! I am invincible. 
+MischievousPixie.npc.dialogue.2=Hahahaha! Prepare to lose!
+MischievousPixie.npc.dialogue.3=------------------
+MischievousPixie.npc.dialogue.4=I don't believe you beat me! 
+MischievousPixie.npc.dialogue.5=You can find the medals at the top of the raffle tower. 
+MischievousPixie.npc.dialogue.6=Good luck getting up there!
+MischievousPixie.npc.dialogue.7=It's almost impossible! hahaha hahaha
+MischievousPixie.npc=Mischievous Pixie
+
+VillageElder.npc.dialogue.1=Well done! You have shown great strength and wisdom in overcoming the challenges. 
+VillageElder.npc.dialogue.2=Your journey up the Eiffel Tower was not just a test of skill but also a demonstration of the principles that Judo teaches.
+VillageElder.npc.dialogue.3=You have embodied courage, sincerity, honour, modesty, respect, self-control, friendship, and loyalty—each step of the way.
+VillageElder.npc.dialogue.4=As a token of our gratitude and recognition of your heroic deeds, please accept this Elytra and these rockets. 
+VillageElder.npc.dialogue.5=May they carry you high and far, just as your spirit has soared through this challenge.
+VillageElder.npc.dialogue.6=Now, go forth! Let the winds of victory lift you above Paris. 
+VillageElder.npc.dialogue.7=Celebrate with the world, share the joy of your success, and let the games continue in the true spirit of camaraderie and competition.
+VillageElder.npc.dialogue.8=Glide down to the Judo arena, where the competition resumes, the medals restored, and athletes ready to compete. 
+VillageElder.npc.dialogue.9=§r
+VillageElder.npc=Village Elder
+item.card:square.name=Square
+entity.prop:water_mill.name=water mill
+entity.props:swing.name=Swing
+entity.character:master_rania.name=Master Rania
+entity.character:painter.name=Painter
+entity.props:pipes_leaking.name=Pipes Leaking
+item.spawn_egg.entity.props:pipes_leaking.name=Spawn Pipes Leaking
+entity.character:plumber.name=Plumber
+entity.prop:pilliarbutton.name=Pillar Button
+item.spawn_egg.entity.prop:pilliarbutton.name=Spawn Pillar Button
+entity.prop:light_beam.name=Light Beam
+entity.prop:plant_of_kindness.name=Plant of Kindness
+item.spawn_egg.entity.prop:plant_of_kindness.name=Spawn Plant of Kindness
+entity.props:poop.name=Poop
+item.spawn_egg.entity.props:poop.name=Spawn Poop
+entity.title:main_title.name=Main Title
+entity.title:main_title.name=Main Title
+entity.title:journey.name=Journey

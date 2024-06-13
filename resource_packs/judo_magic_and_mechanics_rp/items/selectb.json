@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dz:selectb",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "B",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

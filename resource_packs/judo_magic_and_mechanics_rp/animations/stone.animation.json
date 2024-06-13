@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.keystone.turn": {
+			"animation_length": 4,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 720, 0]
+					}
+				}
+			}
+		},
+		"animation.keystone.disapear": {
+			"animation_length": 30,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 1260, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 164.75, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

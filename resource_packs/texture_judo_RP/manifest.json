@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Textures_judo",
+    "name": "Texture_Judo",
+    "uuid": "13a52f3e-b487-4712-af36-a2e17d072c58",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 13, 0]
+  },
+  "modules": [
+    {
+      "description": "Texture_judo",
+      "type": "resources",
+      "uuid": "479fa18d-a715-4a42-b0d7-bf48c6e0850b",
+      "version": [0, 0, 1]
+    }
+  ]
+}

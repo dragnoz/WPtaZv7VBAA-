@@ -1,0 +1,7 @@
+{
+   "game" : {
+      "event_name" : "music.game",
+      "max_delay" : 1200,
+      "min_delay" : 600
+   }
+}

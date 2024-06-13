@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "props:plates",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["plates"] },
+      "minecraft:health": { "value": 10, "max": 10 },
+      "minecraft:damage_sensor": {
+        "triggers": { "cause": "all", "deals_damage": false }
+      }
+    },
+    "events": {
+    }
+  }
+}

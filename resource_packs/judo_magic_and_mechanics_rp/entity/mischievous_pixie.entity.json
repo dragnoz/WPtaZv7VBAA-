@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:mischievous_pixie",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mischievous_pixie"
+			},
+			"geometry": {
+				"default": "geometry.mischievous_pixie"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

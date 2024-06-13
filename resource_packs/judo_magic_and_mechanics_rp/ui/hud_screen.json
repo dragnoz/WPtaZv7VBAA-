@@ -1,0 +1,1692 @@
+
+{
+	"hud_player_renderer": {
+		"type": "panel",
+		"size": [ 30, 30 ],
+	
+		"controls": [
+		  {
+			"hud_player": {
+			  "type": "custom",
+			  
+			  "images":"textures/utextures/ui/icon_cookie",
+			  "layer": 1,
+			  "animation_reset_name": "screen_animation_reset",
+			  "anims": [
+				"@common.screen_exit_size_animation_push",
+				"@common.screen_exit_size_animation_pop",
+				"@common.screen_entrance_size_animation_push",
+				"@common.screen_entrance_size_animation_pop"
+			  ],
+			  "bindings": [
+				{
+				  "binding_name": "#paper_doll_visible",
+				  "binding_name_override": "#visible"
+				}
+			  ]
+			}
+		  }
+		]
+	  },
+	
+	"hud_actionbar_text": {
+		"type": "image",
+		"size": [ "100%c + 12px", "100%c + 5px" ],
+		"offset": [ 0, "34%"  ], 
+		"texture": "textures/ui/Black",
+		"alpha": "@hud.anim_actionbar_text_background_alpha_out",
+		"controls": [
+		  {
+			"actionbar_message": {
+			  "type": "label",
+			  "anchor_from": "center",
+			  "anchor_to": "center",
+			  "color": "$tool_tip_text",
+			  "layer": 100,
+			  "text": "$actionbar_text",
+			  "localize": false,
+			  "alpha": "@hud.anim_actionbar_text_alpha_out"
+			}
+		  }
+		]
+	  },
+	  
+	  "hud_title_text": {
+		"type": "label",
+		"orientation": "horizontal",
+		"offset": [ 200, -50 ],
+		"layer": 1,
+		"alpha": "@hud.anim_title_text_alpha_in",
+		"propagate_alpha": true,
+		"controls": [
+		  {
+			"title_frame": {
+			  "type": "panel",
+			  "size": [ "100%sm", "100%sm" ],
+			  "controls": [
+				{
+					"title_background": {
+						"type": "image",
+						"size": [ "100%sm + 30px", "100%sm + 6px" ],
+						"texture": "textures/ui/blank",
+					"alpha": "@hud.anim_title_background_alpha_in"
+				  }
+				},
+				{
+				  "title": {
+					"type": "label",
+					"anchor_from": "center",
+					"anchor_to": "center",
+					"color": "$title_command_text_color",
+					"text": "#text",
+					"layer": 31,
+					"localize": false,
+					"font_size": "medium",
+					"variables": [
+					  {
+						"requires": "($title_shadow)",
+						"$show_shadow": true
+					  },
+					  {
+						"requires": "$title_shadow",
+						"$show_shadow": true
+					  }
+					],
+					"shadow": "$show_shadow",
+					"text_alignment": "center",
+					"offset": [ 0, 2],
+					"bindings": [
+					  {
+						"binding_name": "#hud_title_text_string",
+						"binding_name_override": "#text",
+						"binding_type": "global"
+					  }
+					]
+				  }
+				}
+			  ]
+			}
+		  },
+		  {
+			"subtitle_frame": {
+			  "type": "panel",
+			  "size": [ "100%", "100%cm" ],
+			  "controls": [
+				{
+				  "subtitle_background": {
+					"type": "image",
+					"size": [ "100%sm + 20px", "100%sm + 5px" ],
+					"offset": [ 0, 0],
+					"texture": "textures/ui/black",
+					"variables": [
+					  {
+						"requires": "$subtitle_initially_visible",
+						"$subtitle_bg": "@hud.anim_title_background_alpha_in"
+					  },
+					  {
+						"requires": "($subtitle_initially_visible)",
+						"$subtitle_bg": "@hud.anim_subtitle_background_alpha_in"
+					  }
+					],
+					"alpha": "$subtitle_bg"
+				  }
+				},
+				{
+				  "subtitle": {
+					"type": "label",
+					"anchor_from": "middle",
+					"anchor_to": "middle",
+					"color": "$title_command_text_color",
+					"text": "#text",
+					"layer": 31,
+					"localize": false,
+					"font_size": "medium",
+					"variables": [
+					  {
+						"requires": "$subtitle_initially_visible",
+						"$anim_type": 1.0
+					  },
+					  {
+						"requires": "(not $subtitle_initially_visible)",
+						"$anim_type": "@hud.anim_subtitle_text_alpha_in"
+					  },
+					  {
+						"requires": "(not $title_shadow)",
+						"$show_shadow": false
+					  },
+					  {
+						"requires": "$title_shadow",
+						"$show_shadow": false
+					  }
+					],
+					"shadow": "$hide_shadow",
+					"alpha": "$anim_type",
+					"text_alignment": "center",
+					"offset": [ 0, -50 ],
+					"bindings": [
+					  {
+						"binding_name": "#hud_subtitle_text_string",
+						"binding_name_override": "#text",
+						"binding_type": "global"
+					  }
+					]
+				  }
+				}
+			  ]
+			}
+		  }
+		]
+	  },
+	
+	"namespace": "hud",
+	"hud_title_text/title_frame/title": {
+		"modifications": [
+			{
+				"array_name": "bindings",
+				"operation": "insert_back",
+				"value": {
+					"binding_type": "view",
+					"source_property_name": "$hud_ignored_title_text",
+					"target_property_name": "#visible"
+				}
+			}
+		]
+	},
+	"mob_effects_renderer": {
+		"renderer": "mob_effects_renderer",
+		"type": "custom",
+		"layer": 1,
+		"alpha": "$enable_mob_icons",
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "(not (#text = $credits.name))",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+	"toggle_centered_gui_elements_at_bottom_middle": {
+		"type": "panel",
+		"size": [
+			180,
+			50
+		],
+		"anchor_from": "bottom_middle",
+		"anchor_to": "bottom_middle",
+		"controls": [
+			{
+				"heart_rend@heart_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						-1,
+						-40
+					],
+					"alpha": "$enable_hearts"
+				}
+			},
+			{
+				"horse_heart_rend_0@horse_heart_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						180,
+						-56
+					],
+					"alpha": "$enable_horse_hearts",
+					"bindings": [
+						{
+							"binding_name": "#is_creative_mode",
+							"binding_name_override": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"horse_heart_rend_1@horse_heart_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						180,
+						-50
+					],
+					"alpha": "$enable_horse_hearts",
+					"variables": [
+						{
+							"requires": "($is_edu = true)",
+							"$binding_content": [
+								{
+									"binding_name": "#is_not_creative_mode",
+									"binding_name_override": "#visible"
+								}
+							]
+						}
+					],
+					"bindings": "$binding_content",
+					"$binding_content|default": []
+				}
+			},
+			{
+				"armor_rend@armor_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						-1,
+						-40
+					],
+					"alpha": "$enable_armor"
+				}
+			},
+			{
+				"hunger_rend@hunger_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						180,
+						-40
+					],
+					"alpha": "$enable_hunger"
+				}
+			},
+			{
+				"bubbles_rend_0@bubbles_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						180,
+						-50
+					],
+					"alpha": "$enable_bubbles",
+					"bindings": [
+						{
+							"binding_name": "#is_not_riding",
+							"binding_name_override": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"bubbles_rend_1@bubbles_renderer": {
+					"anchor_from": "bottom_left",
+					"anchor_to": "bottom_left",
+					"offset": [
+						180,
+						-70
+					],
+					"alpha": "$enable_bubbles",
+					"bindings": [
+						{
+							"binding_name": "#is_riding",
+							"binding_name_override": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"horse_jump_rend@horse_jump_renderer": {
+					"anchor_from": "bottom_middle",
+					"anchor_to": "bottom_middle",
+					"offset": [
+						0,
+						-30
+					],
+					"layer": 7,
+					"alpha": "$enable_horse_jump",
+					"bindings": [
+						{
+							"binding_name": "#is_riding",
+							"binding_name_override": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"exp_rend@exp_progress_bar_and_hotbar": {}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_visible_centered",
+				"binding_type": "global",
+				"binding_name_override": "#visible"
+			}
+		]
+	},
+	"exp_progress_bar_and_hotbar": {
+		"type": "panel",
+		"size": [
+			"100%c",
+			31
+		],
+		"anchor_from": "bottom_middle",
+		"anchor_to": "bottom_middle",
+		"offset": "$xp_control_offset",
+		"controls": [
+			{
+				"item_text_factory": {
+					"control_ids": {
+						"item_text": "@hud.item_name_text",
+						"jukebox_text": "@hud.jukebox_popup_text"
+					},
+					"type": "factory",
+					"size": [
+						100,
+						10
+					]
+				}
+			},
+			{
+				"hotbar@hotbar_chooser": {
+					"offset": [
+						4,
+						16
+					],
+					"alpha": "$enable_hotbar",
+					"bindings": [
+						{
+							"binding_name": "#is_creative_mode",
+							"binding_name_override": "#visible"
+						}
+					]
+				}
+			},
+			{
+				"resizing_xp_bar_with_hotbar": {
+					"type": "panel",
+					"size": [
+						"100%c",
+						5
+					],
+					"alpha": "$enable_experience_bar",
+					"variables": [
+						{
+							"requires": "($is_edu = true)",
+							"$binder": "#is_not_creative_mode"
+						}
+					],
+					"controls": [
+						{
+							"progress_text_label@progress_text_label": {
+								"offset": [
+									0,
+									0
+								],
+								"layer": 7,
+								"alpha": "$enable_experience_level"
+							}
+						},
+						{
+							"custom_lvl_background@lvl_background": {
+								"offset": [
+									0,
+									-10
+								],
+								"alpha": "$lvl_background"
+							}
+						},
+						{
+							"empty_progress_bar@empty_progress_bar": {
+								"size": [
+									"100%c",
+									5
+								],
+								"layer": 1,
+								"alpha": "$enable_experience_bar",
+								"controls": [
+									{
+										"full_progress_bar@full_progress_bar": {
+											"size": [
+												"100%c + 10px",
+												5
+											],
+											"layer": 2,
+											"alpha": "$enable_experience_bar",
+											"controls": [
+												{
+													"progress_bar_nub@progress_bar_nub": {
+														"size": [
+															"100%c - 10px",
+															5
+														],
+														"max_size": "$max_size",
+														"layer": 3,
+														"alpha": "$enable_experience_bar",
+														"variables": [
+															{
+																"requires": "($is_edu = true)",
+																"$max_size": [
+																	172,
+																	5
+																]
+															}
+														],
+														"controls": [
+															{
+																"hotbar@hotbar_chooser": {
+																	"offset": [
+																		4,
+																		16
+																	],
+																	"alpha": "$enable_hotbar",
+																	"propagate_alpha": true
+																}
+															}
+														],
+														"$max_size|default": [
+															190,
+															5
+														]
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					],
+					"bindings": [
+						{
+							"binding_name": "$binder",
+							"binding_name_override": "#visible"
+						}
+					],
+					"$binder|default": "#show_survival_ui"
+				}
+			}
+		]
+	},
+	
+
+	//define images#
+
+	//------------ telescope_view Image ------------------
+"telescope_view": {
+	"texture": "textures/ui/telescope",
+	"fill": true,
+	"type": "image",
+	"size": ["100%","100%"],
+	"anchor_from": "center",
+	"anchor_to": "center",
+	"layer": 100
+},
+
+	//------------ island1 Image ------------------
+	"island1": {
+		"texture": "textures/ui/island1",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+
+
+	"certificate_conservation": {
+		"texture": "textures/ui/conservation_certificate",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	
+	"certificate_aquatic": {
+		"texture": "textures/ui/aquatic_certificate",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"certificate_woodlands": {
+		"texture": "textures/ui/woodlands_certificate",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+
+
+	"certificate_meadow": {
+		"texture": "textures/ui/meadowquest_certificate",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"saplinglose": {
+		"texture": "textures/ui/saplingfailed",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"saplingwin": {
+		"texture": "textures/ui/saplingsuccess",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"reception": {
+		"texture": "textures/ui/reception",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+
+	"aquatic": {
+		"texture": "textures/ui/aquaticadventure",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"school": {
+		"texture": "textures/ui/school",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"meadow": {
+		"texture": "textures/ui/meadowquest",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"poster": {
+		"texture": "textures/ui/conservationcode",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+
+	"cert": {
+		"texture": "textures/ui/cert_back",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 100
+	},
+	"blackscreen": {
+		"texture": "textures/ui/Black",
+		"fill": true,
+		"type": "image",
+		"size": [
+			"101%",
+			"101%"
+		],
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"layer": 1
+	},
+
+	"letterbox_bar_top": {
+		"texture": "textures/ui/Black",
+		"type": "image",
+		"size": [4000,70],
+		"anchor_from": "top_left",
+		"layer": 20
+	},
+	"letterbox_bar_bottom": {
+		"texture": "textures/ui/Black",
+		"type": "image",
+		"size": [4000,90		],
+		"anchor_from": "bottom_left",
+		"layer": 20
+	},
+	
+//-------------- FACTORY --------------------
+
+//------------ telescope_view factory ------------------
+"telescope_view_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "telescope_view@hud.telescope_view"
+		}
+	}
+},
+
+"telescope_view@telescope_view": {
+	"anims": [
+		"@telescope_view:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$telescope_view.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+
+//------------ island1 factory ------------------
+"island1_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "island1@hud.island1"
+		}
+	}
+},
+
+"island1@island1": {
+	"anims": [
+		"@island1:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$island1.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+"certificate_aquatic_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "certificate_aquatic@hud.certificate_aquatic"
+		}
+	}
+},
+
+"certificate_aquatic@certificate_aquatic": {
+	"anims": [
+		"@certificate_aquatic:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$certificate_aquatic.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"certificate_woodlands_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "certificate_woodlands@hud.certificate_woodlands"
+		}
+	}
+},
+
+"certificate_woodlands@certificate_woodlands": {
+	"anims": [
+		"@certificate_woodlands:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$certificate_woodlands.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+
+
+"certificate_meadow_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "certificate_meadow@hud.certificate_meadow"
+		}
+	}
+},
+
+"certificate_meadow@certificate_meadow": {
+	"anims": [
+		"@certificate_meadow:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$certificate_meadow.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"saplinglose_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "saplinglose@hud.saplinglose"
+		}
+	}
+},
+"saplinglose@saplinglose": {
+	"anims": [
+		"@saplinglose:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$saplinglose.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+"saplingwin_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "saplingwin@hud.saplingwin"
+		}
+	}
+},
+
+"saplingwin@saplingwin": {
+	"anims": [
+		"@saplingwin:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$saplingwin.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+"reception_fade_in_out_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "reception_fade_in_out@hud.reception_fade_in_out"
+		}
+	}
+},
+
+"reception_fade_in_out@reception": {
+	"anims": [
+		"@reception_fade_in_out:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$reception_fade_in_out.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"school_fade_in_out_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "school_fade_in_out@hud.school_fade_in_out"
+		}
+	}
+},
+
+"school_fade_in_out@school": {
+	"anims": [
+		"@school_fade_in_out:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$school_fade_in_out.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"aquatic_fade_in_out_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "aquatic_fade_in_out@hud.aquatic_fade_in_out"
+		}
+	}
+},
+
+"aquatic_fade_in_out@aquatic": {
+	"anims": [
+		"@aquatic_fade_in_out:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$aquatic_fade_in_out.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"poster_fade_in_out_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "poster_fade_in_out@hud.poster_fade_in_out"
+		}
+	}
+},
+
+"poster_fade_in_out@poster": {
+	"anims": [
+		"@poster_fade_in_out:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$poster_fade_in_out.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+"meadow_fade_in_out_factory": {
+	"type": "panel",
+	"factory": {
+		"name": "hud_title_text_factory",
+		"control_ids": {
+			"hud_title_text": "meadow_fade_in_out@hud.meadow_fade_in_out"
+		}
+	}
+},
+
+"meadow_fade_in_out@meadow": {
+	"anims": [
+		"@meadow_fade_in_out:fade_in"
+	],
+	"bindings": [
+		{
+			"binding_name": "#hud_title_text_string",
+			"binding_type": "global",
+			"binding_name_override": "#text"
+		},
+		{
+			"binding_type": "view",
+			"source_property_name": "$meadow_fade_in_out.trigger",
+			"target_property_name": "#visible"
+		}
+	]
+},
+
+
+	"black_to_letterbox_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "black_to_letterbox@hud.black_to_letterbox"
+			}
+		}
+	},
+
+	"black_to_letterbox": {
+		"type": "panel",
+		"controls": [
+			{
+				"letterbox_bar_bottom@letterbox_bar_bottom": {
+					"anims": [
+						"@black_to_letterbox:bars_wait"
+					]
+				}
+			},
+			{
+				"letterbox_bar_top@letterbox_bar_top": {
+					"anims": [
+						"@black_to_letterbox:bars_wait"
+					]
+				}
+			},
+			{
+				"blackscreen@blackscreen": {
+					"anims": [
+						"@black_to_letterbox:fullscreen_fade_out"
+					]
+				}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$black_to_letterbox.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+
+	"letterbox_instant": {
+		"type": "panel",
+		"controls": [
+			{
+				"letterbox_bar_top@letterbox_bar_top": {}
+			},
+			{
+				"letterbox_bar_bottom@letterbox_bar_bottom": {}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$letterbox_instant.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+
+	"letterbox_instant_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "letterbox_instant@hud.letterbox_instant"
+			}
+		}
+	},
+
+	"cert_fade_in_out_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "cert_fade_in_out@hud.cert_fade_in_out"
+			}
+		}
+	},
+
+	"cert_fade_in_out@cert": {
+		"anims": [
+			"@cert_fade_in_out:fade_in"
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$cert_fade_in_out.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+
+	"blackscreen_to_clear_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "blackscreen_to_clear@hud.blackscreen_to_clear"
+			}
+		}
+	},
+
+	"blackscreen_to_clear@blackscreen": {
+		"anims": [
+			"@blackscreen_to_clear:wait"
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$blackscreen_to_clear.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+
+
+	
+
+	"image_popup_0_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "image_popup_0@hud.image_popup_0"
+			}
+		}
+	},
+	"image_popup_0": {
+		"type": "image",
+		"controls": [
+			{
+				"foreground": {
+					"texture": "$texture",
+					"fill": true,
+					"type": "image",
+					"size": [
+						"101%",
+						"101%"
+					],
+					"anchor_from": "bottom_middle",
+					"anchor_to": "bottom_middle",
+					"layer": 21,
+					"visible": "$visible",
+					"anims": "$anim",
+					"variables": [
+						{
+							"requires": "(not($image_popup_0.foreground = 'empty'))",
+							"$texture": "$image_popup_0.foreground",
+							"$visible": true
+						},
+						{
+							"requires": "(not($image_popup_0.static = true))",
+							"$anim": [
+								"@anim_image_popup_0_fade_in"
+							]
+						}
+					],
+					"$texture|default": "textures/ui/popup/image0",
+					"$visible|default": false,
+					"$anim|default": []
+				}
+			},
+			{
+				"background": {
+					"texture": "$texture",
+					"fill": true,
+					"type": "image",
+					"size": [
+						"101%",
+						"101%"
+					],
+					"anchor_from": "bottom_middle",
+					"anchor_to": "bottom_middle",
+					"layer": 20,
+					"visible": "$visible",
+					//"anims": "$anim",
+					"variables": [
+						{
+							"requires": "(not($image_popup_0.background = 'empty'))",
+							"$texture": "$image_popup_0.background",
+							"$visible": true
+						},
+						{
+							"requires": "(not($image_popup_0.static = true))",
+							"$anim": [
+								"@anim_image_popup_0_fade_in"
+							]
+						}
+					],
+					"$texture|default": "textures/ui/popup/image0",
+					"$visible|default": false,
+					"$anim|default": []
+				}
+			},
+			{
+				"text_1": {
+					"texture": "$texture",
+					"fill": true,
+					"type": "image",
+					"size": [
+						"101%",
+						"101%"
+					],
+					"anchor_from": "bottom_middle",
+					"anchor_to": "bottom_middle",
+					"layer": 22,
+					"visible": "$visible",
+					//"anims": "$anim",
+					"variables": [
+						{
+							"requires": "(not($image_popup_0.text_1= 'empty'))",
+							"$texture": "$image_popup_0.text_1",
+							"$visible": true
+						},
+						{
+							"requires": "(not($image_popup_0.static = true))",
+							"$anim": [
+								"@anim_image_popup_0_fade_in"
+							]
+						}
+					],
+					"$texture|default": "textures/ui/popup/image0",
+					"$visible|default": false,
+					"$anim|default": []
+				}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$image_popup_0.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+	"certificate_conservation_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_title_text_factory",
+			"control_ids": {
+				"hud_title_text": "certificate_conservation@hud.certificate_conservation"
+			}
+		}
+	},
+
+	"certificate_conservation@certificate_conservation": {
+		"anims": [
+			"@certificate_conservation:fade_in"
+		],
+		"bindings": [
+			{
+				"binding_name": "#hud_title_text_string",
+				"binding_type": "global",
+				"binding_name_override": "#text"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "$certificate_conservation.trigger",
+				"target_property_name": "#visible"
+			}
+		]
+	},
+//------------------ root_panel ----------------------------
+
+	"root_panel": {
+		"modifications": [
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"telescope_view_factory@telescope_view_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"island1_factory@island1_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"certificate_conservation_factory@certificate_conservation_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"certificate_aquatic_factory@certificate_aquatic_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"certificate_woodlands_factory@certificate_woodlands_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"certificate_meadow_factory@certificate_meadow_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"saplinglose_factory@saplinglose_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"saplingwin_factory@saplingwin_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"reception_fade_in_out_factory@reception_fade_in_out_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"school_fade_in_out_factory@school_fade_in_out_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"aquatic_fade_in_out_factory@aquatic_fade_in_out_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"meadow_fade_in_out_factory@meadow_fade_in_out_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"poster_fade_in_out_factory@poster_fade_in_out_factory": {}
+				}
+			},
+		
+			
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"cert_fade_in_out_factory@cert_fade_in_out_factory": {}
+				}
+			},
+			
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"blackscreen_to_clear_factory@blackscreen_to_clear_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"letterbox_instant_factory@letterbox_instant_factory": {}
+				}
+			},
+			
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"image_popup_0_factory@image_popup_0_factory": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"black_to_letterbox_factory@black_to_letterbox_factory": {}
+				}
+			}
+	]},
+	
+//animation
+//------------ telescope_view animation ------------------
+
+"telescope_view:fade_in@anim_fade_in": {
+	"duration": "$telescope_view.in_dur",
+	"next": "@telescope_view:wait"
+},
+"telescope_view:wait@anim_fadeout_wait": {
+	"duration": "$telescope_view.wait_dur",
+	"next": "@telescope_view:fade_out"
+},
+"telescope_view:fade_out@anim_fade_out": {
+	"duration": "$telescope_view.out_dur"
+},
+
+//------------ island1 animation ------------------
+
+"island1:fade_in@anim_fade_in": {
+	"duration": "$island1.in_dur",
+	"next": "@island1:wait"
+},
+"island1:wait@anim_fadeout_wait": {
+	"duration": "$island1.wait_dur",
+	"next": "@island1:fade_out"
+},
+"island1:fade_out@anim_fade_out": {
+	"duration": "$island1.out_dur"
+},
+///-------------------------------
+"certificate_conservation:fade_in@anim_fade_in": {
+	"duration": "$certificate_conservation.in_dur",
+	"next": "@certificate_conservation:wait"
+},
+"certificate_conservation:wait@anim_fadeout_wait": {
+	"duration": "$certificate_conservation.wait_dur",
+	"next": "@certificate_conservation:fade_out"
+},
+"certificate_conservation:fade_out@anim_fade_out": {
+	"duration": "$certificate_conservation.out_dur"
+},
+///-------------------------------
+"certificate_aquatic:fade_in@anim_fade_in": {
+	"duration": "$certificate_aquatic.in_dur",
+	"next": "@certificate_aquatic:wait"
+},
+"certificate_aquatic:wait@anim_fadeout_wait": {
+	"duration": "$certificate_aquatic.wait_dur",
+	"next": "@certificate_aquatic:fade_out"
+},
+"certificate_aquatic:fade_out@anim_fade_out": {
+	"duration": "$certificate_aquatic.out_dur"
+},
+//-------------------------------
+"certificate_woodlands:fade_in@anim_fade_in": {
+	"duration": "$certificate_woodlands.in_dur",
+	"next": "@certificate_woodlands:wait"
+},
+"certificate_woodlands:wait@anim_fadeout_wait": {
+	"duration": "$certificate_woodlands.wait_dur",
+	"next": "@certificate_woodlands:fade_out"
+},
+"certificate_woodlands:fade_out@anim_fade_out": {
+	"duration": "$certificate_woodlands.out_dur"
+},
+//-------------------------------
+"certificate_meadow:fade_in@anim_fade_in": {
+	"duration": "$certificate_meadow.in_dur",
+	"next": "@certificate_meadow:wait"
+},
+"certificate_meadow:wait@anim_fadeout_wait": {
+	"duration": "$certificate_meadow.wait_dur",
+	"next": "@certificate_meadow:fade_out"
+},
+"certificate_meadow:fade_out@anim_fade_out": {
+	"duration": "$certificate_meadow.out_dur"
+},
+//-----------------
+	"black_to_letterbox:bars_wait@anim_alpha_wait": {
+		"from": 1,
+		"to": 1
+	},
+	"black_to_letterbox:fullscreen_fade_out@anim_fade_out": {
+		"duration": "$black_to_letterbox.fullscreen_fadeout_dur"
+	},
+//-----------------
+
+"reception_fade_in_out:fade_in@anim_fade_in": {
+	"duration": "$reception_fade_in_out.in_dur",
+	"next": "@reception_fade_in_out:wait"
+},
+"reception_fade_in_out:wait@anim_fadeout_wait": {
+	"duration": "$reception_fade_in_out.wait_dur",
+	"next": "@reception_fade_in_out:fade_out"
+},
+"reception_fade_in_out:fade_out@anim_fade_out": {
+	"duration": "$reception_fade_in_out.out_dur"
+},
+	//-----------------
+	"cert_fade_in_out:fade_in@anim_fade_in": {
+		"duration": "$cert_fade_in_out.in_dur",
+		"next": "@cert_fade_in_out:wait"
+	},
+	"cert_fade_in_out:wait@anim_fadeout_wait": {
+		"duration": "$cert_fade_in_out.wait_dur",
+		"next": "@cert_fade_in_out:fade_out"
+	},
+	"cert_fade_in_out:fade_out@anim_fade_out": {
+		"duration": "$cert_fade_in_out.out_dur"
+	},
+
+		//-----------------
+
+
+		"meadow_fade_in_out:fade_in@anim_fade_in": {
+			"duration": "$meadow_fade_in_out.in_dur",
+			"next": "@meadow_fade_in_out:wait"
+		},
+		"meadow_fade_in_out:wait@anim_fadeout_wait": {
+			"duration": "$meadow_fade_in_out.wait_dur",
+			"next": "@meadow_fade_in_out:fade_out"
+		},
+		"meadow_fade_in_out:fade_out@anim_fade_out": {
+			"duration": "$meadow_fade_in_out.out_dur"
+		},
+
+		//-----------------
+		"school_fade_in_out:fade_in@anim_fade_in": {
+			"duration": "$school_fade_in_out.in_dur",
+			"next": "@school_fade_in_out:wait"
+		},
+		"school_fade_in_out:wait@anim_fadeout_wait": {
+			"duration": "$school_fade_in_out.wait_dur",
+			"next": "@school_fade_in_out:fade_out"
+		},
+		"school_fade_in_out:fade_out@anim_fade_out": {
+			"duration": "$school_fade_in_out.out_dur"
+		},
+
+
+		//-----------------
+		"aquatic_fade_in_out:fade_in@anim_fade_in": {
+			"duration": "$aquatic_fade_in_out.in_dur",
+			"next": "@aquatic_fade_in_out:wait"
+		},
+		"aquatic_fade_in_out:wait@anim_fadeout_wait": {
+			"duration": "$aquatic_fade_in_out.wait_dur",
+			"next": "@aquatic_fade_in_out:fade_out"
+		},
+		"aquatic_fade_in_out:fade_out@anim_fade_out": {
+			"duration": "$aquatic_fade_in_out.out_dur"
+		},
+
+				//-----------------
+		"poster_fade_in_out:fade_in@anim_fade_in": {
+			"duration": "$poster_fade_in_out.in_dur",
+			"next": "@poster_fade_in_out:wait"
+		},
+		"poster_fade_in_out:wait@anim_fadeout_wait": {
+			"duration": "$poster_fade_in_out.wait_dur",
+			"next": "@poster_fade_in_out:fade_out"
+		},
+		"poster_fade_in_out:fade_out@anim_fade_out": {
+			"duration": "$poster_fade_in_out.out_dur"
+		},
+
+		//-----------------
+		"saplinglose:fade_in@anim_fade_in": {
+			"duration": "$saplinglose.in_dur",
+			"next": "@saplinglose:wait"
+		},
+		"saplinglose:wait@anim_fadeout_wait": {
+			"duration": "$saplinglose.wait_dur",
+			"next": "@saplinglose:fade_out"
+		},
+		"saplinglose:fade_out@anim_fade_out": {
+			"duration": "$saplinglose.out_dur"
+		},
+		
+		//-----------------
+		"saplingwin:fade_in@anim_fade_in": {
+			"duration": "$saplingwin.in_dur",
+			"next": "@saplingwin:wait"
+		},
+		"saplingwin:wait@anim_fadeout_wait": {
+			"duration": "$saplingwin.wait_dur",
+			"next": "@saplingwin:fade_out"
+		},
+		"saplingwin:fade_out@anim_fade_out": {
+			"duration": "$saplingwin.out_dur"
+		},
+//-----------------
+	"blackscreen_to_clear:wait@anim_fade_in": {
+		"duration": "$blackscreen_to_clear.wait_dur",
+		"from": 1,
+		"to": 1,
+		"next": "@blackscreen_to_clear:out"
+	},
+	"blackscreen_to_clear:out@anim_fade_out": {
+		"duration": "$blackscreen_to_clear.out_dur"
+	},
+
+	"anim_fade_out": {
+		"anim_type": "alpha",
+		"easing": "in_quart",
+		"from": 1,
+		"to": 0
+	},
+	"anim_fadeout_wait": {
+		"anim_type": "wait"
+	},
+	
+	"anim_fade_in": {
+		"anim_type": "alpha",
+		"easing": "in_quart",
+		"from": 0,
+		"to": 1
+	}
+}

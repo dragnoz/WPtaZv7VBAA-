@@ -1,0 +1,57 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "admin:card",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["admin"]},
+			"animations": {"admin": "animation.admin.admincard"}
+		},
+		"components": {
+			"minecraft:npc": {
+				"npc_data": {
+				  "portrait_offsets": {
+					"translate": [1, -3, 1],
+					"scale": [1, 1, 1]
+				  }
+				}
+			  },
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			}
+		},
+		"component_groups": {
+			"invistitle": {
+			  "minecraft:timer": {
+				"looping": false,
+				"time": 5.0,
+				"time_down_event": {
+				  "event": "remove",
+				  "target": "self"
+				}
+			  }
+			 
+			},
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			}
+		  },
+		  "events": {
+			"minecraft:entity_born": {
+			  "add": {"component_groups": [ "invistitle"] }
+			},
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			}
+		  }
+	}
+}

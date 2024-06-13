@@ -1,0 +1,29 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {
+	 "end_bricks" : {
+		"textures": {
+			"variations": [
+				{ "path": "textures/blocks/end_bricks" },
+				{ "path": "textures/blocks/end_bricks" },
+				{ "path": "textures/blocks/end_bricks2" }
+			]
+		}
+	 },
+	 "iron_bars_edge" : {
+		"textures" : "textures/blocks/blank"
+	 },
+	 "build_allow" : {
+		"textures": {
+			"variations": [
+				{ "path": "textures/blocks/end_bricks" },
+				{ "path": "textures/blocks/end_bricks" },
+				{ "path": "textures/blocks/end_bricks2" }
+			]
+		}
+	 }
+   },
+   "texture_name" : "atlas.terrain"
+}

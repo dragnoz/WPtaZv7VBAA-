@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "prop:water_mill",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/water_mill"
+			},
+			"geometry": {
+				"default": "geometry.water_mill"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

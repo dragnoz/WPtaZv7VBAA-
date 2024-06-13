@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "props:swing",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/swing"
+			},
+			"geometry": {
+				"default": "geometry.swing"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

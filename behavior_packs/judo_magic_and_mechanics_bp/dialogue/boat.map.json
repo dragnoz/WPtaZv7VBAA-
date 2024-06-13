@@ -1,0 +1,72 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "island1",
+                "npc_name": { "rawtext": [ { "text": "Courage Island"}]},
+                "text": {"rawtext": [{"text": "\n Sail to Courage Island\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator -31 77 76 facing  -43 81 64"]}]
+            },{
+                "scene_tag": "island2",
+                "npc_name": { "rawtext": [ { "text": "Respect Island"}]},
+                "text": {"rawtext": [{"text": "\nSail to Respect Isles\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator 2064 77 10 260 -10"]}]
+            },{
+                "scene_tag": "island3",
+                "npc_name": { "rawtext": [ { "text": "Honesty Island"}]},
+                "text": {"rawtext": [{"text": "\nSail to Honesty Island\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator 1849 77 -2304 -90 0"]}]
+            },{
+                "scene_tag": "island4",
+                "npc_name": { "rawtext": [ { "text": "Isle of self control"}]},
+                "text": {"rawtext": [{"text": "\nSail to Isle of selfcontrol\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator 20 69 -4266 130 -20"]}]
+            },{
+                "scene_tag": "island5",
+                "npc_name": { "rawtext": [ { "text": "Courtesy Island"}]},
+                "text": {"rawtext": [{"text": "\nSail to Courtey Isle\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator -1969 77 -4174 120 0"]}]
+            },{
+                "scene_tag": "island6",
+                "npc_name": { "rawtext": [ { "text": "Friendship Island"}]},
+                "text": {"rawtext": [{"text": "\n \n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator -1941 70 -1471"]}]
+            },{
+                "scene_tag": "island7",
+                "npc_name": { "rawtext": [ { "text": "Honour Island"}]},
+                "text": {"rawtext": [{"text": "\nHonour Island\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator -1994 72 -125"]}]
+            },{
+                "scene_tag": "island8",
+                "npc_name": { "rawtext": [ { "text": "Modesty Island"}]},
+                "text": {"rawtext": [{"text": "\nModesty Island\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator 1993 72 -4204"]}]
+
+            },{
+                "scene_tag": "island9",
+                "npc_name": { "rawtext": [ { "text": "Paris"}]},
+                "text": {"rawtext": [{"text": "\nParisss\n"}] },
+                "buttons": [{
+                        "name": "Let's Sail",
+                        "commands": ["/tp @initiator -77 83 -2787"]}]
+            }
+        ]
+    }
+}

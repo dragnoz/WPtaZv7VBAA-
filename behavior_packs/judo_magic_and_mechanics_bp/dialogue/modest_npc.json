@@ -1,0 +1,651 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "elder_mina_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "elder_mina.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "elder_mina_q1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q2"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say elder_mina.npc.dialogue.6",
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "elder_mina_q2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc.dialogue.7"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q3"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say elder_mina.npc.dialogue.10",
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "elder_mina_q3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc.dialogue.11"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q4"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say elder_mina.npc.dialogue.14",
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "elder_mina_q4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "elder_mina.npc.dialogue.15"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_intro"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say elder_mina.npc.dialogue.18",
+                            "/dialogue open @e[tag=elder_mina] @p elder_mina_q4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "brother_tao_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "brother_tao_q1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q2"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say brother_tao.npc.dialogue.5",
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "brother_tao_q2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q3"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say brother_tao.npc.dialogue.9",
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "brother_tao_q3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc.dialogue.10"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q4"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say brother_tao.npc.dialogue.13",
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "brother_tao_q4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "brother_tao.npc.dialogue.14"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_intro"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say brother_tao.npc.dialogue.17",
+                            "/dialogue open @e[tag=brother_tao] @p brother_tao_q4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "sister_lila_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "sister_lila_q1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q2"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say sister_lila.npc.dialogue.5",
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "sister_lila_q2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q3"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say sister_lila.npc.dialogue.9",
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "sister_lila_q3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc.dialogue.10"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q4"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say sister_lila.npc.dialogue.13",
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "sister_lila_q4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "sister_lila.npc.dialogue.14"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=master_keon] @p master_keon_intro"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say sister_lila.npc.dialogue.17",
+                            "/dialogue open @e[tag=sister_lila] @p sister_lila_q4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "master_keon_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Start",
+                        "commands": [
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "master_keon_q1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q2"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say master_keon.npc.dialogue.5",
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "master_keon_q2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q3"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say master_keon.npc.dialogue.9",
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "master_keon_q3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc.dialogue.10"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q4"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say master_keon.npc.dialogue.13",
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "master_keon_q4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "master_keon.npc.dialogue.14"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "1",
+                        "commands": [
+                            "/dialogue open @e[tag=kwame_the_modest] @p kwame_award"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "commands": [
+                            "/say master_keon.npc.dialogue.17",
+                            "/dialogue open @e[tag=master_keon] @p master_keon_q4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "kwame_award",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "kwame_the_modest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "kwame_the_modest.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Return",
+                        "commands": [
+                            "/say Farewell!",
+                            "/tp @p <your_ship_coordinates>"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

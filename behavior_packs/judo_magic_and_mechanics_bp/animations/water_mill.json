@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { "animation.watermill.turn": {
+            "timeline": {
+             
+                "0.0": [
+                    "/playanimation @s animation.water_mill.turn"
+                    
+                ]
+            },
+            "animation_length": 1,
+            "loop": true
+        },
+        "animation.swing": {
+            "timeline": {
+             
+                "0.0": [
+                    "/playanimation @s animation.swing.medium"
+                    
+                ]
+            },
+            "animation_length": 4,
+            "loop": true
+        }
+    }
+}
+
+

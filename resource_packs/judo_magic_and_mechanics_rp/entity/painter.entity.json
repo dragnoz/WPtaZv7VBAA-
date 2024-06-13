@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:painter",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/painter"
+			},
+			"geometry": {
+				"default": "geometry.painter"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

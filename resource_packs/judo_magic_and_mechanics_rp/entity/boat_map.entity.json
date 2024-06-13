@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "map:boat_map",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/boat_map"
+			},
+			"geometry": {
+				"default": "geometry.boat_map"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

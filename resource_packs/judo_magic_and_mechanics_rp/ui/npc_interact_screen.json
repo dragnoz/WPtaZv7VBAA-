@@ -1,0 +1,95 @@
+{ 
+  "namespace": "npc_interact",
+
+  "banner_fill": {
+    "type": "image",
+    "texture": "textures/ui/blank"
+  },
+
+
+  "message_model_window@npc_interact.banner_fill": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    // Take up the rest of the space that the text doesn't take, with a gap
+    "size": [ "110% - 222px -30pxs", "100%" ],
+    "controls": [
+      { "model@npc_interact.clipped_message_model": {} },
+      {
+        "immersive_reader_button@im_reader.reader_button": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -3, -2 ],
+          "size": [16, 16 ],
+          "layer": 5,
+          "ignored": "($is_worldbuilder or not $education_edition)",
+          "bindings": [
+            {
+              "binding_name": "#im_reader_button_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "bubble_point": {
+    "type": "image",
+    "texture": "textures/ui/blank",
+    "size": [ 16, 16 ],
+    "layer": 12,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    // Offset to be on just to the left of the text
+    "offset": [ -295, 0 ]
+  },
+  "bubble_point2": {
+    "type": "image",
+    "texture": "textures/ui/blank",
+    "size": [ 0, 0 ],
+    "layer":-1,
+    "anchor_from": "right",
+    "anchor_to": "right",
+    // Offset to be on just to the left of the text
+    "offset": [ 150, 0 ]
+  },
+  "student_message_bubble": {
+    "type": "image",
+    //"texture": "textures/ui/dialog_bubble",
+    "texture": "textures/ui/button_borderless_lighthover",
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "size": [ 245, "50%" ],
+    "controls": [
+      {
+        "dialog_panel": {
+          "type": "panel",
+          "size": [ "96%", "96%" ],
+          "$virtual_keyboard_buffer_control": "text_scroll",
+          "controls": [
+            { "text_scroll@npc_interact.text_scroll": {} }
+          ]
+        }
+      }
+    ]
+  },
+  "student_message_section@common.empty_panel": {
+    "size": [ "100%", 100 ],
+    "anchor_from": "bottom_middle" ,
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "model@npc_interact.message_model_window": {}
+      },
+      {
+        "point@npc_interact.bubble_point2": {}
+      },
+      {
+        "point@npc_interact.bubble_point": {}
+      },
+      {
+        "message@npc_interact.student_message_bubble": {}
+      }
+    ]
+  }
+}

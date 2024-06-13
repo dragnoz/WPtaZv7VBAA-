@@ -1,0 +1,216 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Samir_default_not_all_keys",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n Have you found the keystones yet?\n"
+                        }
+                    ]
+                }
+            },
+            {
+                "scene_tag": "Samir_the_Steadfast_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Samir_the_Steadfast.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Samir_the_Steadfast.npc.dialogue.2"
+                        },
+                        
+                        {
+                            "translate": "Samir_the_Steadfast.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/summon game:fx ~ ~ ~ ~ ~ event3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Samir_the_Steadfast_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                    
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.4"
+                    },
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.5"
+                    }
+                        
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/summon game:fx ~ ~ ~ ~ ~ event4",
+                            "/event entity @s remove "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Samir_the_Steadfast_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.6"
+                    },
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.7"
+                    }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Samir_the_Steadfast_3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Samir_the_Steadfast_3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+
+                   
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.8"
+                    },
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.9"
+                    }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Samir_the_Steadfast_4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Samir_the_Steadfast_4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Samir_the_Steadfast.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+
+                   
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.10"
+                    },
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.11"
+                    },
+                    {
+                        "text": "\n"
+                    },
+                    {
+                        "translate": "Samir_the_Steadfast.npc.dialogue.12"
+                    },
+                    {
+                        "text": "\n"
+                    }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }
+           
+        ]
+    }
+}

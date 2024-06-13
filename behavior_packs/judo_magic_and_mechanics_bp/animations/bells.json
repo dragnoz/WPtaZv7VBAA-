@@ -1,0 +1,120 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.bellring": {
+         "timeline": {
+            "0.0":["/execute as @s run playanimation @s animation.big_bell.ring"],
+
+            "0.1":[
+                    "/execute as @s[x=-27,y=123,z=178,r=20] at @s run summon info:bells ~ ~ ~ ~ ~ bell_tmpl1",
+                    "/execute as @s[x=82,y=132,z=26,r=20] at @s run summon info:bells ~ ~ ~ ~ ~ bell_tmpl2",
+                    "/execute as @s[x=29,y=147,z=-81,r=20] at @s run summon info:bells ~ ~ ~ ~ ~ bell_tmpl3"
+                
+                ],
+          "0.2" : ["/event entity @s bell"]
+                },
+         
+         "animation_length": 2.1,
+         "loop": true
+     },
+     "animation.bell1": {
+        "timeline": {
+      
+            "0.0":["/execute as @e[family=bellring] at @s run playanimation @s animation.big_bell.ring"],
+            "2.0":["/tp @a -27.11 124.00 180.44 facing @e[type=dz:big_bell,c=1]"],
+            "2.5":["/tp @a ~ ~ ~ facing @e[type=dz:big_bell,c=1]"],
+            "3.0":["/tp @a ~ ~ ~ facing @e[type=dz:big_bell,c=1]"],
+           
+           "3.1":["/event entity @e[type=dz:big_bell,c=1] fall"],
+           "3.2":["/tp @a ~ ~ ~ facing @e[type=dz:big_bell,c=1]"],
+           
+           "3.3":["/camerashake add @a 0.5 1"],
+           "3.4":["/tp @a ~ ~ ~ facing @e[type=dz:big_bell,c=1]"],
+           "3.5":["/function action/temple_lava_fall"],
+           "3.8":["/tag @a[tag=bellfall] remove bellfall" ],
+           
+
+           "10.0":[
+                    "/function command_center/resets/reset_temple_lava_fall",
+                    "/event entity @s remove"
+                ]
+
+        },
+        
+        "animation_length": 10.1,
+        "loop": true
+    },
+    "animation.belltimer":{
+        "timeline": {
+            "0.0":[]
+        },
+       
+        "animation_length": 0.1,
+        "loop": true
+    },
+    "animation.bell2": {
+       "timeline": {
+        "0.0":["/tag @a[r=10] add ring2", "/scoreboard players set @a title 212"],
+        "2.0":["/tp @a[tag=ring2] 81.19 133.00 24.24 170 10","/execute as @a[tag=ring2] at @s run function command_center/player_control/nomovcam"],
+        "3.0":["/execute as @p run structure load isle1:bridge 41 126 -36 0_degrees none block_by_block 20 false true false 50"    ],
+        "5.0":["/execute as @p run function cards/tcard09"],
+        "9.0":["/execute as @a[tag=ring2] at @s run function command_center/player_control/yesmovcam"],
+        "10.2":["/tag @a[tag=ring2] remove ring2"],
+        "10.3":["/event entity @s remove"]
+       },
+       
+       "animation_length": 10.31,
+       "loop": true
+   },
+     "animation.bell3": {
+        "timeline": {        
+        "0.0":["/tag @a[r=10] add ring3", "/scoreboard players set @a title 213"],
+        "2.0":["/tp @a[tag=ring3] 29.74 154.81 -80.40 160 -10","/execute as @a[tag=ring3] at @s run function command_center/player_control/nomovcam"],
+        "3.0":["/execute as @p run structure load"    ],
+        "5.0":["/execute as @p run function cards/tcard09"],
+        "9.0":["/execute as @a[tag=ring3] at @s run function command_center/player_control/yesmovcam"],
+        "9.1":["/tp @a[tag=ring3] 28 147 -81 -140 0"],
+        "10.2":["/tag @a[tag=ring3] remove ring3"],
+        "10.3":["/event entity @s remove"]
+        },
+      
+        "animation_length": 10.31,
+        "loop": true
+    },
+
+    "animation.island1_complete": {
+        "timeline": {        
+        "0.0":["/structure load isle1:bridge_clear 41 126 -36",
+                "/tp @a[r=10] -4000 77 -3989 facing  -4000 84 -4001",
+                "/scoreboard players set UnlockMapLvl quest 2" ],
+        "0.1":["/event entity @s remove"]
+        },
+      
+        "animation_length": 0.11,
+        "loop": true
+    },
+
+    "animation.island2_complete": {
+        "timeline": {        
+            "0.0":["/tp @a[r=10] -4000 77 -3989","/scoreboard players set UnlockMapLvl quest 3" ],
+            "0.1":["/event entity @s remove"]
+            },
+          
+            "animation_length": 0.11,
+            "loop": true
+        },
+
+    "animation.entities.remove": {
+        "timeline": {
+            "0.0":["/event entity @s remove"]
+        },
+        
+        "animation_length": 0.1,
+        "loop": true
+    }
+    }
+  
+}
+
+

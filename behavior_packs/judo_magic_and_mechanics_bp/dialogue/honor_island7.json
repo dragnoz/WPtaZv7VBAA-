@@ -1,0 +1,556 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Rania_the_Honourable_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.10"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.11"
+                        },
+                        {
+                            "text": "\n"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Rania_the_Honourable_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Rania_the_Honourable_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Rania_the_Honourable_2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Rania_the_Honourable_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Rania_the_Honourable_3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Rania_the_Honourable_3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.8"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Rania_the_Honourable_4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Rania_the_Honourable_4",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.10"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.11"
+                        },
+                        {
+                            "text": "\n"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+
+            //milo
+            {
+                "scene_tag": "MilotheWise_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "MilotheWise.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "MilotheWise.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MilotheWise.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MilotheWise.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "thank",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //lila
+            {
+                "scene_tag": "LilatheQuiet_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "LilatheQuiet.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "LilatheQuiet.npc.dialogue.1"
+                        },
+                     
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "LilatheQuiet.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "thank",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //fin
+            {
+                "scene_tag": "FinntheBold_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "FinntheBold.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "FinntheBold.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "FinntheBold.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "thank",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //tara
+
+            {
+                "scene_tag": "TaratheArtisan_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "TaratheArtisan.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "TaratheArtisan.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "TaratheArtisan.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "thank",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //statues
+            {
+                "scene_tag": "statues_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "statues.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "statues.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.10"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.11"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.12"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "statues.npc.dialogue.13"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "thank",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+
+
+
+            {
+                "scene_tag": "Rania_the_Honourable_end",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.13"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.14"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Rania_the_Honourable_end_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Rania_the_Honourable_end_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Rania_the_Honourable.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                    
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.15"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.16"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Rania_the_Honourable.npc.dialogue.17"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "give decorative",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+titleraw @a actionbar {"rawtext":[{"text":"\n\n\n\n"}{"translate":"Card_Collector.npc.dialogue.1"}]}

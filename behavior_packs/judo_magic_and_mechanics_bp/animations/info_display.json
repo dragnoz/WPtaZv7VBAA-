@@ -1,0 +1,135 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.map.display": {
+            "timeline": {
+             
+                "0.0": ["/function command_center/commands/map1"]
+            },
+            "animation_length": 1.0,
+            "loop": true 
+        },
+         "animation.poster1": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 1 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~4 ~ "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~4 ~ ~ ~ island1 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island1,c=1] island1"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster2": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 2 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~3 ~1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~3 ~1 ~ ~ island2 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island2,c=1] island2"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster3": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 3 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~2 ~-1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~2 ~-1 ~ ~ island3 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island3,c=1] island3"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster4": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 4 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~2 ~ "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~2 ~ ~ ~ island4 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island4,c=1] island4"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster5": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 5 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~2 ~1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~2 ~1 ~ ~ island5 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island5,c=1] island5"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster6": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 6 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~4 ~1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~4 ~1 ~ ~ island6 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island6,c=1] island6"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster7": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 7 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~4 ~-1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~4 ~-1 ~ ~ island7 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island7,c=1] island7"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster8": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 8 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~3 ~-1 "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~3 ~-1 ~ ~ island8 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island8,c=1] island8"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.poster9": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 9 "],
+                "0.05": ["/execute as @s at @s run particle map:cloud_reveal ~1 ~3 ~ "],
+                "0.06" :["/summon cards:card_selector ~-0.1 ~3 ~ ~ ~ island9 "],
+                "1.5" :["/dialogue change @e[type=cards:card_selector,family=island9,c=1] island9"],
+                "1.99": ["/event entity @s map" ]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.map.reset": {
+            "timeline": {
+                
+                "0.0": ["/scoreboard players set UnlockMapLvl quest 0 "],
+                
+                "0.1": ["/event entity @e[type=cards:card_selector,r=10] remove" ]
+            },
+            "animation_length": 0.2,
+            "loop": true
+        }
+    }
+    
+}
+
+

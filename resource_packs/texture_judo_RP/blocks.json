@@ -1,0 +1,54 @@
+{
+   "hardened_clay" : {
+      "isotropic" : false,
+      "sound" : "stone",
+      "textures" : "hardened_clay"
+   },
+   "stained_hardened_clay" : {
+      "isotropic" : false,
+      "sound" : "stone",
+      "textures" : "stained_clay"
+   },
+   "clay" : {
+      "isotropic" : false,
+      "sound" : "gravel",
+      "textures" : "clay"
+   },
+     "glow_lichen" : {
+      "isotropic" : true,
+      "sound" : "grass",
+      "textures" : "glow_lichen"
+   },
+   "concretePowder" : {
+      "isotropic" : true,
+      "sound" : "sand",
+      "textures" : "concretePowder"
+   },
+   "iron_bars" : {
+      "sound" : "metal",
+      "textures" : {
+         "down" : "iron_bars",
+         "east" : "iron_bars_edge",
+         "north" : "iron_bars",
+         "south" : "iron_bars",
+         "up" : "iron_bars",
+         "west" : "iron_bars"
+      }
+   },
+   "end_bricks" : {
+      "sound" : "netherite",
+      "textures" : "end_bricks"
+   },
+   "end_brick_stairs" : {
+      "sound" : "netherite",
+      "textures" : "end_bricks"
+   },
+   "warped_planks" : {
+      "sound" : "metal",
+      "textures" : "warped_planks"
+   },
+   "mangrove_planks" : {
+      "sound" : "metal",
+      "textures" : "mangrove_planks"
+   }
+}

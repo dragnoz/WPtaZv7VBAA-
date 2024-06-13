@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { "animation.admin.admincard": {
+            "timeline": {
+                
+                "0.2": ["/dialogue open @e[type=admin:card,c=1] @p[c=1] Admin_utility" ],
+                "10.0": ["/function entities/remove" ]
+            },
+            "animation_length": 10.1,
+            "loop": true
+        }
+    }
+}
+
+

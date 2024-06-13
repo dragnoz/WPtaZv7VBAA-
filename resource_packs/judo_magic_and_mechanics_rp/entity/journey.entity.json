@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "title:journey",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/journey"
+			},
+			"geometry": {
+				"default": "geometry.journey"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

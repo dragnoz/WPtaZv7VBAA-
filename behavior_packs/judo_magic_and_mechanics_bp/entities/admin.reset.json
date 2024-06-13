@@ -1,0 +1,119 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "admin:reset",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": { "remove":"animation.reset.fx.entities.remove",
+							"island1":  "animation.reset.fx.island1",
+							"island2":  "animation.reset.fx.island2",
+							"island3":  "animation.reset.fx.island3",
+                            "island4":  "animation.reset.fx.island4",
+                            "island5":  "animation.reset.fx.island5",
+                            "island6":  "animation.reset.fx.island6",
+                            "island7":  "animation.reset.fx.island7",
+                            "island8":  "animation.reset.fx.island8",
+                            "island9":  "animation.reset.fx.island9",
+                            "island10":  "animation.reset.fx.island10",
+                            "island11":  "animation.reset.fx.island11",
+                            "island12":  "animation.reset.fx.island12",
+                            "island13":  "animation.reset.fx.island13"
+							},
+			"scripts": {"animate": [{"remove": "q.variant == 0"},
+									{"island1": "q.variant == 1"},
+									{"island2": "q.variant == 2"},
+									{"island3": "q.variant == 3"},
+									{"island4": "q.variant == 4"},
+									{"island5": "q.variant == 5"},
+									{"island6": "q.variant == 6"},
+									{"island7": "q.variant == 7"},
+									{"island8": "q.variant == 8"},
+									{"island9": "q.variant == 9"},
+									{"island10": "q.variant == 10"},
+									{"island11": "q.variant == 11"},
+									{"island12": "q.variant == 12"},
+									{"island13": "q.variant == 13"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"reset"
+				]
+			},
+	
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+	
+			"minecraft:scale": {
+				"value": 0
+			},
+
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			}
+		},
+		"component_groups": {
+			"island1": {"minecraft:variant": {"value": 1}},
+			"island2": {"minecraft:variant": {"value": 2}},
+			"island3": {"minecraft:variant": {"value": 3}},
+			"island4": {"minecraft:variant": {"value": 4}},
+			"island5": {"minecraft:variant": {"value": 5}},
+			"island6": {"minecraft:variant": {"value": 6}},
+			"island7": {"minecraft:variant": {"value": 7}},
+			"island8": {"minecraft:variant": {"value": 8}},
+			"island9": {"minecraft:variant": {"value": 9}},
+			"island10": {"minecraft:variant": {"value": 10}},
+			"island11": {"minecraft:variant": {"value": 11}},
+			"island12": {"minecraft:variant": {"value": 12}},
+			"island13": {"minecraft:variant": {"value": 13}},
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            }
+            
+
+		},
+		"events":{
+			"island1": {"add": {"component_groups": [ "island1"] }},
+			"island2": {"add": {"component_groups": [ "island2"] }},
+			  "island3": {"add": {"component_groups": [ "island3"] }},
+			  "island4": {"add": {"component_groups": [ "island4"] }},
+              
+              "island5": {"add": {"component_groups": ["island5"] }},
+              "island6": {"add": {"component_groups": ["island6"] }},
+
+              "island7": {"add": {"component_groups": ["island7"] }},
+
+              "island8": {"add": {"component_groups": ["island8"] }},
+
+              "island9": {"add": {"component_groups": ["island9"] }},
+
+              "island10": {"add": {"component_groups": ["island10"] }},
+
+              "island11": {"add": {"component_groups": ["island11"] }},
+
+              "island12": {"add": {"component_groups": ["island12"] }},
+
+              "island13": {"add": {"component_groups": ["island13"] }},
+
+			
+			"remove":{"add": {"component_groups": [ "remove" ]}}
+		
+	}
+	}
+}

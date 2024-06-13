@@ -1,0 +1,111 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "info:map",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {"map":  "animation.map.display",
+							"unlock1": "animation.map.unlock1",
+							"unlock2": "animation.map.unlock2",
+							"unlock3": "animation.map.unlock3",
+							"unlock4": "animation.map.unlock4",
+							"unlock5": "animation.map.unlock5",
+							"unlock6": "animation.map.unlock6",
+							"unlock7": "animation.map.unlock7",
+							"unlock8": "animation.map.unlock8",
+							"unlock9": "animation.map.unlock9",
+							"reset": "animation.map.reset"
+							},
+			
+			"scripts": {"animate": ["map",
+									{"unlock1": "q.variant == 1"},
+									{"unlock2": "q.variant == 2"},
+									{"unlock3": "q.variant == 3"},
+									{"unlock4": "q.variant == 4"},
+									{"unlock5": "q.variant == 5"},
+									{"unlock6": "q.variant == 6"},
+									{"unlock7": "q.variant == 7"},
+									{"unlock8": "q.variant == 8"},
+									{"unlock9": "q.variant == 9"},
+									{"reset": "q.variant == 10"}
+                                    ]}
+			
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "map" ]
+			  },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			}
+		},
+		"component_groups": {
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            },
+			"map1":{
+				"minecraft:type_family": {
+					"family": [ "map1" ]
+				  }
+			},
+			"map": {"minecraft:variant": {"value": 0}},
+            "unlock1": {"minecraft:variant": {"value":1}},
+            "unlock2": {"minecraft:variant": {"value":2}},
+            "unlock3": {"minecraft:variant": {"value":3}},
+            "unlock4": {"minecraft:variant": {"value":4}},
+            "unlock5": {"minecraft:variant": {"value":5}},
+            "unlock6": {"minecraft:variant": {"value":6}},
+            "unlock7": {"minecraft:variant": {"value":7}},
+            "unlock8": {"minecraft:variant": {"value":8}},
+            "unlock9": {"minecraft:variant": {"value":9}},
+
+
+            "reset": {"minecraft:variant": {"value":10}}
+
+		},
+		"events":{
+			"map": {"add": {"component_groups": ["map"] }},
+			
+			"unlock1": {"add": {"component_groups": ["unlock1"] }},
+			"unlock2": {"add": {"component_groups": ["unlock2"] }},
+			"unlock3": {"add": {"component_groups": ["unlock3"] }},
+			"unlock4": {"add": {"component_groups": ["unlock4"] }},
+			"unlock5": {"add": {"component_groups": ["unlock5"] }},
+			"unlock6": {"add": {"component_groups": ["unlock6"] }},
+			"unlock7": {"add": {"component_groups": ["unlock7"] }},
+			"unlock8": {"add": {"component_groups": ["unlock8"] }},
+			"unlock9": {"add": {"component_groups": ["unlock9"] }},
+
+			"reset": {"add": {"component_groups": ["reset"] }},
+
+
+			"map1":{
+				"add": {
+					"component_groups": [ "map1" ]
+				}
+			},
+			
+			"remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			}
+		
+	}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "card:ucard08",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "ucard08",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dz:character",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/npc/judokai",
+				"pixie": "textures/entity/pixie_char",
+				"npc_2": "textures/entity/npc/npc_2",
+        "npc_3": "textures/entity/npc/npc_3",
+        "npc_4": "textures/entity/npc/npc_4",
+        "npc_5": "textures/entity/npc/npc_5",
+        "npc_6": "textures/entity/npc/npc_6",
+        "npc_7": "textures/entity/npc/npc_7",
+        "npc_8": "textures/entity/npc/npc_8",
+        "npc_9": "textures/entity/npc/npc_9",
+        "npc_10": "textures/entity/npc/npc_10",
+        "npc_scientist_1": "textures/entity/npc/npc_scientist_1",
+        "npc_scientist_2": "textures/entity/npc/npc_scientist_2",
+        "npc_scientist_3": "textures/entity/npc/npc_scientist_3",
+        "npc_scientist_4": "textures/entity/npc/npc_scientist_4",
+        "npc_scientist_5": "textures/entity/npc/npc_scientist_5",
+        "npc_scientist_6": "textures/entity/npc/npc_scientist_6",
+        "npc_scientist_7": "textures/entity/npc/npc_scientist_7",
+        "npc_scientist_8": "textures/entity/npc/npc_scientist_8",
+        "npc_scientist_9": "textures/entity/npc/npc_scientist_9",
+        "npc_apiary_1": "textures/entity/npc/npc_apiary_1",
+        "npc_apiary_2": "textures/entity/npc/npc_apiary_2",
+        "npc_apiary_3": "textures/entity/npc/npc_apiary_3",
+        "npc_apiary_4": "textures/entity/npc/npc_apiary_4",
+        "npc_apiary_5": "textures/entity/npc/npc_apiary_5",
+        "npc_teacher_1": "textures/entity/npc/npc_teacher_1",
+        "npc_teacher_2": "textures/entity/npc/npc_teacher_2",
+        "npc_teacher_3": "textures/entity/npc/npc_teacher_3",
+        "npc_teacher_4": "textures/entity/npc/npc_teacher_4",
+        "npc_teacher_5": "textures/entity/npc/npc_teacher_5",
+        "npc_construction_1": "textures/entity/npc/npc_construction_1",
+        "npc_construction_2": "textures/entity/npc/npc_construction_2",
+        "npc_construction_3": "textures/entity/npc/npc_construction_3",
+        "npc_construction_4": "textures/entity/npc/npc_construction_4",
+        "npc_construction_5": "textures/entity/npc/npc_construction_5",
+        "npc_Agriculture_1": "textures/entity/npc/npc_Agriculture_1",
+        "npc_Agriculture_2": "textures/entity/npc/npc_Agriculture_2",
+        "npc_Agriculture_3": "textures/entity/npc/npc_Agriculture_3",
+        "npc_Agriculture_4": "textures/entity/npc/npc_Agriculture_4",
+        "npc_Agriculture_5": "textures/entity/npc/npc_Agriculture_5",
+        "npc_Agriculture_6": "textures/entity/npc/npc_Agriculture_6",
+        "npc_Agriculture_7": "textures/entity/npc/npc_Agriculture_7",
+        "npc_Agriculture_8": "textures/entity/npc/npc_Agriculture_8",
+        "npc_Agriculture_9": "textures/entity/npc/npc_Agriculture_9",
+        "npc_Agriculture_10": "textures/entity/npc/npc_Agriculture_10",
+        "npc_BusinessMobs_1": "textures/entity/npc/npc_BusinessMobs_1",
+        "npc_BusinessMobs_2": "textures/entity/npc/npc_BusinessMobs_2",
+        "npc_BusinessMobs_3": "textures/entity/npc/npc_BusinessMobs_3",
+        "npc_BusinessMobs_4": "textures/entity/npc/npc_BusinessMobs_4",
+        "npc_BusinessMobs_5": "textures/entity/npc/npc_BusinessMobs_5",
+        "npc_EverydayBusiness_1": "textures/entity/npc/npc_EverydayBusiness_1",
+        "npc_EverydayBusiness_2": "textures/entity/npc/npc_EverydayBusiness_2",
+        "npc_EverydayBusiness_3": "textures/entity/npc/npc_EverydayBusiness_3",
+        "npc_EverydayBusiness_4": "textures/entity/npc/npc_EverydayBusiness_4",
+        "npc_EverydayBusiness_5": "textures/entity/npc/npc_EverydayBusiness_5",
+        "npc_Kiosk_1": "textures/entity/npc/npc_Kiosk_1",
+        "npc_Kiosk_2": "textures/entity/npc/npc_Kiosk_2",
+        "npc_Kiosk_3": "textures/entity/npc/npc_Kiosk_3",
+        "npc_Kiosk_4": "textures/entity/npc/npc_Kiosk_4",
+        "npc_Kiosk_5": "textures/entity/npc/npc_Kiosk_5",
+        "div1": "textures/entity/character/div1",
+        "div2": "textures/entity/character/div2",
+        "div3": "textures/entity/character/div3",
+        "div4": "textures/entity/character/div4",
+        "div5": "textures/entity/character/div5",
+        "div6": "textures/entity/character/div6",
+        "div7": "textures/entity/character/div7",
+        "div8": "textures/entity/character/div8",
+        "div9": "textures/entity/character/div9",
+        "div10": "textures/entity/character/div10",
+        "div11": "textures/entity/character/div11",
+        "div12": "textures/entity/character/div12"
+        
+			},
+			"geometry": {
+				"default": "geometry.character"
+			},
+			"spawn_egg": {
+				"base_color": "#42ead6",
+				"overlay_color": "#42ead6"
+			},
+
+
+			"animations": {
+				"moving": "animation.character.walk",
+				"idle": "animation.character.idle",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+		
+				"animate": [
+					{"moving": "query.modified_move_speed"},
+					{"idle": "query.is_moving==0"}
+				  
+				]
+			},
+
+
+			
+			"render_controllers": [ "controller.render.character" ],
+			"enable_attachables": true
+		}
+	}
+}

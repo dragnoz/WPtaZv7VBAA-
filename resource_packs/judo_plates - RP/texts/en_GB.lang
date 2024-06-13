@@ -1,0 +1,7 @@
+﻿pack.name=Plate
+pack.description=Plate Stuff
+
+
+##item names
+
+item.blighty:plates.name=Plates

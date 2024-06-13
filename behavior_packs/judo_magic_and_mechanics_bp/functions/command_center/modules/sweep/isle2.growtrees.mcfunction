@@ -1,0 +1,37 @@
+execute as @a[x=2205,y=81,z=33,r=20] at @s run summon game:build 2205 81 33 ~ ~ event1
+execute as @a[x=2214,y=81,z=63,r=20] at @s run summon game:build 2214 81.68 63 ~ ~ event1
+execute as @a[x=2243,y=81,z=40,r=20] at @s run summon game:build 2243 81.81 40 ~ ~ event1
+execute as @a[x=2221,y=81,z=-35,r=20] at @s run summon game:build 2221 81.51 -35 ~ ~ event1
+execute as @a[x=2211,y=81,z=-59,r=20] at @s run summon game:build 2211 81.42 -59 ~ ~ event1
+execute as @a[x=2163,y=81,z=-48,r=20] at @s run summon game:build 2163 81.52 -48 ~ ~ event1
+execute as @a[x=2136,y=81,z=-17,r=20] at @s run summon game:build 2136 81.72 -17 ~ ~ event1
+execute as @a[x=2121,y=81,z=6,r=20] at @s run summon game:build 2121 81 6.41 ~ ~ event1
+execute as @a[x=2121,y=81,z=16,r=20] at @s run summon game:build 2121.25 81.23 16.44 ~ ~ event1
+execute as @a[x=2138,y=81,z=-29,r=20] at @s run summon game:build 2138.00 80.63 -29.43 ~ ~ event3
+execute as @a[x=2114,y=81,z=-29,r=20] at @s run summon game:build 2113.68 81.47 -29.25 ~ ~ event3
+execute as @a[x=2163,y=81,z=-56,r=20] at @s run summon game:build 2163.40 81.22 -56.25 ~ ~ event3
+execute as @a[x=2232,y=81,z=-31,r=20] at @s run summon game:build 2232.45 81.18 -30.75 ~ ~ event3
+execute as @a[x=2113,y=81,z=25,r=20] at @s run summon game:build 2113.27 81.36 24.75 ~ ~ event3
+execute as @a[x=2186,y=81,z=48,r=20] at @s run summon game:build 2186.48 81.48 47.50 ~ ~ event5
+execute as @a[x=2228,y=81,z=53,r=20] at @s run summon game:build 2227.60 81.44 53.25 ~ ~ event3
+execute as @a[x=2193,y=82,z=54,r=20] at @s run summon game:build 2193.38 81.66 54.39 ~ ~ event7
+execute as @a[x=2224,y=81,z=35,r=20] at @s run summon game:build 2223.55 81.00 34.80 ~ ~ event5
+execute as @a[x=2232,y=82,z=39,r=20] at @s run summon game:build 2232.38 81.54 39.49 ~ ~ event7
+execute as @a[x=2216,y=84,z=37,r=20] at @s run summon game:build 2215.54 84.32 36.50 ~ ~ event7
+execute as @a[x=2221,y=81,z=22,r=20] at @s run summon game:build 2220.55 81.29 21.62 ~ ~ even7
+execute as @a[x=2202,y=81,z=60,r=20] at @s run summon game:build 2202.48 81.33 59.62 ~ ~ event7
+execute as @a[x=2232,y=84,z=44,r=20] at @s run summon game:build 2232.25 84.38 44.43 ~ ~ event7
+execute as @a[x=2232,y=89,z=44,r=20] at @s run summon game:build 2232.25 89.38 44.43 ~ ~ event7
+execute as @a[x=2142,y=81,z=-65,r=20] at @s run summon game:build 2142.42 81.37 -65.38 ~ ~ event7
+execute as @a[x=2151,y=81,z=-11,r=20] at @s run summon game:build 2150.57 81.40 -10.62 ~ ~ event9
+execute as @a[x=2189,y=82,z=13,r=20] at @s run summon game:build 2189.11 82.23 13.00 ~ ~ event11
+execute as @a[x=2211,y=83,z=9,r=20] at @s run summon game:build 2211.00 82.52 9.37 ~ ~ event11
+execute as @a[x=2232,y=85,z=44,r=20] at @s run summon game:build 2232.06 85.26 44.00 ~ ~ event7
+execute as @a[x=2244,y=83,z=30,r=20] at @s run summon game:build 2243.75 83.38 29.62 ~ ~ event5
+execute as @a[x=2210,y=82,z=30,r=20] at @s run summon game:build 2210.38 81.59 29.61 ~ ~ event9
+execute as @a[x=2217,y=84,z=-26,r=20] at @s run summon game:build 2217 84 -26 ~ ~ event9
+execute as @a[x=2240,y=82,z=-49,r=10] at @s run summon game:build 2240.00 82.37 -49.19 ~ ~ event5
+execute as @a[x=2244,y=85,z=30,r=10] at @s run summon game:build 2243.75 85.46 29.58 ~ ~ event5
+execute as @a[x=2224,y=81,z=35,r=10] at @s run summon game:build 2223.68 81.23 34.75 ~ ~ event5
+playanimation @e[type=game:sweep] animation.sweep.sweep
+execute as @e[type=game:sweep] as @s run particle sweep:dust ~ ~ ~

@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cards:card_selector",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default":"textures/hands/tcard0",
+				"card1": "textures/hands/tcard01",
+				"card2": "textures/hands/tcard02",
+				"card3": "textures/hands/tcard03",
+				"card4": "textures/hands/tcard04",
+				"card5": "textures/hands/tcard05",
+				"card6": "textures/hands/tcard06",
+				"card7": "textures/hands/tcard07",
+				"card8": "textures/hands/tcard08",
+				"card9": "textures/hands/tcard09",
+				"card10": "textures/hands/tcard10",
+				"cardclose": "textures/hands/close",
+				"cardaccept": "textures/hands/accept",
+				"island1": "textures/hands/island1",
+				"island2": "textures/hands/island2",
+				"island3": "textures/hands/island3",
+				"island4": "textures/hands/island4",
+				"island5": "textures/hands/island5",
+				"island6": "textures/hands/island6",
+				"island7": "textures/hands/island7",
+				"island8": "textures/hands/island8",
+				"island9": "textures/hands/island9"
+				
+
+
+
+			},
+			"geometry": {
+				"default": "geometry.card_selector"
+			},
+			"render_controllers": ["controller.render.cards.select"]
+		}
+	}
+}

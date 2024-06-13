@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dz:selecta",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "A",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

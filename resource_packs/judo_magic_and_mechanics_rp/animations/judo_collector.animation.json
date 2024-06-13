@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.judo_collector.cardsway": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"cardright": {
+					"rotation": {
+						"0.0": {
+							"post": [-0.44103, -7.23073, 4.4716],
+							"lerp_mode": "catmullrom"
+						},
+						"2.25": {
+							"post": [1.85427, 9.63703, -5.14877],
+							"lerp_mode": "catmullrom"
+						},
+						"4.0": {
+							"post": [-0.44103, -7.23073, 4.4716],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"cardleft": {
+					"rotation": {
+						"0.0": {
+							"post": [-0.44103, -7.23073, 4.4716],
+							"lerp_mode": "catmullrom"
+						},
+						"2.25": {
+							"post": [1.85427, 9.63703, -5.14877],
+							"lerp_mode": "catmullrom"
+						},
+						"4.0": {
+							"post": [-0.44103, -7.23073, 4.4716],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

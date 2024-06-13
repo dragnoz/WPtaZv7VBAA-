@@ -1,0 +1,273 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+           
+            {
+                "scene_tag": "Card_Collector_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.5"
+                        }
+                    ]
+                },
+                "on_open_commands": [
+                   
+                ],
+                "on_close_commands": [
+                    "/tag @a[r=10] add questcard",
+                    "/tag @a[r=10] add dialogue1"
+                ],
+                "buttons": [
+                    {
+                        "name": "First Time!",
+                        "commands": [
+                            "/dialogue open @s @a[r=10] Card_Collector_intro1"
+                        ]
+                    },
+                    {
+                        "name": "Skip Tutorial",
+                        "commands": [
+                            "/tag @a[r=10]add questcard",
+                            "/tp @a[r=10] -4000 77 -3989 facing  -4000 84 -4001"
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Card_Collector_intro1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.10"
+                        }
+                    ]
+                },
+                "on_open_commands": [
+                  
+                ],
+                "on_close_commands": [
+                    "/tag @a[r=10] add questcard",
+                    "/tag @a[r=10] add dialogue1"
+                ],
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [ "/dialogue open @s @a[r=10] Card_Collector_intro3"]
+                    }]
+            },
+            {
+                "scene_tag": "Card_Collector_intro2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc.dialogue.11"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.12"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.13"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.14"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.15"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.16"
+                        }
+                    ]
+                },
+                "on_open_commands": [
+                
+                ],
+                "on_close_commands": [
+                    "/tag @a[r=10] add dialogue1"
+                ],
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [ "/dialogue open @s @a[r=10] Card_Collector_intro3"]
+
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Card_Collector_intro3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc.dialogue.17"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.18"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.19"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.20"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Card_Collector.npc.dialogue.21"
+                        }
+                    ]
+                },
+                "on_open_commands": [
+                 
+                ],
+                "on_close_commands": [
+                   
+                ]
+            },
+            {
+                "scene_tag": "Card_Collector_jumpcard",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Card_Collector.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                     
+                        {
+                            "text": "\nNot all cards will be available all the time."
+                        },
+                        
+                        {
+                            "text": "\nFor example, here is a limited use jumpcard that you might find handy!"
+                        },
+                       
+                        {
+                            "text": "\n"
+                        },
+                        
+                        {
+                            "text": "\n"
+                        }
+                       
+                    ]
+                },
+                "on_open_commands": [
+                 "/tag @a[r=10] remove dialogue1",
+                 "/tag @a[r=10] add jumpcard"
+                ],
+                "on_close_commands": [
+                    "/tag @a[r=10] remove dialogue1",
+                    "/tag @a[r=10] add jumpcard"
+                   
+                ]
+                
+            }
+
+
+        ]}}

@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Plate Stuff",
+    "name": "Plate",
+    "uuid": "B7D1596D-FA18-494E-9E2B-B4EA54767ACA",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 13, 0]
+  },
+  "modules": [
+    {
+      "description": "Plate",
+      "type": "resources",
+      "uuid": "EBD8687A-3DF6-4F4C-98FE-EB0699693101",
+      "version": [0, 0, 1]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Amira_the_Sincere_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.3"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Amira_the_Sincere_2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Amira_the_Sincere_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.7"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Amira_the_Sincere_3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Amira_the_Sincere_3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.10"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.11"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.12"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.13"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.14"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Amira_the_Sincere.npc.dialogue.15"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Leave",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Amira_the_Sincere_3"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,183 @@
+{
+    "format_version": "1.20.13",
+    "animations":
+     { 
+     "animation.combat.ukigoshi": {
+         "timeline": {
+            "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"
+                    
+                    ],
+        
+            "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow","/title @a title Uki-Goshi"],
+            
+            "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+            
+            "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+            "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+            "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_uki-goshi"],
+            "14" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_tai-otoshi"],
+            "21" :["/event entity @s remove"]
+
+     
+            
+           
+
+         },
+         
+         "animation_length": 21.1,
+         "loop": false
+     },
+     "animation.combat.taiotoshi": {
+        "timeline": {
+           "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+       
+           "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow","/title @a title Taio-Toshi"],
+           
+           "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+           
+           "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+           "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+           "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_tai-otoshi"],
+
+           "21" :["/event entity @s remove"]
+
+    
+           
+          
+
+        },
+        
+        "animation_length": 21.1,
+        "loop": false
+    },
+     "animation.combat.tsurikomigoshi": {
+        "timeline": {
+           "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+       
+           "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow"],
+           
+           "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+           
+           "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+           "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+           "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_tsurikomi-goshi"],
+           
+           "21" :["/event entity @s remove"]
+
+    
+           
+          
+
+        },
+        
+        "animation_length": 21.1,
+        "loop": false
+    },
+    "animation.combat.seoiotoshi": {
+       "timeline": {
+          "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+      
+          "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow","/title @a title Seoi-Otoshi"],
+          
+          "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+          
+          "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+          "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+          "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_seoi-otoshi"],
+          
+          "21" :["/event entity @s remove"]
+
+   
+          
+         
+
+       },
+       
+       "animation_length": 21.1,
+       "loop": false
+   },
+   "animation.combat.ogoshi": {
+      "timeline": {
+         "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+     
+         "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow","/title @a title O-Goshi"],
+         
+         "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+         
+         "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+         "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+         "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_o-goshi"],
+         
+         "21" :["/event entity @s remove"]
+
+  
+         
+        
+
+      },
+      
+      "animation_length": 21.1,
+      "loop": false
+  },
+  "animation.combat.sotomakikomi": {
+     "timeline": {
+        "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+    
+        "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow","/title @a title Soto-Makikomi"],
+        
+        "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+        
+        "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+        "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+        "12" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.player_move_soto-makikomi"],
+        
+        "21" :["/event entity @s remove"]
+
+ 
+        
+       
+
+     },
+     
+     "animation_length": 21.1,
+     "loop": false
+ },
+ "animation.combat.opening.move":{
+
+   "timeline": {
+      "0.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.default"],
+  
+      "0.5" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.bow"],
+      
+      "5.75" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.walk"],
+      
+      "8.0" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple","/title @a title Player 1's move"],
+
+      "10" :["/playanimation @e[type=combat:combat_tatami,c=1] animation.combat_area.grapple"],
+
+      "21" :["/event entity @s remove"]  
+       
+
+   },
+   
+   "animation_length": 21.1,
+   "loop": false}
+    }
+}
+
+
+
+
+

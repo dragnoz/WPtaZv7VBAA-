@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:master_zara",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/character/master_zara"
+			},
+			"geometry": {
+				"default": "geometry.master_zara"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

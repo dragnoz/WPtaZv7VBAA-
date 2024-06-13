@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "props:pipes_leaking",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pipes_leaking"
+			},
+			"geometry": {
+				"default": "geometry.pipes_leaking"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "pipes_leaking_spawn_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "isle:courage",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			
+			"animations": {"commands":  "animation.isle.courage"},
+			"scripts": {"animate": ["commands"]}
+
+				
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "commands" ]
+			  },
+              "minecraft:collision_box": {
+                "width":0,
+                "height": 0
+              },
+              
+			  "minecraft:nameable": {
+				"always_show":true,
+				"allow_name_tag_renaming": true
+			  },
+              "minecraft:persistent": {
+            },
+            "minecraft:npc": {
+              "npc_data": {
+                "portrait_offsets": {
+                  "translate": [-7, 50, 0],
+                  "scale": [1.75, 1.75, 1.75]
+                },
+                "picker_offsets": {
+                  "translate": [0, 20, 0],
+                  "scale": [1.7, 1.7, 1.7]
+                }
+              }
+            },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			}
+			
+		},
+		"component_groups": {
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            },
+
+			"courage1":{
+				"minecraft:type_family": {
+					"family": [ "courage1" ]
+				  }
+			},
+ 
+			"courage2":{
+				"minecraft:type_family": {
+					"family": [ "courage2" ]
+				  }
+			}
+            
+
+		},
+		"events":{
+
+			"remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			},
+			"courage1":{
+				"add": {
+					"component_groups": [ "courage1" ]
+				}
+			},
+			"courage2":{
+				"add": {
+					"component_groups": [ "courage2" ]
+				}
+			},
+			"clear_info":{
+				"remove": {
+					"component_groups": [ "courage1","courage2" ]
+				}
+			
+		
+	}
+	}
+}
+}

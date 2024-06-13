@@ -1,0 +1,31 @@
+{
+    "format_version": "1.18.10",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "blighty:tcard08",
+            "materials": {
+                "default": "villager_v2"
+            },
+          
+            "textures": {
+                "default": "textures/hands/tcard08"
+            },
+            "geometry": {
+                "default": "geometry.blighty.cardtest"
+            },
+            "scripts": {
+                "animate": [ "controller.holding.fp" ]
+            },
+            "animations": {
+                "controller.holding.fp": "controller.animation.card.wield",
+                "holding.fp": "animation.card.holding.first_person",
+                "use.fp": "animation.card.use.first_person",
+                "use.tp": "animation.card.use.third_person",
+                "holding.tp": "animation.card.holding.third_person"
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}

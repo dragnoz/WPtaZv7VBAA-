@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.notifications": {
+			"loop": true,
+			"animation_length": 4,
+			"timeline": {
+				"0.0": [
+					"/function command_center/particle/notifications"
+
+				]
+			}
+		},
+		"animation.cardcollector.isletut": {
+			"loop": true,
+			"animation_length": 1,
+			"timeline": {
+				"0.0": [
+					"/dialogue open @e[c=1,type=character:card_trader] @a[x=-97,y=62,z=3983,r=10,tag=dialogue1] Card_Collector_jumpcard"
+
+				]
+			}
+		},
+		"animation.pet.hunger": {
+			"loop": true,
+			"animation_length": 10,
+			"timeline": {
+				"0.0": [
+					"/scoreboard players add @s hunger 1",
+					"/execute as @s[scores={hunger=100..100}] at @s run say hungry"
+
+				]
+			}
+		}
+
+
+	}
+}

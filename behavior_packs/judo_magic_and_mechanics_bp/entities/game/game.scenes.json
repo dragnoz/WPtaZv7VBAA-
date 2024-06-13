@@ -1,0 +1,91 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "game:scenes",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": { "remove":"animation.game.goals.entities.remove",
+                             "posx":   "animation.posx",
+							"scene1":  "animation.game.scenes.scene1",
+							"scene2":  "animation.game.scenes.scene2",
+							"scene3":  "animation.game.scenes.scene3",
+                            "scene4":  "animation.game.scenes.scene4",
+                            "scene5":  "animation.game.scenes.scene5",
+                            "scene6":  "animation.game.scenes.scene6",
+                            "target":  "animation.game.scenes.target"
+							},
+			"scripts": {"animate": [{"remove": "q.variant == 0"},
+									{"scene1": "q.variant == 1"},
+                                    {"posx": "q.variant == 1"},
+									{"scene2": "q.variant == 2"},
+									{"scene3": "q.variant == 3"},
+									{"scene4": "q.variant == 4"},
+									{"scene5": "q.variant == 5"},
+									{"scene6": "q.variant == 6"},
+                                    {"target": "q.variant == 7"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"info","gamegoal"
+				]
+			},
+	
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+	
+			"minecraft:scale": {
+				"value": 0
+			},
+
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			}
+		},
+		"component_groups": {
+			"scene1": {"minecraft:variant": {"value": 1}},
+			"scene2": {"minecraft:variant": {"value": 2}},
+			"scene3": {"minecraft:variant": {"value": 3}},
+			"scene4": {"minecraft:variant": {"value": 4}},
+			"scene5": {"minecraft:variant": {"value": 5}},
+			"scene6": {"minecraft:variant": {"value": 6}},
+            "target": {"minecraft:variant": {"value": 7},"minecraft:type_family": {"family": ["endscene"]}},
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            }
+            
+
+		},
+		"events":{
+			"scene1": {"remove": {"component_groups": [ "scene1","scene2","scene3","scene4"] },"add": {"component_groups": [ "scene1"] }},
+			"scene2": {"remove": {"component_groups": [ "scene1","scene2","scene3","scene4"] },"add": {"component_groups": [ "scene2"] }},
+			  "scene3": {"remove": {"component_groups": [ "scene1","scene2","scene3","scene4"] },"add": {"component_groups": [ "scene3"] }},
+			  "scene4": {"remove": {"component_groups": [ "scene1","scene2","scene3","scene4"] },"add": {"component_groups": [ "scene4"] }},
+              
+              "scene5": {"add": {"component_groups": ["scene5"] }},
+              "scene6": {"add": {"component_groups": ["scene6"] }},
+
+              "target": {"add": {"component_groups": ["target"] }},
+
+			
+			"remove":{"add": {"component_groups": [ "remove" ]}}
+		
+	}
+	}
+}

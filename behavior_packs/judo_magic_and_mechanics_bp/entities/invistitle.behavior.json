@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "display:map_timer",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["remove"]},
+			"animations": {"remove": "animation.card.map"}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			  }
+		},
+		"component_groups": {
+			"invistitle": {
+			  "minecraft:timer": {
+				"looping": false,
+				"time": 5.0,
+				"time_down_event": {
+				  "event": "remove",
+				  "target": "self"
+				}
+			  }
+			 
+			},
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			}
+		  },
+		  "events": {
+			"minecraft:entity_born": {
+			  "add": {"component_groups": [ "invistitle"] }
+			},
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			}
+		  }
+	
+		
+}}
+
+

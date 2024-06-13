@@ -1,0 +1,107 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.build.entities.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+          "animation.game.build.event1": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree1 ~-4 ~3 ~-4 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event2": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree2 ~-4 ~3 ~-4 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event3": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree3 ~-4 ~3 ~-4 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event4": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree4 ~-4 ~3 ~-4 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event5": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree5 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event6": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree6 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event7": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree7 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event8": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree8 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event9": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree9 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event10": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree10 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event11": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree11 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.build.event12": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree12 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        }
+    }
+}
+
+
+

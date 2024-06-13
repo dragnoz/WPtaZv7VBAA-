@@ -1,0 +1,26 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "card1",
+        "npc_name": "Card 1",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "cards.card1:description.text1"
+           
+            }
+          ]          
+        },
+        "buttons": [
+          {
+            "name": "Give photos",
+            "commands": [
+              "/dialogue open @s @initiator npc.climate.1"
+            ]
+          }
+        ]
+  }]
+  }
+}

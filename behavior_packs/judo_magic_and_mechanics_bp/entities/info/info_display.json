@@ -1,0 +1,111 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "info:display",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+							"poster1": "animation.poster1",
+							"poster2": "animation.poster2",
+							"poster3": "animation.poster3",
+							"poster4": "animation.poster4",
+							"poster5": "animation.poster5",
+							"poster6": "animation.poster6",
+							"poster7": "animation.poster7",
+							"poster8": "animation.poster8",
+							"poster9": "animation.poster9"
+							},
+			
+			"scripts": {"animate": [
+									{"poster1": "q.variant == 1"},
+									{"poster2": "q.variant == 2"},
+									{"poster3": "q.variant == 3"},
+									{"poster4": "q.variant == 4"},
+									{"poster5": "q.variant == 5"},
+									{"poster6": "q.variant == 6"},
+									{"poster7": "q.variant == 7"},
+									{"poster8": "q.variant == 8"},
+									{"poster9": "q.variant == 9"}
+                                    ]}
+			
+
+				
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "display" ]
+			  },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			}
+		},
+		"component_groups": {
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            },
+			"map1":{
+				"minecraft:type_family": {
+					"family": [ "map1" ]
+				  }
+			},
+			"map": {"minecraft:variant": {"value": 0}},
+            "poster1": {"minecraft:variant": {"value":1}},
+            "poster2": {"minecraft:variant": {"value":2}},
+            "poster3": {"minecraft:variant": {"value":3}},
+            "poster4": {"minecraft:variant": {"value":4}},
+            "poster5": {"minecraft:variant": {"value":5}},
+            "poster6": {"minecraft:variant": {"value":6}},
+            "poster7": {"minecraft:variant": {"value":7}},
+            "poster8": {"minecraft:variant": {"value":8}},
+            "poster9": {"minecraft:variant": {"value":9}},
+
+
+            "reset": {"minecraft:variant": {"value":10}}
+
+		},
+		"events":{
+			"map": {"add": {"component_groups": ["map"] }},
+			
+			"poster1": {"add": {"component_groups": ["poster1"] }},
+			"poster2": {"add": {"component_groups": ["poster2"] }},
+			"poster3": {"add": {"component_groups": ["poster3"] }},
+			"poster4": {"add": {"component_groups": ["poster4"] }},
+			"poster5": {"add": {"component_groups": ["poster5"] }},
+			"poster6": {"add": {"component_groups": ["poster6"] }},
+			"poster7": {"add": {"component_groups": ["poster7"] }},
+			"poster8": {"add": {"component_groups": ["poster8"] }},
+			"poster9": {"add": {"component_groups": ["poster9"] }},
+
+			"reset": {"add": {"component_groups": ["reset"] }},
+
+
+			"map1":{
+				"add": {
+					"component_groups": [ "map1" ]
+				}
+			},
+			
+			"remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			}
+		
+	}
+	}
+}

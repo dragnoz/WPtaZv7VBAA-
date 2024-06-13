@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "UI:select1",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "UI:select1",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

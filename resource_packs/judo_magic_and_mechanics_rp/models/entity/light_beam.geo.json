@@ -1,0 +1,55 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.light_beam",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 14,
+				"visible_bounds_offset": [0, 5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, -33, -1],
+							"size": [2, 216, 2],
+							"pivot": [0.5, 1, -0.5],
+							"rotation": [0, 0, -20],
+							"uv": {
+								"north": {
+									"uv": [48, 48],
+									"uv_size": [-48, -48]
+								},
+								"east": {
+									"uv": [48, 48],
+									"uv_size": [-48, -48]
+								},
+								"south": {
+									"uv": [48, 48],
+									"uv_size": [-48, -48]
+								},
+								"west": {
+									"uv": [48, 48],
+									"uv_size": [-48, -48]
+								},
+								"up": {
+									"uv": [0, 0],
+									"uv_size": [48, 48]
+								},
+								"down": {
+									"uv": [0, 0],
+									"uv_size": [48, 48]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

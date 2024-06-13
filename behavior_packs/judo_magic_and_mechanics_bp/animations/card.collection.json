@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { "animation.card.collection": {
+            "timeline": {
+             
+                "0.0": ["/event entity @e[type=cards:card_selector,r=10]   remove"], 
+                "0.1": ["/summon cards:card_selector ~       ~      ~1 ~ ~ card01"], 
+                "0.2": ["/summon cards:card_selector ~0.5    ~1.5   ~1 ~ ~ card02"] , 
+                "0.3": ["/summon cards:card_selector ~-0.5   ~1.5   ~1 ~ ~ card03"] , 
+                "0.4": ["/summon cards:card_selector ~       ~0.5   ~1 ~ ~ card04"] , 
+                "0.5": ["/summon cards:card_selector ~0.5    ~0.5   ~1 ~ ~ card05"] , 
+                "0.6": ["/summon cards:card_selector ~-0.5   ~0.5   ~1 ~ ~ card06"] , 
+                "0.8": ["/summon cards:card_selector ~0.5    ~1     ~1 ~ ~ card07"] , 
+                "0.9": ["/summon cards:card_selector ~-0.5   ~1     ~1 ~ ~ card08"] , 
+                "1.0": ["/summon cards:card_selector ~       ~1     ~1 ~ ~ card09"] , 
+                "1.1": ["/summon cards:card_selector ~       ~1.5   ~1 ~ ~ card10"]  , 
+                "1.2": ["/summon cards:card_selector ~-0.5   ~      ~1 ~ ~ close",
+                        "/summon cards:card_selector ~0.5    ~      ~1 ~ ~ accept"],
+                "1.3": ["/event entity @e[type=cards:card_selector] npc"]  ,    
+
+                "1.31": ["/dialogue change @e[family=card01,c=1] card01"] , 
+                "1.32": ["/dialogue change @e[family=card02,c=1]  card02"] , 
+                "1.33": ["/dialogue change @e[family=card03,c=1]  card03"] , 
+                "1.34": ["/dialogue change @e[family=card04,c=1]  card04"] , 
+                "1.35": ["/dialogue change @e[family=card05,c=1]  card05"] , 
+                "1.36": ["/dialogue change @e[family=card06,c=1]  card06"] , 
+                "1.37": ["/dialogue change @e[family=card07,c=1]  card07"] , 
+                "1.38": ["/dialogue change @e[family=card08,c=1]  card08"] , 
+                "1.39": ["/dialogue change @e[family=card09,c=1]  card09"] , 
+                "1.40": ["/dialogue change @e[family=card10,c=1]  card10"] , 
+                "1.41": ["/dialogue change @e[family=accept,c=1]  accept"] , 
+                "1.42": ["/dialogue change @e[family=close,c=1]  close"] , 
+
+                
+                "2" :["/event entity @s remove"]  
+            },
+            "animation_length": 2.1,
+            "loop": false
+        }
+    }
+}
+
+

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "master:kwame",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/kwame"
+			},
+			"geometry": {
+				"default": "geometry.kwame"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

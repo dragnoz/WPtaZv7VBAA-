@@ -1,0 +1,245 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+        {
+            "scene_tag": "card01",
+            "npc_name": "",
+            "text": {
+              "rawtext": [
+                {
+                  "text": "§9§l浮腰 Uki-goshi (floating hip throw)§l\n\nA technique is that it requires less strength and speed than other hip throws.\n\n§dPlaying this card gives you +2§l\n\n§2Can be played as a defence."
+               
+                }
+              ]          
+            },
+            "buttons": [
+              {
+                "name": "Select Card",
+                "commands": [
+                  "/give @initiator blighty:tcard01"
+                ]
+              }
+            ]
+      },
+      {
+        "scene_tag": "card02",
+        "npc_name": "",
+        "text": {
+          "rawtext": [
+            {
+              "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+           
+            }
+          ]          
+        },
+        "buttons": [
+          {
+            "name": "Select Card",
+            "commands": [
+                "/give @initiator blighty:tcard02"
+            ]
+          }
+        ]
+    }, 
+    {
+    "scene_tag": "card03",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard03"
+        ]
+      }
+    ]
+    }, 
+    {
+        "scene_tag": "card04",
+        "npc_name": "",
+        "text": {
+          "rawtext": [
+            {
+              "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+           
+            }
+          ]          
+        },
+        "buttons": [
+          {
+            "name": "Select Card",
+            "commands": [
+                "/give @initiator blighty:tcard04"
+            ]
+          }
+        ]
+  },
+  {
+    "scene_tag": "card05",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard05"
+        ]
+      }
+    ]
+}, {
+    "scene_tag": "card06",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard06"
+        ]
+      }
+    ]
+},
+{
+   "scene_tag": "card07",
+   "npc_name": "",
+   "text": {
+     "rawtext": [
+       {
+         "text": "§9§lReflection§r\n\nYou take a moment to breath and reflect about all you have learnt.\n\n§dPlaying this card gives you +2 Focus"
+      
+       }
+     ]          
+   },
+   "buttons": [
+     {
+       "name": "Select Card",
+       "commands": [
+        "/give @initiator blighty:tcard07"
+       ]
+     }
+   ]
+},  {
+    "scene_tag": "card08",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard08"
+        ]
+      }
+    ]
+}, {
+    "scene_tag": "card09",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard09"
+        ]
+      }
+    ]
+},
+{
+    "scene_tag": "card10",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Select Card",
+        "commands": [
+            "/give @initiator blighty:tcard10"
+        ]
+      }
+    ]
+},
+{
+    "scene_tag": "close",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "Close",
+        "commands": [
+            "/title @initiator title Close",
+            "/event entity @e[type=cards:card_selector,r=6] remove"
+        ]
+      }
+    ]
+},
+{
+    "scene_tag": "accept",
+    "npc_name": "",
+    "text": {
+      "rawtext": [
+        {
+          "text": "§9§lTitle§l\n\nDescription\n\n§dWhat it does§l\n§2Extra Conditions."
+       
+        }
+      ]          
+    },
+    "buttons": [
+      {
+        "name": "accept",
+        "commands": [
+            "/title @initiator title accept"
+        ]
+      }
+    ]
+}
+]
+  }
+}

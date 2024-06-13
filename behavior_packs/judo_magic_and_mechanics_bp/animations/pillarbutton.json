@@ -1,0 +1,45 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.pillarbutton.stage1": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @s animation.redbutton.press"],
+                 "0":["/clone 1927 57 -2343 1930 59 -2340 1930 63 -2328"],
+                "0.1":["/tag @s add pressme"],
+                "0.9":["/event entity @s reset"],
+                "0.99":["/summon game:scenes ~ ~ ~ ~ ~ scene5"]
+           
+            },
+            "animation_length": 1,
+            "loop": true
+        },
+        "animation.pillarbutton.general": {
+            "timeline": {
+             
+                "0.0":[ "/execute as @s[tag=!pressme] at @s run particle sign:pressme ~1 ~2 ~ "]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.pillarbutton.stage2": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:pillarbutton_of_kindness] animation.pillarbutton_of_kindness.stage2 "],
+                "4.9":["/event entity @e[type=prop:pillarbutton_of_kindness] stage2wait"]
+           
+            },
+            "animation_length": 5,
+            "loop": true
+        },
+        "animation.pillarbutton.stage2_wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:pillarbutton_of_kindness] animation.pillarbutton_of_kindness.stage2_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        }
+    }
+}

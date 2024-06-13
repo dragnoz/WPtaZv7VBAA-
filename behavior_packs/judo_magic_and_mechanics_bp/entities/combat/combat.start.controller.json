@@ -1,0 +1,99 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "combat:start",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"ukigoshi":  "animation.combat.ukigoshi", 
+				"taiotoshi":  "animation.combat.taiotoshi",
+				"ogoshi":  "animation.combat.ogoshi",
+				"tsurikomigoshi": "animation.combat.tsurikomigoshi",
+				"seoiotoshi":"animation.combat.seoiotoshi",
+				"sotomakikomi":"animation.combat.sotomakikomi",
+				"opening":"animation.combat.opening.move"
+				},
+			"scripts": {"animate": [
+						{"ukigoshi": "q.variant == 0"},
+						{"taiotoshi": "q.variant == 1"},
+						{"ogoshi": "q.variant == 2"},
+						{"tsurikomigoshi": "q.variant == 3"},
+						{"seoiotoshi": "q.variant == 4"},
+						{"sotomakikomi": "q.variant == 5"},
+						{"opening": "q.variant == 6"}
+						]}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			  }
+		},
+		"component_groups": {
+			"invistitle": {
+			  "minecraft:timer": {
+				"looping": false,
+				"time": 5.0,
+				"time_down_event": {
+				  "event": "remove",
+				  "target": "self"
+				}
+			  }
+			 
+			},
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			},
+			"default": {"minecraft:variant": {"value": 0}},
+			"move1": {"minecraft:variant": {"value": 1}},
+			"move2": {"minecraft:variant": {"value": 2}},
+			"move3": {"minecraft:variant": {"value": 3}},
+			"move4": {"minecraft:variant": {"value": 4}},
+			"move5": {"minecraft:variant": {"value": 5}},
+			"move6": {"minecraft:variant": {"value": 6}},
+			"move7": {"minecraft:variant": {"value": 7}},
+			"move8": {"minecraft:variant": {"value": 8}},
+			"move9": {"minecraft:variant": {"value": 9}},
+			"move10": {"minecraft:variant": {"value": 10}},
+			"move11": {"minecraft:variant": {"value": 11}},
+			"move12": {"minecraft:variant": {"value": 12}}
+		  },
+		  "events": {
+			"default": {"add": {"component_groups": [ "default"] }},
+			"move1": {"add": {"component_groups": [ "move1"] }},
+			"move2": {"add": {"component_groups": [ "move2"] }},
+			"move3": {"add": {"component_groups": [ "move3"] }},
+			"move4": {"add": {"component_groups": [ "move4"] }},
+			"move5": {"add": {"component_groups": [ "move5"] }},
+			"move6": {"add": {"component_groups": [ "move6"] }},
+			"move7": {"add": {"component_groups": [ "move7"] }},
+			"move8": {"add": {"component_groups": [ "move8"] }},
+			"move9": {"add": {"component_groups": [ "move9"] }},
+			"move10": {"add": {"component_groups": [ "move10"] }},
+			"move11": {"add": {"component_groups": [ "move11"] }},
+			"move12": {"add": {"component_groups": [ "move12"] }},
+
+			"minecraft:entity_born": {
+			  "add": {"component_groups": [ "invistitle"] }
+			},
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			}
+		  }
+	
+		
+}}
+
+

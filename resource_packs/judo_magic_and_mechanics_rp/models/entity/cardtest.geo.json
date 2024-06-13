@@ -1,0 +1,155 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blighty.cardtest",
+				"texture_width": 33,
+				"texture_height": 33,
+				"visible_bounds_width": 525,
+				"visible_bounds_height": 533,
+				"visible_bounds_offset": [0, -123.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "upperbody",
+					"parent": "waist",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "upperbody",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [23, 28, 12]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [34.83289, 15, 13.91013]
+				},
+				{
+					"name": "rightItem2",
+					"parent": "leftArm",
+					"pivot": [22.83289, 15, 13.91013],
+					"locators": {
+						"lead_hold2": [22.83289, 15, 13.91013]
+					}
+				},
+				{
+					"name": "bone4",
+					"parent": "rightItem2",
+					"pivot": [27.83289, 2.85, 11.91013]
+				},
+				{
+					"name": "bone5",
+					"parent": "bone4",
+					"pivot": [26.83289, 0.75, 12.66013]
+				},
+				{
+					"name": "bone6",
+					"parent": "bone4",
+					"pivot": [28.33289, 8, 11.41013],
+					"cubes": [
+						{"origin": [23.33289, 3, 10.91013], "size": [10, 10, 1], "inflate": 0.025, "uv": [1, 19]}
+					],
+					"locators": {
+						"card2": [28.83289, 8, 10.91013]
+					}
+				},
+				{
+					"name": "armpart2",
+					"parent": "bone4",
+					"pivot": [22.83289, 23, 12.91013],
+					"cubes": [
+						{"origin": [20.83289, 12, 10.91013], "size": [4, 12, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 24, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 25, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 26, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 27, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 28, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 29, 10.91013], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [20.83289, 12, 10.91013], "size": [4, 12, 4], "inflate": 0.24, "uv": [17, 0]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "bone",
+					"parent": "rightItem",
+					"pivot": [-1, 2.85, -1]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [-2, 0.75, -0.25]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone",
+					"pivot": [-0.5, 8, -1.5],
+					"cubes": [
+						{"origin": [-5.5, 3, -2], "size": [10, 10, 1], "inflate": 0.025, "uv": [1, 19]}
+					],
+					"locators": {
+						"card": [0, 8, -2]
+					}
+				},
+				{
+					"name": "armpart",
+					"parent": "bone",
+					"pivot": [-6, 23, 0],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [0, 0]},
+						{"origin": [-8, 24, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 25, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 26, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 27, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 28, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 29, -2], "size": [4, 1, 4], "uv": [0, 0]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.24, "uv": [17, 0]}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-1.9, 12, 0]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,86 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Combat_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Combat.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Combat.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Combat.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Combat.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Combat.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "uki-goshi",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_uki-goshi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    },
+                    {
+                        "name": "seoi-otoshi",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_seoi-otoshi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    },
+                    {
+                        "name": "tai-otoshi",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_tai-otoshi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    },
+                    {
+                        "name": "soto-makikomi",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_soto-makikomi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    },
+                    {
+                        "name": "tsurikomi-gosh",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_tsurikomi-goshi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    },
+                    {
+                        "name": "o-goshi",
+                        "commands": [
+                            "/playanimation @e[type=combat:combat_tatami] animation.combat_area.player_move_o-goshi",
+                            "/execute as @initiator at @s run tp @s ~ ~ ~ facing -4000 73 -4011"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

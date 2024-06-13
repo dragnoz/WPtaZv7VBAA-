@@ -1,0 +1,83 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.card.wield": {
+			"initial_state": "first_person",
+			"states": {
+				"first_person": {
+					"animations": ["holding.fp"],
+					"transitions": [
+						{"third_person": "!c.is_first_person"},
+						{"use_first_person": "query.main_hand_item_use_duration > 0.0f"}
+					]
+				},
+				"third_person": {
+					"animations": ["holding.tp"],
+					"transitions": [
+						{"first_person": "c.is_first_person"},
+						{"use_third_person": "query.main_hand_item_use_duration > 0.0f"}
+					]
+				},
+				"use_first_person": {
+					"animations": ["use.fp"],
+					"particle_effects": [
+						{
+							"effect": "laugh_particle_1",
+							"locator": "card"
+						}
+					],
+					"transitions": [
+						{"first_person": "q.all_animations_finished"},
+						{"third_person": "!c.is_first_person"}
+					]
+				},
+				"use_third_person": {
+					"animations": ["use.tp"],
+					"transitions": [
+						{"third_person": "q.all_animations_finished"},
+						{"first_person": "c.is_first_person"}
+					]
+				}
+			}
+		},
+		"controller.animation.card.front": {
+			"initial_state": "first_person",
+			"states": {
+				"first_person": {
+					"animations": ["holding.fp"],
+					"transitions": [
+						{"third_person": "!c.is_first_person"},
+						{"use_first_person": "query.main_hand_item_use_duration > 0.0f"}
+					]
+				},
+				"third_person": {
+					"animations": ["holding.tp"],
+					"transitions": [
+						{"first_person": "c.is_first_person"},
+						{"use_third_person": "query.main_hand_item_use_duration > 0.0f"}
+					]
+				},
+				"use_first_person": {
+					"animations": ["use.fp"],
+					"particle_effects": [
+						{
+							"effect": "laugh_particle_1",
+							"locator": "card"
+						}
+					],
+					"transitions": [
+						{"first_person": "q.all_animations_finished"},
+						{"third_person": "!c.is_first_person"}
+					]
+				},
+				"use_third_person": {
+					"animations": ["use.tp"],
+					"transitions": [
+						{"third_person": "q.all_animations_finished"},
+						{"first_person": "c.is_first_person"}
+					]
+				}
+			}
+		}
+	}
+}

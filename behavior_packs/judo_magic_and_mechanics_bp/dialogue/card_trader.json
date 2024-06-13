@@ -1,0 +1,26 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "card_trader1",
+        "npc_name": "Card Trader",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "cards.trader.text1"
+           
+            }
+          ]          
+        },
+        "buttons": [
+          {
+            "name": "Take Card",
+            "commands": [
+              "/tag @initiator add questcard"
+            ]
+          }
+        ]
+  }]
+  }
+}

@@ -1,0 +1,222 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+
+     "animation.game.scenes.target" :{
+        "timeline": {
+            "0.0": ["/execute as @a[tag=posx] at @s run function command_center/player_control/nomovcam",
+                    "/tp @a[tag=posx] -153 106 4039"
+
+                    ] },
+        "animation_length": 20.1,
+        "loop": true
+    },
+
+
+        "animation.posx" :{
+            "animation_length":0.02, "loop": true,
+            "timeline": {
+                        "0.0": ["/execute positioned 45.08 100.00 4040.05 run execute as @s[r=4] at @s run event entity @s remove",
+                        "/execute positioned 45.08 100.00 4040.05 run execute as @a[r=5] at @s run function command_center/player_control/yesmovcam",
+                        "/execute positioned 45.08 100.00 4040.05 run execute as @a[r=4] at @s run tag @s[tag=posx] remove posx",
+                            "/execute as @a[tag=posx] at @s run tp @s ^ ^ ^0.8 facing 48 105 4041",
+                        "/execute as @s  at @s run tp @s @p[c=1]"
+                        
+                        
+                                ]
+                        
+                    
+                        }
+
+        },
+        
+       
+          "animation.game.scenes.scene1": {
+            "timeline": {
+                "0.0": ["/execute as @a[tag=posx] at @s run function command_center/player_control/nomovcam",
+                        "/tp @a[tag=posx] -153 106 4039"
+
+                        ] },
+            "animation_length": 20.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene2": {
+            "timeline": {
+                "0.0": ["/title @a title unlock:island1"  ],
+                "1.6": ["/tp @a -33.64 72.00 85.00 90 -15","/tp @s -33.64 72.00 85.00" ],
+                "1.5": ["/execute as @a at @s run inputpermission set @s camera disabled",
+                        "/execute as @a at @s run inputpermission set @s movement disabled"
+                ],
+                "4":["/title @a title dz:letterbox_instant"],
+                "5":["/event entity @e[type=info:map] unlock1"],
+                "9.0":["/execute as @a at @s run function command_center/player_control/yesmovcam"],
+                "9.9" :["@s remove"]
+            },
+            "animation_length": 10,
+            "loop": true
+        },
+        "animation.game.scenes.scene3": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s run tp @a 27 167 -4314 facing -13 161 -4320"],
+                 "0.5":  ["/function command_center/player_control/nomovcam" ],
+                "1.0":["/summon character:mischievous_pixie -17 163 -4320 facing -13 161 -4320 event3"],
+                "0.3": ["/effect @a slowness 3 5 true"],
+                "3": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+                "4.0": ["/execute as @a at @s run tp @s[c=1] ~ ~ ~ facing 5 159 -4343" ],
+                "4.05": ["/summon character:mischievous_pixie 2 161 -4344 facing 5 159 -4343 event3"],
+                "4.5": ["/effect @a slowness 3 5 true"],
+                "7.0": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+
+                "8.0": ["/execute as @a at @s run tp @s[c=1] ~ ~ ~ facing 25 157 -4341" ],
+                "8.05": ["/summon character:mischievous_pixie 27 160 -4343 facing 25 157 -4341 event3"],
+                "8.5": ["/effect @a slowness 3 5 true"],
+                "11.0": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+
+                "13.5":["/execute as @a at @s run tp @s[c=1] 35 68 -4265 facing 40 69 -4265","/function command_center/player_control/yesmovcam"],
+                "15.0":["/dialogue open @e[type=dz:character,c=1,r=6] @p Samir_the_Steadfast_1"],
+
+            
+
+
+
+                "15.1":["/event entity @s remove"]
+            },
+            "animation_length": 15.2,
+            "loop": true
+        },
+        "animation.game.scenes.scene4": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s run tp @s[c=1] 156 116 -4315 facing 143 110 -4314","/tp @s 156 116 -4315 "],
+                "1":["/summon character:mischievous_pixie 143 111 -4314 facing @p[c=1] event3",
+                    "/function command_center/player_control/nomovcam"
+                ],
+                "4": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie"],
+                
+                
+                "5": ["/execute as @a at @s run tp @s[c=1] -38 111 -4471 facing -46 109 -4462","/tp @s -38 111 -4471" ],
+                "5.5": ["/summon character:mischievous_pixie -46 110 -4462 facing @p[c=1] event3"],
+                "8.5": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie"],
+
+                "9.5": ["/execute as @a at @s run tp @s[c=1] -19 6 -4332 facing -6 60 -4334","/tp @s -19 61 -4332 " ],
+                "10.5": ["/summon character:mischievous_pixie -8 59 -4334  facing @p[c=1] event3"],
+
+               "13.5": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie","/summon master:master_samir 38 68 -4266 ~ ~ npc"],
+
+
+
+               "14.5":["/execute as @a at @s run tp @s[c=1] 35 68 -4265 facing 40 69 -4265","/function command_center/player_control/yesmovcam"],
+
+
+
+                
+
+
+                "17":["/event entity @s remove"]
+            },
+            "animation_length": 17.2,
+            "loop": true
+        },
+        "animation.game.scenes.scene5": {
+            "animation_length": 30,
+            "loop": true,
+            "timeline": {
+                "1.0":["/execute as @a[r=6] at @s run function command_center/player_control/nomovcam"],
+                "1.1": ["/execute as @a[r=6] at @s run tp @s 1920.78 64.00 -2327.36 facing 1931 66 -2328"],
+                
+                "2.0":["/clone 1931 52 -2340 1928 54 -2343 1930 63 -2328"],
+              "3.0":[ "/summon character:mischievous_pixie 1932.88 66.00 -2326.01  ~ ~ event3"],
+    
+                "3.5":["/fill 1931 62 -2327 1932 63 -2326 redstone_block"],
+                "4":["/fill 1931 62 -2327 1932 63 -2326 air"],
+                "5":["/fill 1930 63 -2328 1933 65 -2325 air"],
+                "7":["/camerashake add @a 2"],
+                "8.1":["/fill 1918 62 -2318 1946 62 -2340 air replace water"],
+                "8.3":["/execute as @a at @s run tp @s ~ ~ ~ ~ ~5"],
+                "10.1":["/fill 1918 61 -2318 1946 61 -2340 air replace water"],
+                "10.2":["/execute as @a at @s run tp @s ~ ~ ~ ~ ~5"],
+      
+                "12.1":["/fill 1918 60 -2318 1946 60 -2340 air replace water"],
+                "12.2":["/execute as @a at @s run tp @s ~ ~ ~ ~ ~5"],
+                "14.1":["/fill 1918 59 -2318 1946 59 -2340 air replace water"],
+                "14.2":["/execute as @a at @s run tp @s ~ ~ ~ ~ ~5"],
+
+                "17":["/setblock 1947 66 -2327 redstone_block"],
+                "20":["/summon character:master_rania 1926.90 71.00 -2340.71 ~ ~ npc"],
+                "20.1":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.2":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.3":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.4":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.5":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.6":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.7":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
+                "20.8":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
+                "20.9":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],  
+                "21":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
+                "21.1":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
+
+                "29":["/execute as @a[r=6] at @s run function command_center/player_control/yesmovcam"],
+                "30":["@s remove"]
+            }
+        },
+        "animation.game.scenes.scene6": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree6 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene7": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree7 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene8": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree8 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene9": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree9 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene10": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree10 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene11": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree11 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.scenes.scene12": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree12 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        }
+    }
+}
+
+
+

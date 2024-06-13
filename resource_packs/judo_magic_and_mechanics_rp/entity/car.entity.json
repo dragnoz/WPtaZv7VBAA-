@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cable:car",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/car"
+			},
+			"geometry": {
+				"default": "geometry.car"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

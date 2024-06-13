@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "decor:rubbish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/rubbish"
+			},
+			"geometry": {
+				"default": "geometry.rubbish"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

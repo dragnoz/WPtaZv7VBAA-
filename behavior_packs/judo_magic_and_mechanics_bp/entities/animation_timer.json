@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "timer:temple1",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": { "animate": ["animate"]},
+			"animations": {"animate": "animation.player.animatescene"}
+		},
+		"components": {
+			"minecraft:type_family": { "family": [ "util" ]   },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			  }
+		},
+		"component_groups": {
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			},
+			"temple1": {
+				"minecraft:type_family": { "family": [ "temple1" ]   }
+			  }
+		  },
+		  "events": {
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			},
+			"temple1": {
+				"add": {"component_groups": [ "temple1"] }
+			  }
+		  }
+		
+}}
+
+

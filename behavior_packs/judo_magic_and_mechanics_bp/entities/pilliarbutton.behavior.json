@@ -1,0 +1,89 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "prop:pilliarbutton",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			
+			"properties": {
+				"island3:pillarbutton" :{
+					"type" : "int",
+					"default": 0,
+					"range": [0,20],
+					"client_sync": false
+				}
+			},
+			"animations": { "stage1":"animation.pillarbutton.stage1",
+							"stage1_wait":"animation.pillarbutton.stage1_wait",
+							"stage2":"animation.pillarbutton.stage2",
+							"stage2_wait":"animation.pillarbutton.stage2_wait",
+							"stage3":"animation.pillarbutton.stage3",
+							"stage3_wait":"animation.pillarbutton.stage3_wait",
+							"stage4":"animation.pillarbutton.stage4",
+							"stage4_wait":"animation.pillarbutton.stage4_wait",
+							"stage5":"animation.pillarbutton.stage5",
+							"stage5_wait":"animation.pillarbutton.stage5_wait",
+							"remove":"animation.pillarbutton.remove",
+							"general":"animation.pillarbutton.general"
+							},
+			"scripts": {"animate": ["general",
+									{"stage1": "q.property('island3:pillarbutton' ) ==1"},
+									{"stage1_wait": "q.property('island3:pillarbutton' ) ==2"},
+									{"stage2": "q.property('island3:pillarbutton' ) ==3"},
+									{"stage2_wait": "q.property('island3:pillarbutton' ) ==4"},
+									{"stage3": "q.property('island3:pillarbutton' ) ==5"},
+									{"stage3_wait": "q.property('island3:pillarbutton' ) ==6"},
+									{"stage4": "q.property('island3:pillarbutton' ) ==7"},
+									{"stage4_wait": "q.property('island3:pillarbutton' ) ==8"},
+									{"stage5": "q.property('island3:pillarbutton' ) ==9"},
+									{"stage5_wait": "q.property('island3:pillarbutton' ) ==10"},
+									{"remove": "q.property('island3:pillarbutton' ) ==20"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:interact": {
+				"interactions": [
+				  {
+					"on_interact": {
+					  "filters": {
+						"all_of": [
+						  { "test": "is_family", "subject" : "other", "value" :  "player"}
+						]
+					  },
+					  "event":"stage1"
+					}
+				  }
+				]
+			  },
+			"minecraft:push_through": {
+				"value": 1
+			}
+		},
+		"events":{
+			"reset":{"set_property":{"island3:pillarbutton":0} },
+			"stage1":{"set_property":{"island3:pillarbutton":1} },
+			"stage1wait":{"set_property":{"island3:pillarbutton":2} },
+			"stage2":{"set_property":{"island3:pillarbutton":3} },
+			"stage2wait":{"set_property":{"island3:pillarbutton":4} },
+			"stage3":{"set_property":{"island3:pillarbutton":5} },
+			"stage3wait":{"set_property":{"island3:pillarbutton":6} },
+			"stage4":{"set_property":{"island3:pillarbutton":7} },
+			"stage4wait":{"set_property":{"island3:pillarbutton":8} },
+			"stage5":{"set_property":{"island3:pillarbutton":9} },
+			"stage5wait":{"set_property":{"island3:pillarbutton":10} },
+
+			"add":{"set_property":{"island3:pillarbutton":"query.property('island3:pillarbutton') + 1"} },
+			 
+			"remove":{"set_property":{"island3:pillarbutton":20}}
+		}
+	}
+}

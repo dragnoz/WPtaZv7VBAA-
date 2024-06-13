@@ -1,0 +1,228 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.game.questtimer":{
+            "animation_length":4, "loop": true,
+            "timeline": {
+                        "0.0": []
+                    
+                        }
+        },
+        "animation.keystone.commands" :{
+            "animation_length":4, "loop": true,
+            "timeline": {
+                        "0.0": ["/execute as @s if block ~ ~-1 ~ ochre_froglight run playanimation @s animation.keystone.turn"]
+                    
+                        }
+
+        },
+        "animation.keystone.give" :{
+            "animation_length": 1.2, "loop": false,
+            "timeline": {
+                        "0.0": ["/playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+                        "0.4": [ "/execute as @a[r=10] at @s run give @s key:stone_spawn_egg 1 0 {\"minecraft:can_place_on\":{\"blocks\":[\"ochre_froglight\"]}}"],
+                        "0.6": ["/scoreboard players add @a[scores={title = 220..222},r=10] title 1"],
+                        "1":["/kill @s"]
+                    
+                        }
+
+        },
+        "animation.game.fx.entities.remove": { "timeline": {"0.0": ["/event entity @s remove"]},"animation_length": 0.1, "loop": true},
+       
+          "animation.game.fx.event1": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s run function command_center/player_control/nomovcam",
+                        "/summon character:mischievous_pixie 2165 92 27 facing 2175 94 24 event1" ],
+                "0.1": ["/setblock 2175 93 24 barrier" ],
+                "0.3": ["/tp @a 2175 94 24 facing 2157 85 30" ],
+
+                "4.0" :["/summon character:mischievous_pixie 2174.66 101.22 6.18 facing 2157 100 39 event1",
+                        "/setblock 2175 93 24 barrier"
+                        ],
+                "4.01": ["/tp @a 2175 94 24 facing @e[type=character:mischievous_pixie] " ],
+
+                "7.0" :["/summon character:mischievous_pixie 2193 92 47 facing 2175 94 24 event1",
+                         "/setblock 2175 93 24 barrier" 
+                        ],
+                "7.1": ["/tp @a 2175 94 24 facing 2193 92 47 " ],
+                "10.9": ["/execute as @a at @s run function command_center/player_control/yesmovcam"],
+                "11":["/tp @a 2117 81 -6 facing 2120.00 81 -5.56"],
+                "12": [ "/execute as @a at @s run dialogue open @e[type=dz:character,c=1] @s Respect_Quest_1" ],
+                "12.5":["/dialogue change  @e[type=dz:character,c=1] Respect_Quest_2"],
+                "13.0":["/event entity @s remove"]
+
+            },
+            "animation_length": 13.1,
+            "loop": true
+        },
+        "animation.game.fx.event2": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s if block ~ ~ ~ chain run effect @s levitation 1 3 true" ],
+                "0.1": ["/scoreboard players remove @s timer 1" ],
+                "0.2": ["/event entity @s[scores={timer=0..0}] remove " ]
+            },
+            "animation_length": 1,
+            "loop": true
+        },
+        "animation.game.fx.event3": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s run tp @a 27 167 -4314 facing -13 161 -4320"],
+                 "0.5":  ["/function command_center/player_control/nomovcam" ],
+                "1.0":["/summon character:mischievous_pixie -17 163 -4320 facing -13 161 -4320 event3"],
+                "0.3": ["/effect @a slowness 3 5 true"],
+                "3": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+                "4.0": ["/execute as @a at @s run tp @s[c=1] ~ ~ ~ facing 5 159 -4343" ],
+                "4.05": ["/summon character:mischievous_pixie 2 161 -4344 facing 5 159 -4343 event3"],
+                "4.5": ["/effect @a slowness 3 5 true"],
+                "7.0": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+
+                "8.0": ["/execute as @a at @s run tp @s[c=1] ~ ~ ~ facing 25 157 -4341" ],
+                "8.05": ["/summon character:mischievous_pixie 27 160 -4343 facing 25 157 -4341 event3"],
+                "8.5": ["/effect @a slowness 3 5 true"],
+                "11.0": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run playanimation @e[type=key:stone,c=1] animation.keystone.disapear"],
+
+                "13.5":["/execute as @a at @s run tp @s[c=1] 35 68 -4265 facing 40 69 -4265","/function command_center/player_control/yesmovcam"],
+                "15.0":["/dialogue open @e[type=dz:character,c=1,r=6] @p Samir_the_Steadfast_1"],
+
+        
+
+                "15.1":["/event entity @s remove"]
+            },
+            "animation_length": 15.2,
+            "loop": true
+        },
+        "animation.game.fx.event4": {
+            "timeline": {
+                "0.0": ["/execute as @a at @s run tp @s[c=1] 156 116 -4315 facing 143 110 -4314","/tp @s 156 116 -4315 "],
+                "1":["/summon character:mischievous_pixie 143 111 -4314 facing @p[c=1] event3",
+                    "/function command_center/player_control/nomovcam"
+                ],
+                "4": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie"],
+                
+                
+                "5": ["/execute as @a at @s run tp @s[c=1] -38 111 -4471 facing -46 109 -4462","/tp @s -38 111 -4471" ],
+                "5.5": ["/summon character:mischievous_pixie -46 110 -4462 facing @p[c=1] event3"],
+                "8.5": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie"],
+
+                "9.5": ["/execute as @a at @s run tp @s[c=1] -19 6 -4332 facing -6 60 -4334","/tp @s -19 61 -4332 " ],
+                "10.5": ["/summon character:mischievous_pixie -8 59 -4334  facing @p[c=1] event3"],
+
+               "13.5": ["/execute as @e[type=character:mischievous_pixie,c=1] at @s run summon key:stone ~ ~ ~ ~ ~ pixie","/summon master:master_samir 38 68 -4266 ~ ~ npc"],
+
+
+
+               "14.5":["/execute as @a at @s run tp @s[c=1] 35 68 -4265 facing 40 69 -4265","/function command_center/player_control/yesmovcam"],
+
+
+
+                
+
+
+                "17":["/event entity @s remove"]
+            },
+            "animation_length": 17.2,
+            "loop": true
+        },
+        "animation.game.fx.event5": {
+            "timeline": {
+                "0.0": ["/execute as @a at @e[type=info:waypoint,r=20] run particle scan:reverse "]
+            },
+            "animation_length": 10.1,
+            "loop": true
+        },
+        "animation.game.fx.event6": {
+            "timeline": {
+                "0": ["/event entity @e[type=prop:plant_of_kindness] stage1"],
+                "1.2": ["/event entity @e[type=prop:plant_of_kindness] stage2"],
+                "6.2": ["/event entity @e[type=prop:plant_of_kindness] stage3"],
+                "10.2": ["/event entity @e[type=prop:plant_of_kindness] stage4"],
+                "15.2": ["/event entity @e[type=prop:plant_of_kindness] stage5","@s remove"]
+
+            },
+            "animation_length": 15.3,
+            "loop": true
+        },
+        "animation.game.fx.event7": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree7 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event8": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree8 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event9": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree9 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event10": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree10 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event11": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree11 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event12": {
+            "timeline": {
+                "0.0": ["/structure load isle2:tree12 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
+                "0.05":["/event entity @s remove"]
+            },
+            "animation_length": 0.1,
+            "loop": true
+        },
+        "animation.game.fx.event13": {
+            "timeline": {
+                "0.0": ["/setblock ~ ~ ~ redstone_block"],
+                "0.2": ["/setblock ~ ~ ~ stone"],
+                "0.4": ["/setblock ~1 ~ ~ redstone_block"],
+                "0.6": ["/setblock ~1 ~ ~ stone"],
+                "0.8": ["/setblock ~ ~1 ~ redstone_block"],
+                "1.0": ["/setblock ~ ~1 ~ stone"],
+                "1.2": ["/setblock ~1 ~ ~ redstone_block"],
+                "1.4": ["/setblock ~1 ~ ~ stone"]
+            },
+            
+            "animation_length": 1.6,
+            "loop": true
+        },
+        "animation.game.fx.isle3pushButton" :{
+            "animation_length": 6.1, "loop": false,
+            "timeline": {
+                "0.0": ["/execute as @a[r=6] at @s run tp @s ~ ~ ~ facing 1931 61 -2328"],
+                "1.0":["/execute as @a[r=6] at @s run function command_center/player_control/nomovcam"],
+                "2":["/clone 1936 41 -2325 1933 44 -2328 1931 59 -2329 "],
+                "4":["/fill 1933 59 -2328 1932 59 -2327 redstone_block", "/fill 1933 62 -2328 1932 62 -2327 redstone_block"],
+                "4.01":["/fill 1933 62 -2328 1932 62 -2327 air"],
+                "6":["/execute as @a[r=6] at @s run function command_center/player_control/yesmovcam"],
+                "6.01":["/say im gone"],
+                "6.05":["@s remove"]
+            }
+            
+            
+        }
+    }
+}
+
+
+

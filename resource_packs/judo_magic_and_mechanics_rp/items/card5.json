@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dz:card5",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "card5",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

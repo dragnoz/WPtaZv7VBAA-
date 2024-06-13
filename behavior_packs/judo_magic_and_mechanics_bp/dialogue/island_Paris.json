@@ -1,0 +1,197 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+
+            {
+                "scene_tag": "JudoJudge_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "JudoJudge.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "JudoJudge.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "JudoJudge.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "JudoJudge.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "JudoJudge.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "JudoJudge.npc.dialogue.5"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "MischievousPixie_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "MischievousPixie.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "MischievousPixie.npc.dialogue.8"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "VillageElder_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "VillageElder.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "VillageElder.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "VillageElder.npc.dialogue.9"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

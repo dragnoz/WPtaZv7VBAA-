@@ -1,0 +1,394 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "Respect_Quest_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Respect_Quest.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Respect_Quest.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Respect_Quest.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Respect_Quest.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Respect_Quest.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/scoreboard players set @initiator title 214",
+                            "/summon game:fx ~ ~ ~ ~ ~ event1","/fog @a remove sick"
+                        ]
+                    }
+                ]
+            },
+            {
+             
+                    "scene_tag": "Respect_Quest_1",
+                    "npc_name": {
+                        "rawtext": [
+                            {
+                                "translate": "Respect_Quest.npc"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "rawtext": [
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.5"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.6"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.7"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.8"
+                            }
+                        ]
+                    },
+                    "buttons": [
+                        {
+                            "name": "Next",
+                            "commands": [
+                                "/execute as @initiator at @s run dialogue open @e[type=dz:character,c=1] @s Respect_Quest_2"
+                            ]
+                        }
+                    ]
+                
+            },
+            {
+             
+                    "scene_tag": "Respect_Quest_2",
+                    "npc_name": {
+                        "rawtext": [
+                            {
+                                "translate": "Respect_Quest.npc"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "rawtext": [
+                            {
+                                "text": "\n"
+                            },
+                    
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.9"
+                            },
+                            {
+                                "text": "\n"
+                            },
+                            {
+                                "translate": "Respect_Quest.npc.dialogue.10"
+                            }
+                        ]
+                    },
+                    "buttons": [
+                        {
+                            "name": "Grab a Broom",
+                            "commands": [
+                                "/tag @initiator add sweepcard"
+                            ]
+                        }
+                    ]
+                
+            },
+            {
+                "scene_tag": "GardenerOne_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerOne.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerOne.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerOne.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerOne.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerOne.npc.dialogue.4"
+                        }
+                    ]
+                }
+            },
+            {
+                "scene_tag": "GardenerTwo_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerTwo.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerTwo.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerTwo.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerTwo.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerTwo.npc.dialogue.4"
+                        }
+                    ]
+                }
+            },
+            {
+                "scene_tag": "GardenerThree_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerThree.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerThree.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerThree.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerThree.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerThree.npc.dialogue.4"
+                        }
+                    ]
+                }
+            },
+            {
+                "scene_tag": "GardenerFour_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerFour.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "GardenerFour.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerFour.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerFour.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "GardenerFour.npc.dialogue.4"
+                        }
+                    ]
+                }
+            },
+            {
+                "scene_tag": "Hiroshi_the_Respectful_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.2"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[type=dz:character,c=1] @s Hiroshi_the_Respectful_1"
+
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Hiroshi_the_Respectful_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.8"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[type=dz:character,c=1] @s Hiroshi_the_Respectful_2"
+
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Hiroshi_the_Respectful_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Hiroshi_the_Respectful.npc.dialogue.9"
+                        },
+                        {
+                            "text": "\n"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "To the ship!",
+                        "commands": [
+          
+                            "/summon info:bells ~ ~ ~ ~ ~ island2_complete",
+                            "/tp @a[r=10] -4000 77 -3989"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "game:fx",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"game:fx" :{
+					"type" : "int",
+					"default": 0,
+					"range": [0,30],
+					"client_sync": false
+				} 
+			},
+			"animations": { "remove":"animation.game.fx.entities.remove",
+							"isle3pushButton":"animation.game.fx.isle3pushButton",
+							"event1":  "animation.game.fx.event1",
+							"event2":  "animation.game.fx.event2",
+							"event3":  "animation.game.fx.event3",
+                            "event4":  "animation.game.fx.event4",
+                            "event5":  "animation.game.fx.event5",
+                            "event6":  "animation.game.fx.event6",
+                            "event7":  "animation.game.fx.event7",
+                            "event8":  "animation.game.fx.event8",
+                            "event9":  "animation.game.fx.event9",
+                            "event10":  "animation.game.fx.event10",
+                            "event11":  "animation.game.fx.event11",
+                            "event12":  "animation.game.fx.event12",
+                            "event13":  "animation.game.fx.event13",
+							"questtimer":  "animation.game.questtimer"
+							},
+			"scripts": {"animate": [
+									{"remove": "q.variant == 0 && q.property('game:fx' ) == 0"},
+									{"isle3pushButton": "q.property('game:fx' ) == 1"},
+									{"event1": "q.variant == 1"},
+									{"event2": "q.variant == 2"},
+									{"event3": "q.variant == 3"},
+									{"event4": "q.variant == 4"},
+									{"event5": "q.variant == 5"},
+									{"questtimer": "q.variant == 5"},
+									
+									{"event6": "q.variant == 6"},
+									{"event7": "q.variant == 7"},
+									{"event8": "q.variant == 8"},
+									{"event9": "q.variant == 9"},
+									{"event10": "q.variant == 10"},
+									{"event11": "q.variant == 11"},
+									{"event12": "q.variant == 12"},
+									{"event13": "q.variant == 13"}
+                                    ]}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"fx"
+				]
+			},
+	
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+	
+			"minecraft:scale": {
+				"value": 0
+			},
+
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			}
+		},
+		"component_groups": {
+			"event1": {"minecraft:variant": {"value": 1}},
+			"event2": {"minecraft:variant": {"value": 2}},
+			"event3": {"minecraft:variant": {"value": 3}},
+			"event4": {"minecraft:variant": {"value": 4}},
+			"questcard": {"minecraft:variant": {"value": 5}},
+			"event6": {"minecraft:variant": {"value": 6}},
+			"event7": {"minecraft:variant": {"value": 7}},
+			"event8": {"minecraft:variant": {"value": 8}},
+			"event9": {"minecraft:variant": {"value": 9}},
+			"event10": {"minecraft:variant": {"value": 10}},
+			"event11": {"minecraft:variant": {"value": 11}},
+			"event12": {"minecraft:variant": {"value": 12}},
+			"event13": {"minecraft:variant": {"value": 13}},
+	
+			"remove":{
+                "minecraft:instant_despawn":{}
+            }
+            
+
+		},
+		"events":{
+
+			"cutscene:pushbutton":{"set_property":{"game:fx":1}},
+			"questcard": {"add": {"component_groups": [ "questcard"] }},
+			"event1": {"add": {"component_groups": [ "event1"] }},
+			"climbchain": {"add": {"component_groups": [ "event2"] }},
+			  "event3": {"add": {"component_groups": [ "event3"] }},
+			  "event4": {"add": {"component_groups": [ "event4"] }},
+              
+              "event5": {"add": {"component_groups": ["event5"] }},
+              "event6": {"add": {"component_groups": ["event6"] }},
+
+              "event7": {"add": {"component_groups": ["event7"] }},
+
+              "event8": {"add": {"component_groups": ["event8"] }},
+
+              "event9": {"add": {"component_groups": ["event9"] }},
+
+              "event10": {"add": {"component_groups": ["event10"] }},
+
+              "event11": {"add": {"component_groups": ["event11"] }},
+
+              "event12": {"add": {"component_groups": ["event12"] }},
+
+              "windmill": {"add": {"component_groups": ["event13"] }},
+
+			
+			"remove":{"add": {"component_groups": [ "remove" ]}}
+		
+	}
+	}
+}

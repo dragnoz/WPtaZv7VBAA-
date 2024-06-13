@@ -1,0 +1,83 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+
+        "animation.player.titles": {
+            "animation_length": 2.0,"loop": true,
+            "timeline": {
+             
+                "0.0": [
+                    "/function command_center/timers/titles_controller",
+                    "/function command_center/modules/card_game/player_cards",
+                    "/tp @a[tag=bellfall] -27.11 124.00 180.44 facing @e[type=dz:big_bell,c=1]"
+                    
+                ]
+            }
+        },
+
+        "animation.player.ability1": {
+            "timeline": {
+             
+                "0.3": [
+                    "/function command_center/modules/card_game/card_controller"
+                    
+                ]
+            },
+            "animation_length": 1.0,
+            "loop": true
+        },
+        "animation.player.wet": {
+            "timeline": {
+             
+                "0.3": [
+                    "/title @s title you gettin wet"
+                    
+                ]
+            },
+            "animation_length": 1.0,
+            "loop": true
+        },
+        "animation.player.lava": {
+            "animation_length": 1.0, "loop": true,
+            "timeline": {
+             
+                "0.3": [
+                    "/title @s title you burnin"
+                    
+                ]
+            }
+           
+        },
+        "animation.player.control": {
+            "animation_length": 1.0, "loop": true,
+            "timeline": {
+             
+                "0.0": [
+                    "/function command_center/player_control/player_start"
+                    
+                ]
+            }
+           
+        },
+        "animation.player.checkpoints": {
+            "animation_length": 10.0, "loop": true,
+            "timeline": {
+             
+                "0.0": [
+                    "/function command_center/modules/checkpoint/checkpoint"
+                    
+                ]
+            }
+           
+        },
+        "animation.player.sound1":{
+            "animation_length": 2.0, "loop": true,
+            "timeline": {
+                "0.0":[
+                    "/execute as @a[tag=sound:waves] at @s run playsound  waves @s ~ ~ ~ 10000 "
+                ]
+            }
+        }
+    }
+}
+

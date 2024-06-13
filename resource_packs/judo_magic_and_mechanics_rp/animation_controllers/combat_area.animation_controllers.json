@@ -1,0 +1,22 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.combat_area.control": {
+			"states": {
+				"default": {
+					"animations": ["opponent"],
+					"transitions": [
+						{"active": "query.foo"},
+						{"missing_state": ""}
+					]
+				},
+				"active": {
+					"animations": ["walk"],
+					"transitions": [
+						{"default": "!query.foo"}
+					]
+				}
+			}
+		}
+	}
+}

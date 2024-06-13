@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "Plate",
+        "uuid": "A85D8549-F6C5-4C41-A5A5-D286B662F809",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 14, 0 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "A51C1DB3-A7CD-41FA-999E-B4C64368042C",
+            "version": [1, 0, 0]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "blighty:cardtest2",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "blighty:cardtest2",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

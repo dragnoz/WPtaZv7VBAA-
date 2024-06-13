@@ -1,0 +1,3 @@
+entity.spyglass:boat.name=Spyglass Boat
+item.spawn_egg.entity.spyglass:boat.name=Spawn Spyglass Boat
+entity.honour:target.name=Viewable Target

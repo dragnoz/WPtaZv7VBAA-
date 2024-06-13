@@ -1,0 +1,39 @@
+1. always delete this file before packaging.
+
+Controllers: They look for the scoreboard values of their type. they then catch the players with these values and then runs a function associated with that number
+    - Teleport: translates scores to locations
+    - Titles: translate scores into titles and rawtexts
+    - Timer: it runs the timer forall the controllers, as well as translates score to timer.
+    - Particle: scores to particles to play
+    - Logic: translates scores to blocks of logic code
+    - Combat: translates scores into combat related functions
+    - Card_Controller: is used to translate scores into cards and their functions
+
+Why: I did it this way to more easily controll updates and changes and allows the reuse of codes. it almost creates a modular ingame coding language.
+    - It aloso allows functions to run from the actual player, this makes it super multiplayer friendly.    
+
+How to use: Set a score for a player to flag the controllers
+
+Directory:
+
+Teleport (/scoreboard players set @s teleport 0)
+0 = will be commands or something like that. its not been used yet.
+401 = 
+402 = P1 Combat. A relative tp to the entity running the combat area. it sets player up for combat 25 
+
+UI (/scoreboard players set @s UItimer 0)
+300 = 
+
+Title:
+0 = No title displayed
+
+
+NOTE!!!!
+combat.UI.particles.mcfunction this runs combat displaySwii 
+
+Displays
+show combat UI: /function control/ui/combat.display
+
+
+
+the skill is

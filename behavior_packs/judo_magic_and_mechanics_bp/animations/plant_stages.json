@@ -1,0 +1,96 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { 
+        "animation.plant.stage1": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage1 "],
+                "4.9":["/event entity @e[type=prop:plant_of_kindness] stage1wait"]
+           
+            },
+            "animation_length": 5,
+            "loop": true
+        },
+        "animation.plant.stage1_wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage1_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.plant.stage2": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage2 "],
+                "4.9":["/event entity @e[type=prop:plant_of_kindness] stage2wait"]
+           
+            },
+            "animation_length": 5,
+            "loop": true
+        },
+        "animation.plant.stage2_wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage2_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.plant.stage3": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage3"],
+                "4.9":["/event entity @e[type=prop:plant_of_kindness] stage3wait"]
+           
+            },
+            "animation_length": 5,
+            "loop": true
+        },
+        "animation.plant.stage3_wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage3_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.plant.stage4": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage4"],
+                "4.9":["/event entity @e[type=prop:plant_of_kindness] stage4wait"]
+           
+            },
+            "animation_length": 6,
+            "loop": true
+        },
+        "animation.plant.stage4wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage4_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        },
+        "animation.plant.stage5": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage5"],
+                "4.9":["/event entity @e[type=prop:plant_of_kindness] stage5wait"]
+           
+            },
+            "animation_length": 5,
+            "loop": true
+        },
+        "animation.plant.stage5_wait": {
+            "timeline": {
+             
+                "0.0":[ "/playanimation @e[type=prop:plant_of_kindness] animation.plant_of_kindness.stage5_wait "]
+            },
+            "animation_length": 2,
+            "loop": true
+        }
+    }
+}

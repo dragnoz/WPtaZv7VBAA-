@@ -1,0 +1,31 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "",
+		"name": "Judo Mechanics BP",
+		"uuid": "4d3bee81-405c-3462-8df7-a5ca36edcaa5",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 13]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "data",
+			"uuid": "1cb4d79c-6fc2-3897-9308-78985921558f",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "87661a65-1371-31eb-90b1-8e29a0342ef1",
+			"version": [1, 0, 0]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"blockbench_block_wizard": ["1.2.1", "1.2.2"],
+			"blockbench_entity_wizard": ["1.3.1", "1.4.0", "1.5.0"],
+			"blockbench_item_wizard": ["1.0.2"]
+		}
+	}
+}

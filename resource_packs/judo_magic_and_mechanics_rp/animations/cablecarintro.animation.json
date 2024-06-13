@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cablecarintro.swing": {
+			"animation_length": 3.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [45, 0, 0],
+						"1.5": [-45, 0, 0],
+						"2.0417": [0, 0, 0],
+						"2.4167": [45, 0, 0],
+						"3.5": [-45, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "animations":
+     { "animation.card.map": {
+            "timeline": {
+                "0.02" :[
+                    "/setblock ~ -31 ~ gold_block",
+                    "/structure load mystructure:entity_locator ~ -30 ~"
+            ],          
+                "10.0": [
+                    "/fill ~1 -31 ~1 ~-1 -30 ~-1 air",
+                    "/say FAREWELL",
+                    "/event entity @s remove"
+                    
+                ]
+            },
+            "animation_length": 10.1,
+            "loop": true
+        }
+    }
+}
+
+

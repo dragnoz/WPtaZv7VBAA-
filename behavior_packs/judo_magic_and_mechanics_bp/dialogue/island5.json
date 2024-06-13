@@ -1,0 +1,528 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+           {
+                "scene_tag": "Lucia_the_Polite_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Lucia_the_Polite_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Lucia_the_Polite_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.6"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.9"
+                        }
+                        
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //herb vendor
+            {
+                "scene_tag": "Herb_Vendor_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Herb_Vendor.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Herb_Vendor.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Herb_Vendor.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Hello!",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Player_Herb_Vendor_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Player_Herb_Vendor.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Player_Herb_Vendor.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Player_Herb_Vendor.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //baker
+            {
+                "scene_tag": "Baker_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Baker.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Baker.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "What's Fresh?",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Player_Baker_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Player_Baker.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Player_Baker.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Player_Baker.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //fishmonger
+            {
+                "scene_tag": "Fishmonger_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Fishmonger.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "translate": "Fishmonger.npc.dialogue.1"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Sure it's Fresh?",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            },
+            //end good
+            {
+                "scene_tag": "Lucia_the_Polite_endgood_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_end_1"
+                        ]
+                    }
+                ]
+            },
+            //end bad
+            {
+                "scene_tag": "Lucia_the_Polite_endbad_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.1"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.2"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_end_1"
+                        ]
+                    }
+                ]
+            },
+            //continues
+            {
+                "scene_tag": "Lucia_the_Polite_end_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_end_2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Lucia_the_Polite_end_2",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.7"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.8"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.9"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_end_3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "Lucia_the_Polite_end_3",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                        {
+                            "text": "\n"
+                        },
+                      
+                        {
+                            "translate": "Lucia_the_Polite_endgood.npc.dialogue.9"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "scene_tag": "Lucia_the_Polite_end2_intro",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.3"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.4"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_end2_1"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "scene_tag": "Lucia_the_Polite_end2_1",
+                "npc_name": {
+                    "rawtext": [
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc"
+                        }
+                    ]
+                },
+                "text": {
+                    "rawtext": [
+                       
+                      
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.5"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite_end2.npc.dialogue.6"
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "name": "Next",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

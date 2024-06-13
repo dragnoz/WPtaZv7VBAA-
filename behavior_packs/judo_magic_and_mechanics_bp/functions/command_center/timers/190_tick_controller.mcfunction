@@ -1,0 +1,1 @@
+execute as @a[x=-111,y=68,z=4039,r=2] at @s run dialogue open @e[type=dz:character,c=1] @s Info_intro

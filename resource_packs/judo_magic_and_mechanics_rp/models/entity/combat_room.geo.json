@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.combat_room",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 10,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, -24, 0],
+					"cubes": [
+						{
+							"origin": [-48, -2, -48],
+							"size": [96, 96, 96],
+							"uv": {
+								"north": {"uv": [258.25, 295.75], "uv_size": [96, 96]},
+								"east": {"uv": [168, 295.25], "uv_size": [96, 96]},
+								"south": {"uv": [377.75, 294.25], "uv_size": [96, 96]},
+								"west": {"uv": [354.5, 295.25], "uv_size": [96, 96]},
+								"up": {"uv": [168, 237.25], "uv_size": [96, 96]},
+								"down": {"uv": [192, 96], "uv_size": [96, -96]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

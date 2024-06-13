@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "character:dojo_juduka",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dojo_juduka"
+			},
+			"geometry": {
+				"default": "geometry.dojo_juduka"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

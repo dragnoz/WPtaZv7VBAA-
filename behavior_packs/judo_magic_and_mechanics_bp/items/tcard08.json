@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "blighty:tcard08",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:use_duration": 5,
+            "minecraft:food": {
+                "nutrition": 1,
+                "can_always_eat": true,
+                "using_converts_to": "card:unplayable",
+                "cooldown_type": "chorusfruit",
+                "saturation_modifier": 0
+            }
+        }
+    }
+}

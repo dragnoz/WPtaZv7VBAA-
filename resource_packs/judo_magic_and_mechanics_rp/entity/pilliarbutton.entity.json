@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "prop:pilliarbutton",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pilliarbutton"
+			},
+			"geometry": {
+				"default": "geometry.pilliarbutton"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "pilliarbutton_spawn_egg"
+			}
+		}
+	}
+}
