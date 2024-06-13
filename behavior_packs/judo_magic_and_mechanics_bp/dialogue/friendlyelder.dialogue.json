@@ -1,0 +1,27 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "characterFriendly_elder1",
+				"npc_name": "Friendly ELder",
+				"text": "\nIf you having trouble following the clues, try viewing the island through the spyglass in your ship's crows nest. "
+			},
+			{
+				"scene_tag": "characterFriendly_elder2",
+				"npc_name": "Friendly Elder",
+				"text": "\nI heard there is a cavern behind and under the waterfall."
+			},
+			{
+				"scene_tag": "characterFriendly_elder3",
+				"npc_name": "Friendly_elder1",
+				"text": "We use to swing for hours on the swings behind the temple. It's broken now."
+			},
+			{
+				"scene_tag": "characterFriendly_elder4",
+				"npc_name": "Friendly Elder",
+				"text": "My grandfather built the mill to the right of the island. Maybe my grandson will fix it up."
+			}
+		]
+	}
+}

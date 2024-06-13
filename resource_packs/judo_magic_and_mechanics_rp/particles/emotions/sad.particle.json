@@ -26,13 +26,13 @@
 			"minecraft:particle_initial_speed": 0,
 			"minecraft:particle_motion_dynamic": {},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.4, 0.5],
+				"size": [0.2, 0.2],
 				"facing_camera_mode": "lookat_y",
 				"uv": {
 					"texture_width": 16,
 					"texture_height": 16,
-					"uv": [0, 0],
-					"uv_size": [16, 16]
+					"uv": [3, 3],
+					"uv_size": [10, 9]
 				}
 			}
 		}

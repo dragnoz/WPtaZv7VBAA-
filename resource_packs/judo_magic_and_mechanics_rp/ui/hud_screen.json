@@ -54,10 +54,11 @@
 	  "hud_title_text": {
 		"type": "label",
 		"orientation": "horizontal",
-		"offset": [ 200, -50 ],
+		"offset": [ 200, -70 ],
 		"layer": 1,
 		"alpha": "@hud.anim_title_text_alpha_in",
 		"propagate_alpha": true,
+		
 		"controls": [
 		  {
 			"title_frame": {
@@ -94,7 +95,7 @@
 					],
 					"shadow": "$show_shadow",
 					"text_alignment": "center",
-					"offset": [ 0, 2],
+					"offset": [ 2, 2],
 					"bindings": [
 					  {
 						"binding_name": "#hud_title_text_string",

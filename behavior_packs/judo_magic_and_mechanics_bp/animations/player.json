@@ -77,6 +77,22 @@
                     "/execute as @a[tag=sound:waves] at @s run playsound  waves @s ~ ~ ~ 10000 "
                 ]
             }
+        },
+        "animation.player.balance":{
+            "animation_length": 1.0, "loop": true,
+            "timeline": {
+                "0.0":[
+                    "/execute if entity @s[hasitem={ item=blighty:plates, location=slot.weapon.mainhand }] run camerashake add @s 0.1 1 positional"
+                ]
+            }
+        },
+        "animation.player.1stperson":{
+            "animation_length": 0.1, "loop": true,
+            "timeline": {
+                "0.0":[
+                    "/say best viewed in 1st person"
+                ]
+            }
         }
     }
 }

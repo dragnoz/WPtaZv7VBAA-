@@ -56,6 +56,15 @@ execute as @a[scores={title=234..234}] at @s run titleraw @s title {"rawtext":[{
 execute as @a[scores={title=235..235}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n   \n\n§lIrrigated\n\n"}]}
 
 
+execute as @a[scores={title=236..236}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n   \n\n"}]}
+execute as @a[scores={title=237..237}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n  \n\n"}]}
+execute as @a[scores={title=238..238}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n   \n\n"}]}
+execute as @a[scores={title=239..239}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n   \n\n"}]}
+
+
+
+
+
 execute as @a[scores={title=200..200}] at @s run function control/ui/ui.combat 
 
 

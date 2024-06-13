@@ -145,10 +145,13 @@
         },
         "animation.game.fx.event7": {
             "timeline": {
-                "0.0": ["/structure load isle2:tree7 ~-3 ~2 ~-3 0_degrees none layer_by_layer 5" ],
-                "0.05":["/event entity @s remove"]
+                "0.0": ["/execute as @a at @s run function command_center/player_control/nomovcam","/fog @a push fog:blue_thick bluethick","/fog @a push fog:blue blue"],
+                "0.1":["/tp @a -2011 113 -231 -60 30"],
+                "10.0": ["/fog @a remove bluethick","/fog @a remove blue"],
+                "12.0":["/tp @a -2005 103 -224 -90 0","/execute as @a at @s run function command_center/player_control/yesmovcam"],
+                "12.1":["@s remove"]
             },
-            "animation_length": 0.1,
+            "animation_length": 12.2,
             "loop": true
         },
         "animation.game.fx.event8": {

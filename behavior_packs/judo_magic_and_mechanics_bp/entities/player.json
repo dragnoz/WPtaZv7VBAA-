@@ -14,13 +14,21 @@
                 "Square": "animation.player.Square",
                 "titles": "animation.player.titles",
                 "playercontrol": "animation.player.control",
-                "checkpoints": "animation.player.checkpoints"
+                "balance": "animation.player.balance",
+                "checkpoints": "animation.player.checkpoints",
+                "1stperson": "animation.player.1stperson"
             },
             "scripts": {
                 "animate": [
                     "titles","playercontrol","checkpoints","sound1",
                     {
                         "card1": "query.main_hand_item_use_duration > 0.01f"
+                    },
+                    {
+                        "balance":"query.ground_speed == 0"
+                    },
+                    {
+                        "1stperson":"query.is_first_person == 1"
                     },
                     {
                         "wet": "query.is_in_contact_with_water"

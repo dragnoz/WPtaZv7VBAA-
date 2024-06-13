@@ -56,33 +56,37 @@
                         },
                         {
                             "translate": "Lucia_the_Polite.npc.dialogue.4"
+                        },
+                        {
+                            "text": "\n"
+                        },
+                        {
+                            "translate": "Lucia_the_Polite.npc.dialogue.5"
                         }
                     ]
                 },
                 "buttons": [
                     {
-                        "name": "Next",
+                        "name": "I'll Find Cheff",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_2"
+                            "/tag @initiator add cheff"
                         ]
                     }
                 ]
             },
             {
-                "scene_tag": "Lucia_the_Polite_2",
+                "scene_tag": "chef_1",
                 "npc_name": {
                     "rawtext": [
                         {
-                            "translate": "Lucia_the_Polite.npc"
+                            "translate": "chef.name.npc"
                         }
                     ]
                 },
                 "text": {
                     "rawtext": [
                        
-                        {
-                            "translate": "Lucia_the_Polite.npc.dialogue.5"
-                        },
+                  
                         {
                             "text": "\n"
                         },
@@ -112,7 +116,23 @@
                 },
                 "buttons": [
                     {
-                        "name": "Next",
+                        "name": "To the Market!",
+                        "commands": [
+                            "/tag @initiator remove chef",
+                            "/tag @initiator add market",
+                            "/scoreboard players set @initiator title 236"
+
+
+                        ]
+                    },
+                    {
+                        "name": "Maybe Later",
+                        "commands": [
+                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                        ]
+                    },
+                    {
+                        "name": "Sounds Boring",
                         "commands": [
                             "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
                         ]

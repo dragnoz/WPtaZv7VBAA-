@@ -2,6 +2,9 @@
 
  ## {"rawtext":[{"translate":"UI_Settings.npc"}]}
 
+item.blighty:plates.name=Plates
+
+
 elder_mina.npc.dialogue.1=Ah, you've arrived. This first marker is where we plant the Seed of Kindness. As you engage with this affirmation puzzle, reflect on the kindness you've received and given.
 elder_mina.npc.dialogue.2=Choose wisely, for positive affirmations will help the seed grow, while negative ones will hinder it.
 elder_mina.npc.dialogue.3=When I help others without expecting anything in return, I feel...
@@ -349,15 +352,16 @@ Samir_the_Steadfast.npc=Samir_the_Steadfast
 
 Lucia_the_Polite.npc.dialogue.1=Welcome! Today, your mission is vital yet challenging. 
 Lucia_the_Polite.npc.dialogue.2=We are preparing a grand banquet in honour of our revered Judo Master. 
-Lucia_the_Polite.npc.dialogue.3=However, a mischievous pixie has been causing chaos throughout the marketplace,
-Lucia_the_Polite.npc.dialogue.4=unsettling the vendors and risking the banquet's success
-Lucia_the_Polite.npc.dialogue.5=You must gather the finest ingredients from our unsettled marketplace while managing the disruptions caused by the pixie.
-Lucia_the_Polite.npc.dialogue.6=We need: 
-Lucia_the_Polite.npc.dialogue.7=Herbs for the soups and stews 
-Lucia_the_Polite.npc.dialogue.8=Fish for the main course
-Lucia_the_Polite.npc.dialogue.9=and Cakes for dessert!
+Lucia_the_Polite.npc.dialogue.3=However, a mischievous pixie has turned our cheff into a monster, it is causing chaos throughout the marketplace,
+Lucia_the_Polite.npc.dialogue.4=The staff is unsettled and refusing to work, it's risking the banquet's success
+Lucia_the_Polite.npc.dialogue.5=Find the Chef. Assist him as you can 
+Lucia_the_Polite.npc.dialogue.6=Hallo young judoka, please dont let my visage scare you. I need you to go to the market and buy:
+Lucia_the_Polite.npc.dialogue.7=- Herbs for the soups and stews 
+Lucia_the_Polite.npc.dialogue.8=- Fish for the main course
+Lucia_the_Polite.npc.dialogue.9=- and Cakes for dessert!
 Lucia_the_Polite.npc.dialogue.10=§r
 Lucia_the_Polite.npc=Lucia the Polite
+chef.name.npc=Scary Chef
 
 Herb_Vendor.npc.dialogue.1=Welcome! 
 Herb_Vendor.npc.dialogue.2=My herbs are the freshest you'll find!
@@ -568,3 +572,5 @@ item.spawn_egg.entity.props:poop.name=Spawn Poop
 entity.title:main_title.name=Main Title
 entity.title:main_title.name=Main Title
 entity.title:journey.name=Journey
+entity.character:chef.name=Cheff
+entity.build:building_blocks.name=Building Blocks

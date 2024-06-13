@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "build:building_blocks",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/building_blocks/building_blocks"
+			},
+			"geometry": {
+				"default": "geometry.building_blocks"
+			},
+			"render_controllers": ["controller.render.default"]
+			
+		}
+	}
+}
