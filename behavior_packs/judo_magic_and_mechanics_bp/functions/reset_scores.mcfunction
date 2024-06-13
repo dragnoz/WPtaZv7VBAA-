@@ -7,7 +7,7 @@ scoreboard players set @s combatstamina 0
 scoreboard players set @s combatskill 0
 scoreboard players set @s combatdefence 0
 scoreboard players set @s combatfocus 0
-say hello again
+
 
 
 scoreboard players set @s  title 0
