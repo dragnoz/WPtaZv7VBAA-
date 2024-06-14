@@ -1,2 +1,6 @@
-db/*
 .DS_Store
+/db
+world_icon.jpeg
+levelname.txt
+level.dat_old
+level.dat
