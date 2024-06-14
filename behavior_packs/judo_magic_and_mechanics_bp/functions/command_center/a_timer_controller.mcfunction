@@ -29,5 +29,5 @@ execute if score 20ticks control_timer matches 20 run function command_center/ti
 execute if score 40ticks control_timer matches 40 run function command_center/timers/40_tick_controller
 execute if score 190ticks control_timer matches 190 run function command_center/timers/190_tick_controller
 execute if score 1min control_timer matches 1200 run function command_center/timers/1_min_controller
-execute if score 80ticks control_timer matches 80 run function command_center/partic
+execute if score 80ticks control_timer matches 80 run function command_center/particle/honour_flames
 function command_center/timers/1_tick_controller

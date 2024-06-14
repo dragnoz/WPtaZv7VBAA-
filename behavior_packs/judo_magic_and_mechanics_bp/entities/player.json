@@ -53,7 +53,17 @@
                         }
                     ]
                 }
-            }
+            },
+            
+         "blighty:become_steve": {
+        "minecraft:skin_id": { "value": 1 }
+                    },
+          "blighty:become_alex": {
+        "minecraft:skin_id": { "value": 2 }
+                            },
+      "blighty:become_default": {
+        "minecraft:skin_id": { "value": 0 }
+                             }
         },
         "components": {
             "minecraft:environment_sensor": {
@@ -178,6 +188,18 @@
             }
         },
         "events": {
+            "blighty:become_steve": {
+                "add": { "component_groups": [ "blighty:become_steve" ] },
+                "remove": { "component_groups": [ "blighty:become_alex" ] }
+                            },
+                "blighty:become_alex": {
+                "add": { "component_groups": [ "blighty:become_alex" ] },
+                  "remove": { "component_groups": [ "blighty:become_steve" ] }
+                },
+                "blighty:become_default": {
+              "add": { "component_groups": [ "blighty:become_default" ] },
+              "remove": { "component_groups": [ "blighty:become_steve", "blighty:become_alex" ] }
+            },
             "powerup:invisible": {
                 "add": {
                     "component_groups": [
