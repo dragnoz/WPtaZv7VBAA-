@@ -1,5 +1,8 @@
 {
 	"texture_data": {
+		"insence_spawn_egg": {
+			"textures": ["textures/items/insence_spawn_egg"]
+		},
 		"poop_spawn_egg": {
 			"textures": ["textures/items/poop_spawn_egg"]
 		},

@@ -2,29 +2,29 @@
 	"format_version": "1.20.13",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "build:square",
+			"identifier": "build:building_blocks",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"animations": { 
-							"4x4":  "animation.shape.event1",
-							"8x8":  "animation.shape.event2",
-							"10x10":  "animation.shape.event3",
-                            "20x20":  "animation.shape.event4",
-                            "event5":  "animation.shape.event5",
-                            "event6":  "animation.shape.event6",
-                            "event7":  "animation.shape.event7",
-                            "event8":  "animation.shape.event8",
-                            "event9":  "animation.shape.event9",
-                            "event10":  "animation.shape.event10",
-                            "event11":  "animation.shape.event11",
-                            "event12":  "animation.shape.event12"
+							"event1":  "animation.game.build.event1",
+							"event2":  "animation.game.build.event2",
+							"event3":  "animation.game.build.event3",
+                            "event4":  "animation.game.build.event4",
+                            "event5":  "animation.game.build.event5",
+                            "event6":  "animation.game.build.event6",
+                            "event7":  "animation.game.build.event7",
+                            "event8":  "animation.game.build.event8",
+                            "event9":  "animation.game.build.event9",
+                            "event10":  "animation.game.build.event10",
+                            "event11":  "animation.game.build.event11",
+                            "event12":  "animation.game.build.event12"
 							},
 			"scripts": {"animate": [
-									{"4x4": "q.variant == 1"},
-									{"8x8": "q.variant == 2"},
-									{"10x10": "q.variant == 3"},
-									{"20x20": "q.variant == 4"},
+									{"event1": "q.variant == 1"},
+									{"event2": "q.variant == 2"},
+									{"event3": "q.variant == 3"},
+									{"event4": "q.variant == 4"},
 									{"event5": "q.variant == 5"},
 									{"event6": "q.variant == 6"},
 									{"event7": "q.variant == 7"},
@@ -63,8 +63,8 @@
 			}
 		},
 		"component_groups": {
-			"event1": {"minecraft:variant": {"value": 1}, "minecraft:type_family": {"family":[ "4x4"]},"minecraft:scale": {"value":4}},
-			"event2": {"minecraft:variant": {"value": 2}, "minecraft:type_family": {"family":[ "8x8"]},"minecraft:scale": {"value":8}},
+			"event1": {"minecraft:variant": {"value": 1}, "minecraft:type_family": {"family":[ "mushroom:red"]},"minecraft:scale": {"value":4}},
+			"event2": {"minecraft:variant": {"value": 2}, "minecraft:type_family": {"family":[ "tree:glass"]},"minecraft:scale": {"value":8}},
 			"event3": {"minecraft:variant": {"value": 3}, "minecraft:type_family": {"family":[ "10x10"]},"minecraft:scale": {"value":10}},
 			"event4": {"minecraft:variant": {"value": 4}, "minecraft:type_family": {"family":[ "20x20"]},"minecraft:scale": {"value":20}},
 			"event5": {"minecraft:variant": {"value": 5}},
@@ -84,8 +84,8 @@
 
 		},
 		"events":{
-			"4x4": {"add": {"component_groups": [ "event1"] }},
-			"8x8": {"add": {"component_groups": [ "event2"] }},
+			"mushroom:red": {"add": {"component_groups": [ "event1"] }},
+			"tree:glass": {"add": {"component_groups": [ "event2"] }},
 			  "10x10": {"add": {"component_groups": [ "event3"] }},
 			  "20x20": {"add": {"component_groups": [ "event4"] }},
               

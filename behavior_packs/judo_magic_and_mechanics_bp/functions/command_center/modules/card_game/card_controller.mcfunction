@@ -20,8 +20,11 @@ execute if entity @s[hasitem={ item=card:square, location=slot.weapon.mainhand }
 execute if entity @s[hasitem={ item=blighty:tcard06, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/jumpboost
 
 
-execute if entity @s[hasitem={ item=dz:card1, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/ui_up
+#execute if entity @s[hasitem={ item=dz:card1, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/ui_up
 execute if entity @s[hasitem={ item=dz:card2, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/sweep.card
-execute if entity @s[hasitem={ item=dz:card3, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/pixi.card
 execute if entity @s[hasitem={ item=dz:card4, location=slot.weapon.mainhand }] run function command_center/modules/card_game/climbchain
 execute if entity @s[hasitem={ item=dz:card5, location=slot.weapon.mainhand }] run function command_center/modules/card_game/questcard
+execute if entity @s[hasitem={ item=dz:card1, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/glasstree
+
+
+execute if entity @s[hasitem={ item=dz:card3, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/mushroom

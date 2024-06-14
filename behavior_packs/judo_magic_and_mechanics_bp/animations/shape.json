@@ -8,9 +8,11 @@
             "animation_length": 0.1,"loop": true,
             "timeline": {
                 "0.0": [
-                    "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=4x4,c=1] ^ ^ ^10"
+                    "/execute as @a[hasitem=[{item=card:square,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:square,family=4x4,c=1] ^ ^ ^10",
+                    "/execute as @a[hasitem=[{item=dz:card3,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:building_blocks,family=mushroom:red,c=1] ^ ^ ^10",
 
-                     ]
+                    "/execute as @a[hasitem=[{item=dz:card1,location=slot.weapon.mainhand}]] at @s run tp @e[type=build:building_blocks,family=tree:glass,c=1] ^ ^1 ^10"
+                ]
 
             }
             

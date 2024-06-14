@@ -2,29 +2,29 @@
 	"format_version": "1.20.13",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "build:building_blocks",
+			"identifier": "prop:insence", 
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"animations": { 
-							"event1":  "animation.game.build.event1",
-							"event2":  "animation.game.build.event2",
-							"event3":  "animation.game.build.event3",
-                            "event4":  "animation.game.build.event4",
-                            "event5":  "animation.game.build.event5",
-                            "event6":  "animation.game.build.event6",
-                            "event7":  "animation.game.build.event7",
-                            "event8":  "animation.game.build.event8",
-                            "event9":  "animation.game.build.event9",
-                            "event10":  "animation.game.build.event10",
-                            "event11":  "animation.game.build.event11",
-                            "event12":  "animation.game.build.event12"
+							"red_mushroom":  "animation.build.event1",
+							"glass_tree":  "animation.build.event2",
+							"10x10":  "animation.build.event3",
+                            "20x20":  "animation.build.event4",
+                            "event5":  "animation.build.event5",
+                            "event6":  "animation.build.event6",
+                            "event7":  "animation.build.event7",
+                            "event8":  "animation.build.event8",
+                            "event9":  "animation.build.event9",
+                            "event10":  "animation.build.event10",
+                            "event11":  "animation.build.event11",
+                            "event12":  "animation.build.event12"
 							},
 			"scripts": {"animate": [
-									{"event1": "q.variant == 1"},
-									{"event2": "q.variant == 2"},
-									{"event3": "q.variant == 3"},
-									{"event4": "q.variant == 4"},
+									{"red_mushroom": "q.variant == 1"},
+									{"glass_tree": "q.variant == 2"},
+									{"10x10": "q.variant == 3"},
+									{"20x20": "q.variant == 4"},
 									{"event5": "q.variant == 5"},
 									{"event6": "q.variant == 6"},
 									{"event7": "q.variant == 7"},
@@ -63,8 +63,8 @@
 			}
 		},
 		"component_groups": {
-			"event1": { "minecraft:type_family": {"family":[ "mushroom:red"]},"minecraft:scale": {"value":6}},
-			"event2": { "minecraft:type_family": {"family":[ "tree:glass"]},"minecraft:scale": {"value":12}},
+			"event1": {"minecraft:variant": {"value": 1}, "minecraft:type_family": {"family":[ "mushroom"]},"minecraft:scale": {"value":4}},
+			"event2": {"minecraft:variant": {"value": 2}, "minecraft:type_family": {"family":[ "tree"]},"minecraft:scale": {"value":8}},
 			"event3": {"minecraft:variant": {"value": 3}, "minecraft:type_family": {"family":[ "10x10"]},"minecraft:scale": {"value":10}},
 			"event4": {"minecraft:variant": {"value": 4}, "minecraft:type_family": {"family":[ "20x20"]},"minecraft:scale": {"value":20}},
 			"event5": {"minecraft:variant": {"value": 5}},
@@ -84,8 +84,8 @@
 
 		},
 		"events":{
-			"mushroomred": {"add": {"component_groups": [ "event1"] }},
-			"treeglass": {"add": {"component_groups": [ "event2"] }},
+			"red_mushroom": {"add": {"component_groups": [ "event1"] }},
+			"glass_tree": {"add": {"component_groups": [ "event2"] }},
 			  "10x10": {"add": {"component_groups": [ "event3"] }},
 			  "20x20": {"add": {"component_groups": [ "event4"] }},
               

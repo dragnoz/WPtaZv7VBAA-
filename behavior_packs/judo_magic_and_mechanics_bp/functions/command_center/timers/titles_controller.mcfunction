@@ -61,6 +61,13 @@ execute as @a[scores={title=237..237}] at @s run titleraw @s title {"rawtext":[{
 execute as @a[scores={title=238..238}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n   \n\n"}]}
 execute as @a[scores={title=239..239}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lShopping\n\n   \n\n"}]}
 
+execute as @a[scores={title=240..240}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lSpeak to Elders\n\n    \n\n"}]}
+execute as @a[scores={title=241..241}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lSpeak to Elders\n\n   \n\n"}]}
+execute as @a[scores={title=242..242}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lSpeak to Elders\n\n    \n\n"}]}
+execute as @a[scores={title=243..243}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lSpeak to Elders\n\n   \n\n"}]}
+execute as @a[scores={title=244..244}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lSpeak to Elders\n\n   \n\n"}]}
+
+
 
 
 

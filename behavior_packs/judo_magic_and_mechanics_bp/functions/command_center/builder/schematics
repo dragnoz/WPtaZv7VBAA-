@@ -1,0 +1,3 @@
+execute as @a[hasitem=[{item=dz:card3,location=slot.weapon.mainhand}]] at @e[type=build:building_blocks]  positioned ^ ^2 ^10 run tp @e[type=build:building_blocks] ~ ~ ~
+say helooo
+execute as @a[hasitem=[{item=dz:card3,location=slot.weapon.mainhand}]] at @s unless entity @e[type=build:building_blocks] run summon build:building_blocks 

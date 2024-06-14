@@ -28,7 +28,7 @@
                     {
                         "name": "Next",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            "/dialogue open @s @a[r=6] Emma_the_Friendly_1"
                         ]
                     }
                 ]
@@ -63,7 +63,7 @@
                     {
                         "name": "Next",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            "/dialogue open @s @a[r=6] Emma_the_Friendly_2"
                         ]
                     }
                 ]
@@ -98,7 +98,7 @@
                     {
                         "name": "Next",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            "/dialogue open @s @a[r=6] Emma_the_Friendly_3"
                         ]
                     }
                 ]
@@ -130,7 +130,7 @@
                     {
                         "name": "Next",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            "/dialogue open @s @a[r=6] Emma_the_Friendly_4"
                         ]
                     }
                 ]
@@ -157,17 +157,20 @@
                             "text": "\n"
                         }
                     ]
-                },
+                },"on_close_commands": [
+                    "/scoreboard players set @a title 240"
+                
+                  ],
                 "buttons": [
                     {
-                        "name": "Next",
+                        "name": "Let's Go",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            ""
                         ]
                     }
                 ]
             },
-            {
+             {
                 "scene_tag": "Emma_the_Friendly_end_1",
                 "npc_name": {
                     "rawtext": [
@@ -226,11 +229,12 @@
                         }
                     ]
                 },
+              
                 "buttons": [
                     {
-                        "name": "Next",
+                        "name": "Ok",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s"
+                            ""
                         ]
                     }
                 ]
@@ -294,7 +298,10 @@
                             "translate": "Wendy_the_Weaver.npc.dialogue.1"
                         }
                     ]
-                },
+                },"on_close_commands": [
+                    "/scoreboard players add @a title 1"
+                
+                  ],
                 "buttons": [
                     {
                         "name": "give wool",
@@ -326,7 +333,11 @@
                             "translate": "Baxter_the_Builder.npc.dialogue.2"
                         }
                     ]
-                },
+                },"on_close_commands": [
+                    "/scoreboard players add @a title 1"
+                
+                  ],
+                
                 "buttons": [
                     {
                         "name": "give blocks",
@@ -358,7 +369,10 @@
                             "translate": "Gus_the_Gardener.npc.dialogue.2"
                         }
                     ]
-                },
+                },"on_close_commands": [
+                    "/scoreboard players add @a title 1"
+                
+                  ],
                 "buttons": [
                     {
                         "name": "give trees",
@@ -384,7 +398,10 @@
                             "translate": "Patty_the_Planner.npc.dialogue.1"
                         }
                     ]
-                },
+                },"on_close_commands": [
+                    "/scoreboard players add @a title 1"
+                
+                  ],
                 "buttons": [
                     {
                         "name": "give decorative",
