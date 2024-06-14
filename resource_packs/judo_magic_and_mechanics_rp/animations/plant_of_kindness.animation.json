@@ -21,25 +21,8 @@
 				}
 			}
 		},
-		"animation.plant_of_kindness.stage1_wait": {
-			"animation_length": 5,
-			"bones": {
-				"stem_1": {
-					"rotation": [0, 0, 0],
-					"position": [0, 11, 0],
-					"scale": 1
-				},
-				"head": {
-					"scale": 0
-				},
-				"right_leaf_9": {
-					"rotation": [0, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				}
-			}
-		},
 		"animation.plant_of_kindness.stage2": {
+			"loop": "hold_on_last_frame",
 			"animation_length": 5,
 			"bones": {
 				"stem_1": {
@@ -80,36 +63,8 @@
 				}
 			}
 		},
-		"animation.plant_of_kindness.stage2_wait": {
-			"animation_length": 2,
-			"bones": {
-				"stem_1": {
-					"rotation": [0, 0, 0],
-					"position": [0, 11, 0],
-					"scale": 1
-				},
-				"stem_2": {
-					"rotation": [135, 0, 0],
-					"position": [0, 14, 0.4],
-					"scale": 1
-				},
-				"right_leaf_3": {
-					"rotation": [-55, 0, 0],
-					"position": [0, 0, 0]
-				},
-				"left_leaf_1": {
-					"rotation": [-102.5, 0, 0],
-					"position": [0, 0, 0]
-				},
-				"head": {
-					"scale": 0
-				},
-				"right_leaf_9": {
-					"rotation": [0, 0, 0]
-				}
-			}
-		},
 		"animation.plant_of_kindness.stage3": {
+			"loop": "hold_on_last_frame",
 			"animation_length": 4,
 			"bones": {
 				"stem_1": {
@@ -240,81 +195,8 @@
 				}
 			}
 		},
-		"animation.plant_of_kindness.stage3_wait": {
-			"animation_length": 2.0417,
-			"bones": {
-				"stem_1": {
-					"rotation": [0, 0, 0],
-					"position": [0, 11, 0],
-					"scale": 1
-				},
-				"stem_2": {
-					"rotation": [135, 0, 0],
-					"position": [0, 14, 0.4],
-					"scale": 1
-				},
-				"right_leaf_3": {
-					"rotation": [-55, 0, 0],
-					"position": [0, 0, 0]
-				},
-				"left_leaf_1": {
-					"rotation": [-102.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"Stem": {
-					"position": [0, 8, 0],
-					"scale": 1.3
-				},
-				"stem_3": {
-					"rotation": [177.5, 0, 0],
-					"position": [0, 24, 2],
-					"scale": 1
-				},
-				"right_leaf_1": {
-					"rotation": [-77.5, 0, 0],
-					"position": [-6, 15, 3],
-					"scale": 1.3
-				},
-				"head": {
-					"rotation": [0, 0, 0],
-					"position": [0, 30, 4],
-					"scale": 0.5
-				},
-				"bottom_petal_1": {
-					"scale": 0
-				},
-				"left_petal_1": {
-					"scale": 0
-				},
-				"right_petal_1": {
-					"scale": 0
-				},
-				"left_top_1": {
-					"scale": 0
-				},
-				"right_top_1": {
-					"scale": 0
-				},
-				"right_leaf_5": {
-					"rotation": [-101.94435, -123.56134, -372.81087],
-					"position": [1, 15, 5],
-					"scale": 1.2
-				},
-				"stem_4": {
-					"rotation": [-21.30838, -21.63168, -43.3833],
-					"position": [0, 21, 0],
-					"scale": [0.8, 1, 0.8]
-				},
-				"stem_6": {
-					"position": [0, 12, -4]
-				},
-				"right_leaf_9": {
-					"position": [0, 0, 0]
-				}
-			}
-		},
 		"animation.plant_of_kindness.stage4": {
+			"loop": "hold_on_last_frame",
 			"animation_length": 5,
 			"bones": {
 				"stem_1": {
@@ -452,105 +334,8 @@
 				}
 			}
 		},
-		"animation.plant_of_kindness.stage4_wait": {
-			"animation_length": 2.0417,
-			"bones": {
-				"stem_1": {
-					"rotation": [0, 0, 0],
-					"position": [0, 2, 0],
-					"scale": 1
-				},
-				"stem_2": {
-					"rotation": [135, 0, 0],
-					"position": [0, 14, 0.4],
-					"scale": 1
-				},
-				"right_leaf_3": {
-					"rotation": [-55, 0, 0],
-					"position": [0, 0, 0]
-				},
-				"left_leaf_1": {
-					"rotation": [-102.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"Stem": {
-					"rotation": [0, 0, 0],
-					"position": [0, 16, 0],
-					"scale": 2
-				},
-				"stem_3": {
-					"rotation": [177.58242, -1.14809, -22.47122],
-					"position": [0, 24, 2],
-					"scale": [1, 1.7, 1]
-				},
-				"right_leaf_1": {
-					"rotation": [-77.5, 0, 0],
-					"position": [-6, 15, 3],
-					"scale": 1.3
-				},
-				"head": {
-					"rotation": [52.5, -20, 0],
-					"position": [-4, 34, 4],
-					"scale": 1
-				},
-				"bottom_petal_1": {
-					"scale": 0
-				},
-				"left_petal_1": {
-					"scale": 0
-				},
-				"right_petal_1": {
-					"scale": 0
-				},
-				"left_top_1": {
-					"scale": 0
-				},
-				"right_top_1": {
-					"scale": 0
-				},
-				"right_leaf_5": {
-					"rotation": [-101.94435, -123.56134, -372.81087],
-					"position": [1, 15, 5],
-					"scale": 1.2
-				},
-				"stem_4": {
-					"rotation": [-21.30838, -21.63168, -43.3833],
-					"position": [0, 21, 0],
-					"scale": [0.8, 1, 0.8]
-				},
-				"stem_6": {
-					"position": [0, 12, -4]
-				},
-				"right_leaf_7": {
-					"position": [0, 21, 5],
-					"scale": 0
-				},
-				"right_leaf_9": {
-					"rotation": {
-						"0.0": [71.33847, -116.68835, 171.08414],
-						"2.0417": [71.34, -116.69, 171.08]
-					},
-					"position": {
-						"0.0": [31, 41, -1],
-						"2.0417": [31, 41, -1]
-					},
-					"scale": {
-						"0.0": [1, 1, 1],
-						"2.0417": [1, 1, 1]
-					}
-				},
-				"stem_5": {
-					"rotation": [0, 0, 32.5],
-					"position": [0.29, 26.15, 0.29],
-					"scale": 1
-				},
-				"right_petal_2": {
-					"position": [0, 0, 0]
-				}
-			}
-		},
 		"animation.plant_of_kindness.stage5": {
+			"loop": "hold_on_last_frame",
 			"animation_length": 5,
 			"bones": {
 				"stem_1": {
@@ -756,126 +541,6 @@
 						"0.0": [0, 0, 0],
 						"5.0": [12.5, 0, 0]
 					},
-					"position": [0, 0, 0]
-				}
-			}
-		},
-		"animation.plant_of_kindness.stage5_wait": {
-			"animation_length": 2,
-			"bones": {
-				"stem_1": {
-					"rotation": [0, 0, 0],
-					"position": [0, 2, 0],
-					"scale": 1
-				},
-				"stem_2": {
-					"rotation": [135, 0, 0],
-					"position": [0, 14, 0.4],
-					"scale": 1
-				},
-				"right_leaf_3": {
-					"rotation": [-55, 0, 0],
-					"position": [0, 0, 0]
-				},
-				"left_leaf_1": {
-					"rotation": [-102.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"Stem": {
-					"rotation": [0, 0, 0],
-					"position": [0, 16, 0],
-					"scale": 2.5
-				},
-				"stem_3": {
-					"rotation": [177.58242, -1.14809, -22.47122],
-					"position": [0, 24, 2],
-					"scale": [1, 1.7, 1]
-				},
-				"right_leaf_1": {
-					"rotation": [-77.5, 0, 0],
-					"position": [-6, 15, 3],
-					"scale": 1.3
-				},
-				"head": {
-					"rotation": [132.5, -20, 0],
-					"position": [-4, 34, 4],
-					"scale": 1
-				},
-				"bottom_petal_1": {
-					"rotation": [95, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"left_petal_1": {
-					"rotation": [80, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"right_petal_1": {
-					"rotation": [92.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"left_top_1": {
-					"rotation": [70, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"right_top_1": {
-					"rotation": [65, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"right_leaf_5": {
-					"rotation": [-101.94435, -123.56134, -372.81087],
-					"position": [1, 15, 5],
-					"scale": 1.2
-				},
-				"stem_4": {
-					"rotation": [-21.30838, -21.63168, -43.3833],
-					"position": [0, 21, 0],
-					"scale": [0.8, 1, 0.8]
-				},
-				"stem_6": {
-					"position": [0, 12, -4]
-				},
-				"right_leaf_7": {
-					"position": [0, 21, 5],
-					"scale": 0
-				},
-				"right_leaf_9": {
-					"rotation": [71.33847, -116.68835, 171.08414],
-					"position": [31, 41, -1],
-					"scale": 1
-				},
-				"right_leaf_10": {
-					"rotation": [0, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 2
-				},
-				"stem_5": {
-					"rotation": [0, 0, 32.5],
-					"position": [0, 27, 1],
-					"scale": [0.8, 0.9, 0.8]
-				},
-				"bottom_petal_2": {
-					"rotation": [7.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"left_petal_2": {
-					"rotation": [22.5, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"right_petal_2": {
-					"rotation": [0, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				},
-				"right_top_2": {
-					"rotation": [12.5, 0, 0],
 					"position": [0, 0, 0]
 				}
 			}

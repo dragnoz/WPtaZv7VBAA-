@@ -9,6 +9,19 @@
 			"textures": {
 				"default": "textures/entity/plant_of_kindness"
 			},
+			"animations": {
+				"ctrl.root": "controller.animation.plant_of_kindness.root",
+				"stage1": "animation.plant_of_kindness.stage1",
+				"stage2": "animation.plant_of_kindness.stage2",
+				"stage3": "animation.plant_of_kindness.stage3",
+				"stage4": "animation.plant_of_kindness.stage4",
+				"stage5": "animation.plant_of_kindness.stage5"
+			},
+			"scripts": {
+				"animate": [
+					"ctrl.root"
+				]
+			},
 			"geometry": {
 				"default": "geometry.plant_of_kindness"
 			},

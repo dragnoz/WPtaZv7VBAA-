@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.plant.root":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {"stage1":"q.property('dz:growthstage')==1"},
+                        {"stage2":"q.property('dz:growthstage')==2"},
+                        {"stage3":"q.property('dz:growthstage')==3"},
+                        {"stage4":"q.property('dz:growthstage')==4"},
+                        {"stage5":"q.property('dz:growthstage')==5"}
+                    ]
+                },
+                "stage1":{
+                    "animations": ["stage1_wait"],
+                    "transitions": [{"default":"q.any_animation_finished && q.property('dz:growthstage') != 1"}]
+                },
+                "stage2":{
+                    "animations": ["stage2_wait"],
+                    "transitions": [{"default":"q.any_animation_finished && q.property('dz:growthstage') != 2"}]
+                },
+                "stage3":{
+                    "animations": ["stage3_wait"],
+                    "transitions": [{"default":"q.any_animation_finished && q.property('dz:growthstage') != 3"}]
+                },
+                "stage4":{
+                    "animations": ["stage4_wait"],
+                    "transitions": [{"default":"q.any_animation_finished && q.property('dz:growthstage') != 4"}]
+                },
+                "stage5":{
+                    "animations": ["stage5_wait"],
+                    "transitions": [{"default":"q.any_animation_finished && q.property('dz:growthstage') != 5"}]
+                }
+            }
+        }
+    }
+}
