@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "",
+		"name": "Sparks Judo BP",
+		"uuid": "9ce7105f-d35f-4e48-914d-adc3cf7140d7",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 13]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "192d7129-3e12-4b07-8ca4-ced01793f0e6",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "ef2044fb-5e9d-4246-8248-84898d42eadd",
+			"version": [1, 0, 0]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Sparks Judo",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"poop_scoop": {
+			"textures": "textures/items/poop_scoop"
+		},
+        "manure": {
+			"textures": "textures/items/manure"
+		}
+	}
+}

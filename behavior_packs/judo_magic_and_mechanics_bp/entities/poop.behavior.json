@@ -7,7 +7,48 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+		"component_groups": {
+			"despawn":{
+				"minecraft:instant_despawn": {}	
+			},
+			"drop_poop":{
+				"minecraft:spawn_entity": {
+					"entities":[
+						{
+							"spawn_item": "sparks:manure",
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"num_to_spawn": 1,
+							"single_use": true
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": 0.3,
+					"looping": false,
+					"time_down_event": {
+						"event": "despawn",
+						"target": "self"
+					}
+				}
+			}
+		},
 		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "void",
+						"deals_damage": false,
+						"on_damage": {
+							"event": "despawn"
+						}
+					},
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
 			"minecraft:physics": {
 				"has_gravity": true,
 				"has_collision": true
@@ -17,6 +58,40 @@
 			},
 			"minecraft:push_through": {
 				"value": 1
+			},
+			"minecraft:interact": {
+				"interactions":[
+					{
+						"on_interact": {
+						  "filters": {
+							"all_of": [
+							  { "test": "is_family", "subject" : "other", "value" :  "player"},
+							  { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "sparks:poop_scoop"}
+							]
+						  },
+						  "event": "drop_poop"
+						},
+						"use_item": true,
+						"play_sounds": "plop",
+						"interact_text": "action.interact.feed"
+					  }
+				]
+			}
+		},
+		"events": {
+			"despawn":{
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"drop_poop":{
+				"add": {
+					"component_groups": [
+						"drop_poop"
+					]
+				}
 			}
 		}
 	}
