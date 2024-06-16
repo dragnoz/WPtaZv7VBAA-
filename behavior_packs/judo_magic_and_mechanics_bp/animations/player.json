@@ -49,11 +49,15 @@
            
         },
         "animation.player.control": {
-            "animation_length": 1.0, "loop": true,
+            "animation_length": 0.01, "loop": true,
             "timeline": {
              
                 "0.0": [
-                    "/function command_center/player_control/player_start"
+                    "/function command_center/player_control/player_start",
+                    "/execute as @a[tag=moveboat2] at @s run tp @s ^-0.3 ^ ^",
+                    "/execute as @a[tag=moveboat1] at @s run tp @s ^ ^ ^0.3"
+                    
+                    
                     
                 ]
             }
