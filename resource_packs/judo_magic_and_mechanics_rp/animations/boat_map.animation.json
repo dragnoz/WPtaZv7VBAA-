@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.boat_map.ilsand1": {
+			"animation_length": 2.2083
+		},
+		"animation.boat_map.ilsand2": {
+			"animation_length": 2,
+			"bones": {
+				"head": {
+					"position": [0, 0, 0],
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.2917": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

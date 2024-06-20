@@ -2,17 +2,26 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "map:boat_map",
+			"identifier": "map:",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/boat_map"
+				"default": "textures/entity/",
+				"map_1": "textures/entity/boat_map1",
+				"map_2": "textures/entity/boat_map2",
+        		"map_3": "textures/entity/boat_map3",
+        		"map_4": "textures/entity/boat_map4",
+        		"map_5": "textures/entity/boat_map5",
+        		"map_6": "textures/entity/boat_map6",
+        		"map_7": "textures/entity/boat_map7",
+        		"map_8": "textures/entity/boat_map8",
+				"map_9": "textures/entity/boat_paris"
 			},
 			"geometry": {
-				"default": "geometry.boat_map"
+				"default": "geometry."
 			},
-			"render_controllers": ["controller.render.default"]
+			"render_controllers": ["controller.render."]
 		}
 	}
 }

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "props:clothing_on_hanger",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/clothing_on_hanger"
+			},
+			"geometry": {
+				"default": "geometry.clothing_on_hanger"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "clothing_on_hanger_spawn_egg"
+			}
+		}
+	}
+}

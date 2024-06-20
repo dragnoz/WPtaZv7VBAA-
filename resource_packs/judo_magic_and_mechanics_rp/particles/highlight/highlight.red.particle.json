@@ -14,7 +14,7 @@
 				"rotation": true
 			},
 			"minecraft:emitter_rate_steady": {
-				"spawn_rate": 5,
+				"spawn_rate": 2,
 				"max_particles": 100
 			},
 			"minecraft:emitter_lifetime_looping": {
@@ -40,7 +40,7 @@
 				"rotation": 90
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.1, 0.1],
+				"size": [0.3, 0.3],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 47,

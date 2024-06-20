@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "card:unstuck",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "card:unstuck",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

@@ -13,8 +13,7 @@
         },
         "animation.game.goals.event2": {
             "timeline": {
-                "0.0": ["/structure load isle2:tree1 ~-4 ~3 ~-4" ],
-                "0.05":["/event entity @s remove"]
+                "0.0": ["/execute as @a[tag=!cardcollector1,r=10] at @s run dialogue open @e[type=character:card_trader,c=1] @s Card_Collector_jumpcard","/tag @a[tag=!cardcollector1,r=10] add cardcollector1"]
             },
             "animation_length": 0.1,
             "loop": true

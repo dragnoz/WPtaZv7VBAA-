@@ -9,15 +9,156 @@
 		},
 		"components": {
 			"minecraft:physics": {
-				"has_gravity": true,
+				"has_gravity": false,
 				"has_collision": true
-			},
+			},	
+			"minecraft:interact": {
+                "interactions": [
+                
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [{ "test": "is_family", "subject": "other", "value": "player" }]
+                            },
+                            "event": "bell_tmpl1",
+                            "target": "self"
+                        }
+                    }
+                ]
+            },
+			"minecraft:scale": { "value":0.3 },
 			"minecraft:pushable": {
 				"is_pushable": false
 			},
 			"minecraft:push_through": {
 				"value": 1
 			}
-		}
+		},
+        "component_groups": {
+            "powerup:invisible": {
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "invisibility",
+                            "amplifier": 1,
+                            "duration": 5
+                        }
+                    ]
+                }
+            },
+            
+            "npc":{
+                "minecraft:npc": {
+                  "npc_data": {
+                    "portrait_offsets": {
+                        "translate": [-15, -5, 0],
+                        "scale": [2, 2, 2]
+                      }
+                  }
+                }
+              },
+			  "default": {
+				"minecraft:skin_id": { "value": 0 }
+			  },
+			  
+				"island1": {
+				  "minecraft:skin_id": { "value": 1 }
+				},
+				"island2": {
+				  "minecraft:skin_id": { "value": 2 }
+				},
+				"island3": {
+				  "minecraft:skin_id": { "value": 3 }
+				},
+				"island4": {
+				  "minecraft:skin_id": { "value": 4 }
+				},
+				"island5": {
+				  "minecraft:skin_id": { "value": 5 }
+				},
+				"island6": {
+				  "minecraft:skin_id": { "value": 6 }
+				},
+				"island7": {
+				  "minecraft:skin_id": { "value": 7 }
+				},
+				"island8": {
+				  "minecraft:skin_id": { "value": 8 }
+				},
+				"paris": {
+				  "minecraft:skin_id": { "value": 9 }
+				}
+			  
+
+
+         
+        },
+        "events": {
+            "addnpc":{
+                "add": {
+                    "component_groups": ["npc"]
+                }
+            },
+            "removenpc":{
+                "remove": {
+                    "component_groups": ["npc"]
+                }
+            },
+			"islanddefault": {
+				"remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+                "add": { "component_groups": [ "default" ] }
+                            },
+            "island1": {
+				"remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+                "add": { "component_groups": [ "island1" ] }
+                            },
+			
+				 "island2": {
+										  "remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+										  "add": { "component_groups": [ "island2" ] }
+													  },
+			   "island3": {
+					"remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+					"add": { "component_groups": [ "island3" ] }
+																				},
+				"island4": {
+																				 "remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																				 "add": { "component_groups": [ "island4" ] }
+																							 },
+				"island5": {
+																							  "remove": { "component_groups": [ "default", "island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																							  "add": { "component_groups": [ "island5" ] }
+																										  },
+				"island6": {
+																										   "remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																										   "add": { "component_groups": [ "island6" ] }
+																													   },
+				"island7": {
+																														"remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																														"add": { "component_groups": [ "island7" ] }
+																																	},
+				"island8": {
+																																	 "remove": { "component_groups": [  "default","island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																																	 "add": { "component_groups": [ "island8" ] }
+																																				 },
+				"paris": {
+																																				  "remove": { "component_groups": [ "default", "island1","island2","island3","island4","island5","island6","island7","island8","paris" ] },
+																																				  "add": { "component_groups": [ "paris" ] }
+																																							  },
+
+
+
+
+            "powerup:invisible": {
+                "add": {
+                    "component_groups": [
+                        "powerup:invisible"
+                    ]
+                }
+            }
+        }
+		
 	}
 }
+
+

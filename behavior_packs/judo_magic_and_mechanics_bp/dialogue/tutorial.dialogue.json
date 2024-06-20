@@ -1,0 +1,67 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "waking_upstart_day",
+				"npc_name": "NPC",
+				"text": "\n*YAWN*\nIt's time to get ready for my exciting day!!\n\n",
+				"buttons": [
+					{
+						"name": "Get up",
+						"commands": ["/dialogue open @s @initiator waking_upelder_1"]
+					}
+				]
+			},
+			{
+				"scene_tag": "waking_upelder_1",
+				"npc_name": "NPC",
+				"text": "\nWe have to go see The Elder.",
+				"buttons": [
+					{
+						"name": "Take Quest Card",
+						"commands": ["/dialogue open @s @initiator waking_upquestcard_1"]
+					},
+					{
+						"name": "Quest Card?",
+						"commands": ["/dialogue open @s @initiator waking_upquestcard_1"]
+					},
+					{
+						"name": "Skip Tutorial",
+						"commands": ["/say remember to connect this to a command"]
+					}
+				]
+			},
+			{
+				"scene_tag": "waking_upquestcard_1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": ""
+						}
+					]
+				},
+				"text": "\nThe Quest Card will help you navigate the world around you, activate the card and look around for the sparkles that will show the way",
+				"buttons": [
+					{
+						"name": "Activate?",
+						"commands": ["/dialogue open @s @initiator waking_upactivate_card"]
+					}
+				],
+				"on_open_commands": ["/tag @initiator add questcard"]
+			},
+			{
+				"scene_tag": "waking_upactivate_card",
+				"npc_name": "NPC",
+				"text": "\nAtivate the card by using it like a normal item. The magic and mechanics in the card will then activate it's Kime.",
+				"buttons": [
+					{
+						"name": "Let's Go!",
+						"commands": ["/event entity @e[type=info:waypoints] elder"]
+					}
+				],
+				"on_close_commands": ["/dialogue open @s @s poster_day"]
+			}
+		]
+	}
+}

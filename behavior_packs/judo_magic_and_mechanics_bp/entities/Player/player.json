@@ -1,0 +1,234 @@
+{
+    "format_version": "1.18.20",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "minecraft:player",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false,
+            "animations": { 
+                "card1": "animation.player.ability1",
+                "sound1":"animation.player.sound1",
+                "wet": "animation.player.wet",
+                "lava": "animation.player.lava",
+                "Square": "animation.player.Square",
+                "titles": "animation.player.titles",
+                "playercontrol": "animation.player.control",
+                "balance": "animation.player.balance",
+                "checkpoints": "animation.player.checkpoints",
+                "1stperson": "animation.player.1stperson"
+            },
+            "scripts": {
+                "animate": [
+                    "titles","playercontrol","checkpoints","sound1",
+                    {
+                        "card1": "query.main_hand_item_use_duration > 0.01"
+                    },
+                    {
+                        "balance":"query.ground_speed == 0"
+                    },
+                    {
+                        "1stperson":"query.is_first_person == 1"
+                    },
+                    {
+                        "wet": "query.is_in_contact_with_water"
+                    },
+                    {
+                        "lava": "query.scoreboard timer == 5"
+                    },
+                    {
+                        "Square": "query.get_equipped_item_name == 'Square' && query.main_hand_item_use_duration > 0.5f"
+                    }
+                ]
+            }
+        },
+        "component_groups": {
+            "powerup:invisible": {
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "invisibility",
+                            "amplifier": 1,
+                            "duration": 5
+                        }
+                    ]
+                }
+            },
+            
+            "npc":{
+                "minecraft:npc": {
+                  "npc_data": {
+                    "portrait_offsets": {
+                        "translate": [-15, -5, 0],
+                        "scale": [2, 2, 2]
+                      }
+                  }
+                }
+              },
+
+
+         "blighty:become_steve": {
+        "minecraft:skin_id": { "value": 1 }
+                    },
+          "blighty:become_alex": {
+        "minecraft:skin_id": { "value": 2 }
+                            },
+      "blighty:become_default": {
+        "minecraft:skin_id": { "value": 0 }
+                             }
+        },
+        "events": {
+            "addnpc":{
+                "add": {
+                    "component_groups": ["npc"]
+                }
+            },
+            "removenpc":{
+                "remove": {
+                    "component_groups": ["npc"]
+                }
+            },
+            "blighty:become_steve": {
+                "add": { "component_groups": [ "blighty:become_steve" ] },
+                "remove": { "component_groups": [ "blighty:become_alex" ] }
+                            },
+                "blighty:become_alex": {
+                "add": { "component_groups": [ "blighty:become_alex" ] },
+                  "remove": { "component_groups": [ "blighty:become_steve" ] }
+                },
+                "blighty:become_default": {
+              "add": { "component_groups": [ "blighty:become_default" ] },
+              "remove": { "component_groups": [ "blighty:become_steve", "blighty:become_alex" ] }
+            },
+            "powerup:invisible": {
+                "add": {
+                    "component_groups": [
+                        "powerup:invisible"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "domain": "hand",
+                            "value": "stick"
+                        },
+                        "event": "add:giant"
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "domain": "hand",
+                            "value": "feather"
+                        },
+                        "event": "add:fly"
+                    }
+                ]
+            },
+            "minecraft:experience_reward": {
+                "on_death": "Math.Min(query.player_level * 7, 100)"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "player"
+                ]
+            },
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:loot": {
+                "table": "loot_tables/empty.json"
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.8
+            },
+            "minecraft:can_climb": {},
+            "minecraft:movement": {
+                "value": 0.1
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 0
+                    }
+                ]
+            },
+            "minecraft:attack": {
+                "damage": 0
+            },
+            "minecraft:player.saturation": {
+                "value": 10000
+            },
+            "minecraft:player.exhaustion": {
+                "value": 0,
+                "max": 0
+            },
+            "minecraft:player.level": {
+                "value": 0,
+                "max": 24791
+            },
+            "minecraft:player.experience": {
+                "value": 0,
+                "max": 1
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": -1,
+                "inhale_time": 3.75,
+                "generates_bubbles": false
+            },
+            "minecraft:nameable": {
+                "always_show": true,
+                "allow_name_tag_renaming": false
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:insomnia": {
+                "days_until_insomnia": 1000
+            },
+            "minecraft:rideable": {
+                "seat_count": 2,
+                "family_types": [
+                    "info",
+                    "passenger"
+                ],
+                "pull_in_entities": true,
+                "seats": [
+                    {
+                        "position": [
+                            6,
+                            -0.2,
+                            -0.1
+                        ],
+                        "min_rider_count": 0,
+                        "max_rider_count": 0,
+                        "lock_rider_rotation": 0
+                    },
+                    {
+                        "position": [
+                            -4,
+                            -0.2,
+                            -0.1
+                        ],
+                        "min_rider_count": 1,
+                        "max_rider_count": 2,
+                        "lock_rider_rotation": 0
+                    }
+                ]
+            }
+        }
+    }
+}

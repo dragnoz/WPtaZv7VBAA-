@@ -234,8 +234,26 @@
             
             
         }
+        ,
+        "animation.game.fx.clothing1" :{
+            "animation_length": 6.1, "loop": false,
+            "timeline": {
+                "0.0": ["say @e[family=clothing1]"]
+            }
+            
+            
+        },
+        "animation.game.fx.clothing2" :{
+            "animation_length": 6.1, "loop": false,
+            "timeline": {
+                "0.0": ["say cloghing"]
+            }
+            
+            
+        }
     }
-}
+    }
+
 
 
 

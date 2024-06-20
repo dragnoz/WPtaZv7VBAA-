@@ -1,0 +1,48 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "mapmaster_welcome",
+				"npc_name": "NPC",
+				"text": "\nWelcome young Judoka. \n\nI am the Map Master.",
+				"buttons": [
+					{
+						"name": "Nice to meet you!",
+						"commands": ["/dialogue open @s @initiator mapmaster_themap", "/scoreboard player add @innitiator kindness 1"]
+					},
+					{
+						"name": "What is this?",
+						"commands": ["/dialogue open @s @initiator mapmaster_themap", "/scoreboard player remove @innitiator kindness 1"]
+					}
+				]
+			},
+			{
+				"scene_tag": "mapmaster_themap",
+				"npc_name": "NPC",
+				"text": "\nInfront of you is the world map.\nEach Master you succesfully recruit, will give you the co-ordinates to the next Island.",
+				"buttons": [
+					{
+						"name": "Please continue",
+						"commands": ["/dialogue open @s @initiator mapmaster_code", "/scoreboard player add @innitiator kindness 1"]
+					},
+					{
+						"name": "Skip to end",
+						"commands": ["/dialogue open @s @initiator mapmaster_code", "/scoreboard player remove @innitiator kindness 1"]
+					}
+				]
+			},
+			{
+				"scene_tag": "mapmaster_code",
+				"npc_name": "NPC",
+				"text": "\nBring the code to me and I'll unlock the next Island.",
+				"buttons": [
+					{
+						"name": "Thank you!",
+						"commands": ["/scoreboard player add @innitiator kindness 1"]
+					}
+				]
+			}
+		]
+	}
+}

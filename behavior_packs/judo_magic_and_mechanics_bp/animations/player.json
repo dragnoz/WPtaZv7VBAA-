@@ -14,7 +14,6 @@
                 ]
             }
         },
-
         "animation.player.ability1": {
             "timeline": {
              
@@ -53,12 +52,11 @@
             "timeline": {
              
                 "0.0": [
-                    "/function command_center/player_control/player_start",
-                    "/execute as @a[tag=moveboat2] at @s run tp @s ^-0.3 ^ ^",
-                    "/execute as @a[tag=moveboat1] at @s run tp @s ^ ^ ^0.3"
+                    "/execute as @s[tag=!judoka] at @s run function command_center/player_control/player_start",
+                  "/function command_center/teleport/teleport_controller"
                     
                     
-                    
+                           
                 ]
             }
            
@@ -86,7 +84,7 @@
             "animation_length": 1.0, "loop": true,
             "timeline": {
                 "0.0":[
-                    "/execute if entity @s[hasitem={ item=blighty:plates, location=slot.weapon.mainhand }] run camerashake add @s 0.1 1 positional"
+                    "/execute if entity @s[hasitem={ item=blighty:plates, location=slot.weapon.mainhand }] run camerashake add @s 0.2 1 positional"
                 ]
             }
         },

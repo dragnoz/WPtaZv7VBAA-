@@ -63,7 +63,7 @@
 			"scene3": {"minecraft:variant": {"value": 3}},
 			"scene4": {"minecraft:variant": {"value": 4}},
 			"scene5": {"minecraft:variant": {"value": 5}},
-			"scene6": {"minecraft:variant": {"value": 6}},
+			"scene6": {"minecraft:variant": {"value": 6},"minecraft:type_family": {"family": ["door"]}},
             "target": {"minecraft:variant": {"value": 7},"minecraft:type_family": {"family": ["endscene"]}},
 	
 			"remove":{

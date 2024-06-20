@@ -1,15 +1,15 @@
 {
     "format_version": "1.10.0",
     "animations":
-     { "animation.player.remove": {
+     { "animation.map.display.locked": {
             "timeline": {
              
-                "10.0": [
-                    "/event entity @s remove"
+                "1.0": [
+                    "/function command_center/timers/map_controller"
                     
                 ]
             },
-            "animation_length": 10.1,
+            "animation_length": 1.1,
             "loop": true
         }
     }

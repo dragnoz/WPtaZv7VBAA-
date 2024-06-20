@@ -1,0 +1,93 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "props:clothing_on_hanger",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+							"clothing1": "animation.game.fx.clothing1",
+							"clothing2": "animation.game.fx.clothing2"
+							},
+			"scripts": {"animate": [
+								
+									{"clothing1": "q.variant == 1"},
+									{"clothing2": "q.variant == 2"}
+									]}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:collision_box": {
+                "width": 1,
+                "height": 2
+            },
+			"minecraft:interact": {
+                "interactions": [
+                
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [{ "test": "is_family", "subject": "other", "value": "player" }]
+                            },
+                            "event": "clothing1",
+                            "target": "self"
+                        }
+                    }
+                ]
+            },
+		
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			}, 
+			"minecraft:damage_sensor": {
+				"triggers": {
+				  "cause": "all",
+				  "deals_damage": false
+				}
+			  }
+		},
+		"component_groups": {
+			"remove": {
+			  "minecraft:instant_despawn": {}
+			},
+
+			 "default": {"minecraft:variant": {"value": 0},"minecraft:type_family": { "family": [ "default" ]   }},
+			 "clothing1": {"minecraft:variant": {"value": 1},"minecraft:type_family": { "family": [ "clothing1" ]   }},
+			 "clothing2": {"minecraft:variant": {"value": 2},"minecraft:type_family": { "family": [ "clothing2" ]   }}, 
+			 "clothing3": {"minecraft:variant": {"value": 3},"minecraft:type_family": { "family": [ "clothing3" ]   }}
+
+		  },
+		  "events": {
+			"default": {
+				"add": {"component_groups": [ "default"] },
+				"remove": {"component_groups": [ "clothing1","clothing2","clothing3"] }
+			  },
+			  "clothing1": {"add": {"component_groups": [ "clothing1"] }},
+			  "clothing2": {"remove": {"component_groups": [ "default","clothing1","clothing2","clothing3"] },"add": {"component_groups": [ "clothing2"] }},
+			  "clothing3": {"remove": {"component_groups": [ "default","clothing1","clothing2","clothing3"] },"add": {"component_groups": [ "clothing3"] }},
+
+			"bellring": {
+				"add": {"component_groups": [ "bellring"] }
+			  },
+			"bellringstop": {
+				"remove": {"component_groups": [ "bellring"] }
+			  },
+			"remove": {
+			  "add": {"component_groups": [ "remove"] }
+			},
+			"fall": {
+				"add": {"component_groups": [ "fall"] }
+			  },
+			  "temple1": {
+				  "add": {"component_groups": [ "temple1"] }
+				}
+		  }
+	}
+}

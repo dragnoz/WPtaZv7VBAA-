@@ -576,3 +576,5 @@ entity.character:chef.name=Cheff
 entity.build:building_blocks.name=Building Blocks
 entity.prop:insence.name=Insence
 item.spawn_egg.entity.prop:insence.name=Spawn Insence
+entity.props:clothing_on_hanger.name=Clothing on Hanger
+item.spawn_egg.entity.props:clothing_on_hanger.name=Spawn Clothing on Hanger

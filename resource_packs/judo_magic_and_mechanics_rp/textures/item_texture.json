@@ -1,5 +1,11 @@
 {
 	"texture_data": {
+		"clothing_on_hanger_spawn_egg": {
+			"textures": ["textures/items/clothing_on_hanger_spawn_egg"]
+		},
+        "card:unstuck": {
+            "textures": "textures/items/card_unstuck"
+        },
 		"insence_spawn_egg": {
 			"textures": ["textures/items/insence_spawn_egg"]
 		},

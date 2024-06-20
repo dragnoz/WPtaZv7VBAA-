@@ -44,7 +44,7 @@
         "animation.game.scenes.scene2": {
             "timeline": {
                 "0.0": ["/title @a title unlock:island1"  ],
-                "1.6": ["/tp @a -33.64 72.00 85.00 90 -15","/tp @s -33.64 72.00 85.00" ],
+                "1.6": ["/tp @a -4001 68 -3959 0 -10","/tp @s -4001 68 -3959 0 -10" ],
                 "1.5": ["/execute as @a at @s run inputpermission set @s camera disabled",
                         "/execute as @a at @s run inputpermission set @s movement disabled"
                 ],
@@ -158,14 +158,14 @@
                 "29":["/execute as @a[r=6] at @s run function command_center/player_control/yesmovcam"],
                 "30":["@s remove"]
             }
-        },
-        "animation.game.scenes.scene6": {
+        },        "animation.game.scenes.scene6": {
             "timeline": {
-                "0.0": ["/structure load isle2:tree6 ~-6 ~4 ~-8 0_degrees none layer_by_layer 5" ],
-                "0.05":["/event entity @s remove"]
+                "5.0": ["/execute as @a at @s run dialogue open @s @s waking_upstart_day"],
+               
+                "10.0" :["/event entity @s remove"]
             },
-            "animation_length": 0.1,
-            "loop": true
+            "animation_length": 10.1,
+            "loop": false
         },
         "animation.game.scenes.scene7": {
             "timeline": {

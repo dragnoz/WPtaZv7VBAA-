@@ -5,7 +5,23 @@
 			"identifier": "info:waypoint",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false
+			"is_experimental": false,
+			"animations": { 
+							"event1":  "animation.waypoints.custom1",
+							"event2":  "animation.waypoints.custom2",
+							"event3":  "animation.waypoints.custom3",
+                            "event4":  "animation.waypoints.custom4",
+                            "event5":  "animation.waypoints.custom5",
+                            "event6":  "animation.waypoints.custom6"
+							},
+			"scripts": {"animate": [
+									{"event1": "q.variant == 1"},
+									{"event2": "q.variant == 2"},
+									{"event3": "q.variant == 3"},
+									{"event4": "q.variant == 4"},
+									{"event5": "q.variant == 5"},
+									{"event6": "q.variant == 6"}
+                                    ]}
 
 				
 		},
@@ -30,6 +46,12 @@
 			}
 		},
 		"component_groups": {
+			"event1": {"minecraft:variant": {"value": 1}, "minecraft:type_family": "A"},
+			"event2": {"minecraft:variant": {"value": 2}, "minecraft:type_family": "B"},
+			"event3": {"minecraft:variant": {"value": 3}, "minecraft:type_family": "C"},
+			"event4": {"minecraft:variant": {"value": 4}},
+			"event5": {"minecraft:variant": {"value": 5}, "minecraft:type_family": "E"},
+			"event6": {"minecraft:variant": {"value": 6}, "minecraft:type_family": "F"},
 	
 			"remove":{
                 "minecraft:instant_despawn":{}
@@ -38,13 +60,16 @@
 
 		},
 		"events":{
+			"elder": {"remove": {"component_groups": [ "event1","event2","event3","event4"] },"add": {"component_groups": [ "event1"] }},
+			"event2": {"remove": {"component_groups": [ "event1","event2","event3","event4"] },"add": {"component_groups": [ "event2"] }},
+			  "event3": {"remove": {"component_groups": [ "event1","event2","event3","event4"] },"add": {"component_groups": [ "event3"] }},
+			  "event4": {"remove": {"component_groups": [ "event1","event2","event3","event4"] },"add": {"component_groups": [ "event4"] }},
+              
+              "event5": {"add": {"component_groups": ["event5"] }},
+              "event6": {"add": {"component_groups": ["event6"] }},
+
 			
-			
-			"remove":{
-				"add": {
-					"component_groups": [ "remove" ]
-				}
-			}
+			"remove":{"add": {"component_groups": [ "remove" ]}}
 		
 	}
 	}

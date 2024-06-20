@@ -2,6 +2,9 @@
     "texture_data": {
         "blighty:plates": {
             "textures": "textures/items/judo_plates"
+        },
+        "card:unstuck": {
+            "textures": "textures/items/unstuck"
         }
     }
 }
