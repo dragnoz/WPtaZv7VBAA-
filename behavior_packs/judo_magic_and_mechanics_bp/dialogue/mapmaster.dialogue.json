@@ -3,43 +3,244 @@
 	"minecraft:npc_dialogue": {
 		"scenes": [
 			{
-				"scene_tag": "mapmaster_welcome",
-				"npc_name": "NPC",
+				"scene_tag": "map:welcome",
+				"npc_name": "Map Master",
 				"text": "\nWelcome young Judoka. \n\nI am the Map Master.",
 				"buttons": [
 					{
-						"name": "Nice to meet you!",
-						"commands": ["/dialogue open @s @initiator mapmaster_themap", "/scoreboard player add @innitiator kindness 1"]
+						"name": "Cool.",
+						"commands": ["/dialogue open @s @initiator map:themap"]
 					},
 					{
-						"name": "What is this?",
-						"commands": ["/dialogue open @s @initiator mapmaster_themap", "/scoreboard player remove @innitiator kindness 1"]
+						"name": "Nice to meet you!",
+						"commands": ["/dialogue open @s @initiator map:themap", "/scoreboard player add @innitiator kindness 1"]
+					},
+					{
+						"name": "Who?",
+						"commands": ["/dialogue open @s @initiator map:themap", "/scoreboard player remove @innitiator kindness 1"]
 					}
-				]
+				],
+				"on_close_commands": ["/dialogue change @s map:welcome1"]
 			},
 			{
-				"scene_tag": "mapmaster_themap",
-				"npc_name": "NPC",
-				"text": "\nInfront of you is the world map.\nEach Master you succesfully recruit, will give you the co-ordinates to the next Island.",
+				"scene_tag": "map:themap",
+				"npc_name": "Map Master",
+				"text": "\nInfront of you is the world map.\nEach Master you succesfully recruit, will give me the co-ordinates to the next Island.",
 				"buttons": [
 					{
 						"name": "Please continue",
-						"commands": ["/dialogue open @s @initiator mapmaster_code", "/scoreboard player add @innitiator kindness 1"]
+						"commands": ["/dialogue open @s @initiator map:always", "/scoreboard player add @innitiator kindness 1"]
 					},
 					{
 						"name": "Skip to end",
-						"commands": ["/dialogue open @s @initiator mapmaster_code", "/scoreboard player remove @innitiator kindness 1"]
+						"commands": ["/dialogue open @s @initiator map:always", "/scoreboard player remove @innitiator kindness 1"]
 					}
 				]
 			},
 			{
-				"scene_tag": "mapmaster_code",
-				"npc_name": "NPC",
-				"text": "\nBring the code to me and I'll unlock the next Island.",
+				"scene_tag": "map:code",
+				"npc_name": "Map Master",
+				"text": "\nShall I unlock the next Island and plot our course?\n\n",
+				"buttons": [
+					{
+						"name": "Please Unlock Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/summon info:mapupdate ~ ~ ~ ~ ~ nextisland"]
+					},
+					{
+						"name": "Just do it.",
+						"commands": ["/scoreboard player remove @innitiator kindness 1", "/summon info:mapupdate ~ ~ ~ ~ ~ nextisland"]
+					},
+					{
+						"name": "This is cool!",
+						"commands": ["/summon info:mapupdate ~ ~ ~ ~ ~ nextisland"]
+					}
+				]
+			},
+			{
+				"scene_tag": "map:always",
+				"npc_name": "Map Master",
+				"text": "\nCome back when ever you ready!",
+				"buttons": [
+					{
+						"name": "Will do!"
+					},
+					{
+						"name": "Maybe.",
+						"commands": ["/scoreboard player remove @innitiator kindness 1"]
+					},
+					{
+						"name": "To Courage Isle!",
+						"commands": ["/tp @a -31 69 83 0 -10"]
+					}
+				]
+			},
+			{
+				"scene_tag": "map:isl1",
+				"npc_name": "Map Master",
+				"text": "\nReady to go? select your destination:",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": "Not Yet.",
+						"commands": ["/dialogue open @s @initiator map:ok"]
+					}
+				]
+			},
+			{
+				"scene_tag": "map:ok",
+				"npc_name": "Map Master",
+				"text": "\nPlease come back anytime!",
 				"buttons": [
 					{
 						"name": "Thank you!",
 						"commands": ["/scoreboard player add @innitiator kindness 1"]
+					},
+					{
+						"name": "Sure"
+					},
+					{
+						"name": "As if!",
+						"commands": ["/scoreboard player remove @innitiator kindness 1"]
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome1",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": "Not yet."
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome2",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": " Honesty Isle ",
+						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome3",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": "Honesty Isle",
+						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
+					},
+					{
+						"name": "Courtesy Isle"
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome4",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": "Honesty",
+						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
+					},
+					{
+						"name": "Courtesy Isle"
+					},
+					{
+						"name": "Respect Isle"
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome5",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Courage Isle",
+						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+					},
+					{
+						"name": "Honesty Isle",
+						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
+					},
+					{
+						"name": "Courtesy Isle"
+					},
+					{
+						"name": "Respect Isle"
+					},
+					{
+						"name": "Isle Self Control"
+					},
+					{
+						"name": "More Islands >>"
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome6",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Friendship Isle"
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome7",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Friendship Isle"
+					},
+					{
+						"name": "Honour Isle"
+					}
+				]
+			},
+			{
+				"scene_tag": "map:welcome8",
+				"npc_name": "Map Master",
+				"text": "\nReady to set sail young judoka?",
+				"buttons": [
+					{
+						"name": "Friendship Isle"
+					},
+					{
+						"name": "Honour Isle"
+					},
+					{
+						"name": "Modesty Isle"
+					},
+					{
+						"name": "THE GREAT SHIAI"
 					}
 				]
 			}

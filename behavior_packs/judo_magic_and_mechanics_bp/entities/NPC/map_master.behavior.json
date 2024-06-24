@@ -53,8 +53,8 @@
 			  "minecraft:npc": {
 				"npc_data": {
 				  "portrait_offsets": {
-					"translate": [-7, 0, 0],
-					"scale": [1, 1, 1]
+					"translate": [-15, 75, 0],
+					"scale": [2.5, 2.5, 2.5]
 				  },
 				  "picker_offsets": {
 					"translate": [0, 20, 0],

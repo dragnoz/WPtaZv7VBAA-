@@ -1,0 +1,138 @@
+{
+	"format_version": "1.20.13",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "info:mapupdate",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+
+
+			"animations": {
+						"island1":  "animation.map.island1",
+						"island2":  "animation.map.island2",
+						"island3":  "animation.map.island3",
+						"island4":  "animation.map.island4",
+						"island5":  "animation.map.island5",
+						"island6":  "animation.map.island6"
+							},
+			"scripts": {"animate": [
+						{"island1": "q.variant == 1"},
+						{"island2": "q.variant == 2"},
+						{"island3": "q.variant == 3"},
+						{"island4": "q.variant == 4"},
+						{"island5": "q.variant == 5"},
+						{"island6": "q.variant == 6"}
+									]}
+
+				
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "commands" ]
+			  },
+              "minecraft:collision_box": {
+                "width":0,
+                "height": 0
+              },
+              
+			  "minecraft:nameable": {
+				"always_show":true,
+				"allow_name_tag_renaming": true
+			  },
+              "minecraft:persistent": {
+            },
+            "minecraft:npc": {
+              "npc_data": {
+                "portrait_offsets": {
+                  "translate": [-7, 50, 0],
+                  "scale": [1.75, 1.75, 1.75]
+                },
+                "picker_offsets": {
+                  "translate": [0, 20, 0],
+                  "scale": [1.7, 1.7, 1.7]
+                }
+              }
+            },
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			}
+			
+		},
+		"component_groups": {
+
+			"island1": {"minecraft:variant": {"value": 1}},
+			"island2": {"minecraft:variant": {"value": 2}},
+			"island3": {"minecraft:variant": {"value": 3}},
+			"island4": {"minecraft:variant": {"value": 4}},
+			"island5": {"minecraft:variant": {"value": 5}},
+			"island6": {"minecraft:variant": {"value": 6}},
+			"reset": {"minecraft:variant": {"value": 0}},
+			"remove":{
+                "minecraft:instant_despawn":{}
+            },
+
+			"courage1":{
+				"minecraft:type_family": {
+					"family": [ "courage1" ]
+				  }
+			},
+
+			"courage2":{
+				"minecraft:type_family": {
+					"family": [ "courage2" ]
+				  }
+			}
+            
+
+		},
+		"events":{
+			"island1": {"add": {"component_groups": [ "island1"] }},
+			"island2": {"add": {"component_groups": [ "island2"] }},
+			  "island3": {"add": {"component_groups": [ "island3"] }},
+			  "island4": {"add": {"component_groups": [ "island4"] }},
+              "island5": {"add": {"component_groups": ["island5"] }},
+              "island6": {"add": {"component_groups": ["island6"] }},
+
+			  "remove":{
+				"add": {
+					"component_groups": [ "remove" ]
+				}
+			},
+			"courage1":{
+				"add": {
+					"component_groups": [ "courage1" ]
+				}
+			},
+			"courage2":{
+				"add": {
+					"component_groups": [ "courage2" ]
+				}
+			},
+			"reset":{
+				"remove": {
+					"component_groups": [ "island1","island2","island3","island4","island5","island6","island7","island8","island9"]
+				},
+				"add": {
+					"component_groups": [ "reset" ]
+				}
+			
+		
+	}
+	}
+}
+}
+
+

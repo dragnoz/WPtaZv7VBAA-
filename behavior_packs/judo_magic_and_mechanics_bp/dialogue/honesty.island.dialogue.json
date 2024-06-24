@@ -1,0 +1,177 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "honesty.islandscene",
+				"npc_name": "Amira the Sincere",
+				"text": "Judoka! What was that noise?\n\nWhat happened to the well of truth?!",
+				"buttons": [
+					{
+						"name": "Wasn't me!",
+						"commands": ["/dialogue open @s @initiator honesty.islanditwasme", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§4<Red Guardian>§r   §o\\\"Wasnt me!\\\".\"}]}", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§9<Blue Guardian>§r   §o\\\"Wasnt me!\\\".\"}]}", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§2<Green Guardian>§r   §o\\\"Wasnt me!\\\".\"}]}", "/dialogue open @s @s honesty.islandwasntme"]
+					},
+					{
+						"name": "It was the Pixie!",
+						"commands": ["/dialogue open @s @initiator honesty.islandfix", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§9<Blue Guardian>§r   §o\\\"It was the Pixie\\\".\"}]}"]
+					},
+					{
+						"name": " ...It was me.",
+						"commands": ["/dialogue open @s @initiator honesty.islanditwasme", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§4<Red Guardian>§r   §o\\\"It was me\\\".\"}]}", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§9<Blue Guardian>§r   §o\\\"It was me\\\".\"}]}", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§2<Green Guardian>§r   §o\\\"It was me!\\\".\"}]}"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandwasntme",
+				"npc_name": "Player",
+				"text": "\nIt Wasn't me! I found it like this!",
+				"buttons": [
+					{
+						"name": "I have to go.."
+					},
+					{
+						"name": "OK... It was me."
+					},
+					{
+						"name": "How do we fix it?"
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islanditwasme",
+				"npc_name": "Player",
+				"text": "I am appologise Master. \n\nThere was a Button, a sign and a quest objective.\n\n",
+				"buttons": [
+					{
+						"name": "I was deceived.",
+						"commands": ["/dialogue open @s @initiator honesty.islandfix", "/tellraw @a {\"rawtext\":[{\"text\":\"\\n§2<Green Guardian>§r   §o\\\"It was me!\\\".\"}]}"]
+					},
+					{
+						"name": "I was curious.",
+						"commands": ["/dialogue open @s @initiator honesty.islandfix"]
+					},
+					{
+						"name": "There was a Button",
+						"commands": ["/dialogue open @s @initiator honesty.islandfix"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandfix",
+				"npc_name": "Amira the Sincere",
+				"text": "We will need to fix it!\n\nWho knows what will happen without our well of truth!",
+				"buttons": [
+					{
+						"name": "So..?",
+						"commands": ["/dialogue open @s @initiator honesty.islandhow"]
+					},
+					{
+						"name": "Sounds like work!",
+						"commands": ["/dialogue open @s @initiator honesty.islandhow"]
+					},
+					{
+						"name": "How do we fix it?",
+						"commands": ["/dialogue open @s @initiator honesty.islandhow"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandhow",
+				"npc_name": "Amira the Sincere",
+				"text": "You need to seek out the three gaurdians.\nRed, Blue and Green. \n\nBut be warned without the well, they will lie. You must break this curse...",
+				"buttons": [
+					{
+						"name": "Please continue",
+						"commands": ["/dialogue open @s @initiator honesty.islandglyph"]
+					},
+					{
+						"name": "Get on with it.",
+						"commands": ["/dialogue open @s @initiator honesty.islandglyph"]
+					},
+					{
+						"name": "and..?",
+						"commands": ["/dialogue open @s @initiator honesty.islandglyph"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandglyph",
+				"npc_name": "Amira the Sincere",
+				"text": "... by making their lies into truths only then can the well start flowing again..\n",
+				"buttons": [
+					{
+						"name": "Where are they?"
+					},
+					{
+						"name": "Let me find them"
+					},
+					{
+						"name": "Ok..."
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandguardians",
+				"npc_name": "Amira the Sincere",
+				"text": "You can find them in the 3 main houses on the island.\n\n",
+				"buttons": [
+					{
+						"name": "YES MAM!",
+						"commands": ["/dialogue open @s @initiator honesty.islandhurry back", "/say set the title"]
+					},
+					{
+						"name": "Be right back!",
+						"commands": ["/dialogue open @s @initiator honesty.islandhurry back", "say set the title"]
+					},
+					{
+						"name": "Do I have to?",
+						"commands": ["/dialogue open @s @initiator honesty.islandnohelp"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandnohelp",
+				"npc_name": "Amira the Sincere",
+				"text": "No, you do not have to do anything if you do not want to help.\n\nI can unlock your next island if you choose to not help us.",
+				"buttons": [
+					{
+						"name": "I will help!",
+						"commands": ["/dialogue open @s @initiator honesty.islandhurry back"]
+					},
+					{
+						"name": "Just unlock island"
+					},
+					{
+						"name": "ok, ok relax!",
+						"commands": ["/dialogue open @s @initiator honesty.islandhurry back"]
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandhurry back",
+				"npc_name": "Amira the Sincere",
+				"text": "Go now and hurry back young judoka!\n\nTime is of the eccense!",
+				"buttons": [
+					{
+						"name": "On my way!"
+					}
+				]
+			},
+			{
+				"scene_tag": "honesty.islandredguardian",
+				"npc_name": "RED GUARDIAN",
+				"text": "With the merest gesture, a mere flick of my wrist, I command the heavens’ fury, the storm’s electric kiss. "
+			},
+			{
+				"scene_tag": "honesty.islandblueguardian",
+				"npc_name": "BLUE GUARDIAN",
+				"text": "Behold my power, my grand pursuit, for I grew a tree that bore suns instead of fruit."
+			},
+			{
+				"scene_tag": "honesty.islandgreenguardian",
+				"npc_name": "GREEN GUARDIAN",
+				"text": "My power is vast, make no mistake; I’ve turned chickens into dragons, mighty and great!"
+			}
+		]
+	}
+}

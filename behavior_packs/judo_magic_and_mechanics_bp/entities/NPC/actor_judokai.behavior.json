@@ -48,13 +48,15 @@
 				"probability": 0.02
 			  }
 		},
+
+
 		"component_groups": {
 			"npc":{
 			  "minecraft:npc": {
 				"npc_data": {
 				  "portrait_offsets": {
-					"translate": [-7, 0, 0],
-					"scale": [1, 1, 1]
+					"translate": [-15, -5, 0],
+					"scale": [2, 2, 2]
 				  },
 				  "picker_offsets": {
 					"translate": [0, 20, 0],

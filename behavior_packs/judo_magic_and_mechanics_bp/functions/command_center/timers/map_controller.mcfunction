@@ -11,6 +11,6 @@ execute  as @e[tag=unlock_3] at @s run particle map:unlock_3 ~0.2 ~1.5 ~
 execute  as @e[tag=unlock_4] at @s run particle map:unlock_4 ~0.2 ~1.5 ~
 execute  as @e[tag=unlock_5] at @s run particle map:unlock_5 ~0.2 ~1.5 ~
 execute   as @e[tag=unlock_6] at @s run particle map:unlock_6 ~0.2 ~1.5 ~
-execute   as @e[tag=unlock_7] at @s run particle map:unlock_7 ~0.2 ~1.5 ~
+execute  as @e[tag=unlock_7] at @s run particle map:unlock_7 ~0.2 ~1.5 ~
 execute as @e[tag=unlock_8] at @s run particle map:unlock_8 ~0.2 ~1.5 ~
 

@@ -143,7 +143,7 @@
 
                 "17":["/setblock 1947 66 -2327 redstone_block"],
                 "20":["/summon character:master_rania 1926.90 71.00 -2340.71 ~ ~ npc"],
-                "20.1":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
+                "20.1":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],    
                 "20.2":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
                 "20.3":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
                 "20.4":["/execute as @a at @s run tp @s ~ ~ ~ ~-6 ~-5"],
@@ -154,6 +154,7 @@
                 "20.9":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],  
                 "21":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
                 "21.1":["/execute as @a at @s run tp @s ~ ~ ~ ~-7 ~"],
+                "23":["/dialogue open @e[type=character:master_rania,c=1] @p honesty.islandscene"],
 
                 "29":["/execute as @a[r=6] at @s run function command_center/player_control/yesmovcam"],
                 "30":["@s remove"]

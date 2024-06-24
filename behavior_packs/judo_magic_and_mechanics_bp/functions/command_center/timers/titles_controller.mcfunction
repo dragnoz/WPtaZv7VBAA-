@@ -69,10 +69,17 @@ execute as @a[scores={title=244..244}] at @s run titleraw @s title {"rawtext":[{
 
 
 
-
+#  island3 press me quest text
+execute as @a[scores={title=250..250}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n\n\n\n\n"}]}
 
 
 execute as @a[scores={title=200..200}] at @s run function control/ui/ui.combat 
+
+
+
+
+execute as @a[scores={title=400..400}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§4Red§r Guardian  \n\n§l§2Blue§r Guardian \n\n§l§1Green§r Guardian\n\n"}]}
+
 
 
 
@@ -154,7 +161,7 @@ execute as @a[scores={title=318..318}] at @s run titleraw @s actionbar {"rawtext
 
 execute as @a[scores={title=319..319}] at @s run titleraw @s actionbar {"rawtext":[{"text":" "},{"text": "§l§e Big Jump §l§d"},{"text":" "}]}
 
-execute as @a[scores={title=320..320}] at @s run titleraw @s actionbar {"rawtext":[{"text":" "},{"text": "WARNING!!!:§l§d "},{"score":{"name":"@s","objective":"danger"}},{"text":" "}]}
+execute as @a[scores={title=321..321}] at @s run titleraw @s actionbar {"rawtext":[{"text":" "},{"text": "WARNING!!!:§l§d "},{"score":{"name":"@s","objective":"danger"}},{"text":" "}]}
 
 
 
