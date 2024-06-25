@@ -97,7 +97,7 @@
 			{
 				"scene_tag": "honesty.islandglyph",
 				"npc_name": "Amira the Sincere",
-				"text": "... by making their lies into truths only then can the well start flowing again..\n",
+				"text": "... by making their lies...\n\n... into truths only then can the well start flowing again..\n",
 				"buttons": [
 					{
 						"name": "Where are they?"
@@ -160,17 +160,25 @@
 			{
 				"scene_tag": "honesty.islandredguardian",
 				"npc_name": "RED GUARDIAN",
-				"text": "With the merest gesture, a mere flick of my wrist, I command the heavens’ fury, the storm’s electric kiss. "
+				"text": "With the merest gesture, a mere flick of my wrist, I command the heavens’ fury, the storm’s electric kiss. ",
+				"on_open_commands": ["/tag @e[name=] add red", "/tag @e[name=] remove red", "/tag @e[name=] add lightning", "/scoreboard players set @a title 402 "]
 			},
 			{
 				"scene_tag": "honesty.islandblueguardian",
 				"npc_name": "BLUE GUARDIAN",
-				"text": "Behold my power, my grand pursuit, for I grew a tree that bore suns instead of fruit."
+				"text": "Behold my power, my grand pursuit, for I grew a tree that bore suns instead of fruit.",
+				"on_open_commands": ["/tag @e[name=] add blue", "/tag @e[name=] remove blue", "/tag @e[name=] add sun", "/scoreboard players set @a title 402 "]
 			},
 			{
 				"scene_tag": "honesty.islandgreenguardian",
 				"npc_name": "GREEN GUARDIAN",
-				"text": "My power is vast, make no mistake; I’ve turned chickens into dragons, mighty and great!"
+				"text": "My power is vast, make no mistake; I’ve turned chickens into LIONS, clucking and great!",
+				"on_open_commands": ["/tag @e[name=] add green", "/tag @e[name=] remove green", "/tag @e[name=] add lion", "/scoreboard players set @a title 402 "]
+			},
+			{
+				"scene_tag": "honesty.islandscene_2",
+				"npc_name": "NPC",
+				"text": "Sample Text"
 			}
 		]
 	}

@@ -143,14 +143,15 @@
 				"buttons": [
 					{
 						"name": "Courage Isle",
-						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+						"commands": ["/tp @a -31 69 83 0 -10"]
 					},
 					{
 						"name": "Honesty Isle",
 						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
 					},
 					{
-						"name": "Courtesy Isle"
+						"name": "Courtesy Isle",
+						"commands": ["/tp @a -1975.45 71.60 -4170.00"]
 					}
 				]
 			},
@@ -161,14 +162,15 @@
 				"buttons": [
 					{
 						"name": "Courage Isle",
-						"commands": ["/scoreboard player add @innitiator kindness 1", "/tp @a -31 69 83 0 -10"]
+						"commands": ["/tp @a -31 69 83 0 -10"]
 					},
 					{
 						"name": "Honesty",
 						"commands": ["/tp @a 1869.89 63.00 -2345.92 -90 0"]
 					},
 					{
-						"name": "Courtesy Isle"
+						"name": "Courtesy Isle",
+						"commands": ["/tp @a -1975.45 71.60 -4170.00"]
 					},
 					{
 						"name": "Respect Isle"

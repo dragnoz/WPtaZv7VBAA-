@@ -41,6 +41,27 @@
             },
             "animation_length": 6.1,
             "loop": false
+        },
+        "animation.map.island3": {
+            "timeline": {
+                
+                "0.0": ["/particle lock:unlock -4002.50 70 -3954",
+                        "/function command_center/player_control/nomovcam"
+                        
+                        ],
+                "0.5": ["/tp @a -4001 68 -3958 0 -20"],
+                "2": ["/function command_center/resets/remove_map_tags"],
+                "2.01": ["/tag @e[type=info:map] add unlock_3"],
+
+                "5": ["/function command_center/player_control/yesmovcam",
+                     "/dialogue open @e[type=character:map_master,c=1] @a[r=6] map:welcome3",
+                     "/dialogue change @e[type=character:map_master,c=1] map:welcome3"
+                    ],
+
+                "6" :["@s remove"]
+            },
+            "animation_length": 6.1,
+            "loop": false
         }
     }
 }

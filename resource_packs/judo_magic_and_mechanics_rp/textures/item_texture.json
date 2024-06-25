@@ -1,10 +1,13 @@
 {
 	"texture_data": {
+
+		"plate":{"textures": "textures/items/plate1" },
+		"speed": {"textures": "textures/items/speed"},
 		"clothing_on_hanger_spawn_egg": {
 			"textures": ["textures/items/clothing_on_hanger_spawn_egg"]
 		},
         "card:unstuck": {
-            "textures": "textures/items/card_unstuck"
+            "textures": "textures/items/unstuck"
         },
 		"insence_spawn_egg": {
 			"textures": ["textures/items/insence_spawn_egg"]

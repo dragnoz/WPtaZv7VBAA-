@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "card:plate",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:icon": "plate",
+            "minecraft:use_animation": "none"
+        }
+    }
+}

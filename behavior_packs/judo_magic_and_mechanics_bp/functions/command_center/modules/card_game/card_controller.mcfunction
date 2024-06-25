@@ -28,3 +28,5 @@ execute if entity @s[hasitem={ item=dz:card1, location=slot.weapon.mainhand }] r
 
 
 execute if entity @s[hasitem={ item=dz:card3, location=slot.weapon.mainhand }] run function command_center/modules/card_game/cards/mushroom
+execute if entity @s[hasitem={ item=card:speed, location=slot.weapon.mainhand }] run effect @s speed 10 4 true
+execute if entity @s[hasitem={ item=card:speed, location=slot.weapon.mainhand }] run effect @s jump_boost 10 2 true

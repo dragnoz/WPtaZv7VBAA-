@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "prop:plate_of_fish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/plate_of_fish"
+			},
+			"geometry": {
+				"default": "geometry.plate_of_fish"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

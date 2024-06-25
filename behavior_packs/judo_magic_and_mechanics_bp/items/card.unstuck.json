@@ -11,7 +11,7 @@
         "nutrition": 4,
         "saturation_modifier": "low",
         "on_use_action": "chorus_teleport",
-        "on_use_range": [ 2, 2, 2 ],
+        "on_use_range": [ 4, 4, 4 ],
         "cooldown_type": "chorusfruit",
         "cooldown_time": 20,
         "can_always_eat": true

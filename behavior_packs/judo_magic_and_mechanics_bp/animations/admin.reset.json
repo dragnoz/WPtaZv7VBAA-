@@ -88,6 +88,7 @@
                
                 "0.0": ["/fill 1918 62 -2318 1946 62 -2340 water replace air","/setblock 1947 66 -2327 redstone_block"],
                 "1.0":["/tag @e[type=prop:pilliarbutton] remove pressme"],
+                "1.05":["/function command_center/resets/honorislandreset"],
                 "1.1":["@s remove"]
             },
             "animation_length": 1.5,

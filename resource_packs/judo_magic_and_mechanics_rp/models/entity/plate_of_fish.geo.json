@@ -1,0 +1,58 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.plate_of_fish",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -6], "size": [12, 1, 12], "uv": [0, 0]},
+						{"origin": [6, 1, -6], "size": [1, 1, 12], "pivot": [0, 1.5, 0], "rotation": [0, -90, 0], "uv": [11, 0]},
+						{"origin": [-6, 0, -6], "size": [12, 1, 12], "uv": [0, 0]},
+						{"origin": [6, 1, -6], "size": [1, 1, 12], "uv": [11, 0]},
+						{"origin": [-7, 1, -6], "size": [1, 1, 12], "uv": [11, 0]},
+						{"origin": [-7, 1, -6], "size": [1, 1, 12], "pivot": [0, 1.5, 0], "rotation": [0, -90, 0], "uv": [11, 0]}
+					]
+				},
+				{
+					"name": "Food",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "1st",
+					"parent": "Food",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 0, -5.5], "size": [10, 3, 11], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "2nd",
+					"parent": "1st",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-5, 3, -5.5], "size": [10, 3, 11], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "3rd",
+					"parent": "2nd",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-5, 6, -5.5], "size": [10, 3, 11], "uv": [0, 24]}
+					]
+				}
+			]
+		}
+	]
+}

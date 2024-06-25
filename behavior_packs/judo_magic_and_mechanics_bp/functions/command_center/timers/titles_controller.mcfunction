@@ -80,7 +80,9 @@ execute as @a[scores={title=200..200}] at @s run function control/ui/ui.combat
 
 execute as @a[scores={title=400..400}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§4Red§r Guardian  \n\n§l§2Blue§r Guardian \n\n§l§1Green§r Guardian\n\n"}]}
 
+execute as @a[scores={title=401..401}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lGuardians \n\n"},{"selector": "@e[tag=red,c=1,type=!player]"},{"selector": "@e[tag=blue,c=1,type=!player]"},{"selector": "@e[tag=green,c=1,type=!player]"},{"text":"\n\n "}]}
 
+execute as @a[scores={title=402..402}] at @s run titleraw @s title {"rawtext":[{"text":"\n\n§lGuardians \n\n"},{"selector": "@e[tag=red,c=1,type=!player]"},{"selector": "@e[tag=blue,c=1,type=!player]"},{"selector": "@e[tag=green,c=1,type=!player]"},{"text": "\n\nCreate:\n\n"},{"selector": "@e[tag=lightning,c=1,type=!player]"},{"text": " "},{"selector": "@e[tag=lion,c=1,type=!player]"},{"text": " "},{"selector": "@e[tag=sun,c=1,type=!player]"},{"text": "\n\n "}]}
 
 
 #when playing a card - trigger by card being used

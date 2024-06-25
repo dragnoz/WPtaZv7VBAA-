@@ -28,7 +28,7 @@
                     {
                         "name": "Next",
                         "commands": [
-                            "/execute as @initiator at @s run dialogue open @e[rm=1,c=1,r=6] @s Lucia_the_Polite_1"
+                            "/dialogue open @s @a[r=6] Lucia_the_Polite_1"
                         ]
                     }
                 ]

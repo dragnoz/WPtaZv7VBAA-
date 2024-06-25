@@ -91,12 +91,12 @@ UI_Settings.npc.dialogue.1=You can make UI bigger, Smaller or higher and lower
 UI_Settings.npc=UI_Settings
 
 
-
-item.dz:card1.name=card1
-item.dz:card2.name=card2
-item.dz:card3.name=card3
-item.dz:card4.name=card4
-item.dz:card5.name=card5
+item.card:speed.name=Speed Card
+item.dz:card1.name=Pink Glass Tree
+item.dz:card2.name=Sweeping Card
+item.dz:card3.name=Mushroom Schematic
+item.dz:card4.name=Climb Chain
+item.dz:card5.name=Quest Card
 item.dz:action1.name=action1
 item.dz:action2.name=action2
 item.dz:friendship.name=Friendship

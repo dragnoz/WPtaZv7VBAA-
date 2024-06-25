@@ -92,17 +92,20 @@ UI_Settings.npc=UI_Settings
 
 
 
-item.dz:card1.name=card1
-item.dz:card2.name=card2
-item.dz:card3.name=card3
-item.dz:card4.name=card4
-item.dz:card5.name=card5
+
+item.card:speed.name=Speed Card
+item.dz:card1.name=Pink Glass Tree
+item.dz:card2.name=Sweeping Card
+item.dz:card3.name=Mushroom Schematic
+item.dz:card4.name=Climb Chain
+item.dz:card5.name=Quest Card
 item.dz:action1.name=action1
 item.dz:action2.name=action2
 item.dz:friendship.name=Friendship
 item.dz:selecta.name=selecta
 item.dz:selectb.name=selectb
 item.dz:selectc.name=selectc
+
 
 item.UI:select1.name=Option 1
 item.blighty:cardtest.name=Card
@@ -578,3 +581,4 @@ entity.prop:insence.name=Insence
 item.spawn_egg.entity.prop:insence.name=Spawn Insence
 entity.props:clothing_on_hanger.name=Clothing on Hanger
 item.spawn_egg.entity.props:clothing_on_hanger.name=Spawn Clothing on Hanger
+entity.prop:plate_of_fish.name=Plate of Fish
